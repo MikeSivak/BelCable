@@ -1,3 +1,68 @@
+.headInfo{
+    margin: 0;
+    padding: 0 7em;
+    height: 146px;
+    display: flex;
+    flex-flow: row nowrap;
+    background: white;
+    justify-content: space-between;
+}
+
+.companyLogo{
+    width: 300px;
+    height: 79px;
+    margin-top: 23px;
+}
+
+.info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 45px;
+    font-size: 16px;
+}
+
+.info li{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.contacts li{
+    white-space: nowrap;
+}
+
+.phone{
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.icons{
+    margin-left: 78px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.icons li{
+    display: block;
+}
+
+.icons li img{
+    width: 51px;
+    height: 51px;
+    padding: 0px 4px;
+}
+
+.icons-info{
+    width: 170px;
+    margin-left: 10px;
+    margin-top: -7px;
+    font-weight: 700;
+    flex-flow: row wrap;
+}
+
 .navigation {
     display: flex;
     flex-flow: row nowrap;
@@ -21,6 +86,17 @@
 .navigation a:hover{
     background: rgb(180, 180, 180);
 }
+
+@media all and (max-width: 1181px) {
+    .icons{
+        margin-left: 0;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .info{
+        margin-left: 0;
+    }
+  }
 
 @media all and (min-width: 1920px) {
     .navigation a{
