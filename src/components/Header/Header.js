@@ -4,7 +4,9 @@ export default function Header() {
     return (
         <>
             <div className='headInfo'>
+
                 <img className='companyLogo' src='https://images.wallpaperscraft.ru/image/dikie_tsvety_tsvety_pole_217762_1920x1080.jpg' alt='no'></img>
+
                 <ul className='info'>
                     <li>
                         <ul className='contacts'>
