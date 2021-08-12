@@ -11,27 +11,29 @@
 
 @media screen and (max-width: 1073px) {
     .icons{
-        /* background: green; */
         max-width: 400px !important;
         margin: 40px auto 0px auto  !important;
     }
   }
 
   @media screen and (max-width: 779px) {
+    .sectionReception{
+        margin: 40px 0px 0px 70px  !important;
+    }
     .sectionSales{
-        margin: 40px 0px 0px 55px  !important;
+        margin: 40px 0px 0px 70px  !important;
     }
     .icons{
-        margin: 40px 80px 0px auto  !important;
+        margin: 40px 0px 0px auto  !important;
     }
   }
 
   @media screen and (max-width: 767px) {
-    .sectionReception{
-        margin: 30px auto 0px 20%  !important;
+    .logo{
+        text-align: center;
     }
-    .sectionSales{
-        margin: 20px auto 0px 20%  !important;
+    .icons{
+        margin: 40px 0px 0px 0px  !important;
     }
   }
 

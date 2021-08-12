@@ -9,7 +9,7 @@ export default function Header() {
         <>
             <div className="banner">
                 <div className='row'>
-                    <div className='col-md'>
+                    <div className='col-md logo'>
                         <img height='37px' width='309px' src='https://wallpapers.com/wp-content/themes/wallpapers.com/src/Logo.svg' />
                     </div>
                     <div className='col-md sectionReception'>
