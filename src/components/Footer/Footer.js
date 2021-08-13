@@ -3,7 +3,7 @@ import Styles from './Footer.css';
 export default function Footer() {
     return (
         <>
-            <footer class="text-center text-lg-start text-muted" style={{ background: '#343753' }}>
+            <footer class="text-center text-lg-start text-muted" style={{ background: '#343753'}}>
                 <section
                     class="d-flex justify-content-center justify-content-lg-between border-bottom"
                 />
