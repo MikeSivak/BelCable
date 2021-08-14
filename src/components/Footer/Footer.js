@@ -3,7 +3,7 @@ import Styles from './Footer.css';
 export default function Footer() {
     return (
         <>
-            <footer class="text-center text-lg-start text-muted" style={{ background: '#343753'}}>
+            <footer class="text-center text-lg-start text-muted" style={{ background: '#343753' }}>
                 <section
                     class="d-flex justify-content-center justify-content-lg-between border-bottom"
                 />
@@ -16,7 +16,7 @@ export default function Footer() {
                             <div class="col-md col-lg-4 col-xl-8 mx-auto mb-4">
 
                                 <h6 class="text-uppercase fw-bold mb-4" style={{ color: 'red' }}>
-                                    Беларускабель
+                                    <img height='37px' width='309px' src='logo.png' />
                                 </h6>
                                 <p>
                                     Более 50 лет ОАО "Беларускабель" - одно из ведущих кабельных предприятий в Республике Беларусь, которое изготавливает и поставляет кабельную продукцию для отраслей и сфер потребления - таких как радиоэлектроника, приборостроение, связь, авиационная техника, строительство, телекоммуникация и электротехника.  Мы всегда рады новым проектам и партнёрам! Изготавливаем кабель и провод по ГОСТу, принимаем заказы на разработку и производство по Вашим ТЗ и ТУ, всегда готовы предоставить консультацию по любым вопросам.
@@ -24,7 +24,7 @@ export default function Footer() {
                             </div>
 
                             <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4">
-                                <a href="#!" class="text-reset" >Компания</a>
+                                <a href="#!" class="text-reset company">Компания</a>
                                 <br />
                                 <a href="#!" class="text-reset">Производство</a>
                                 <br />

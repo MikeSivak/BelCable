@@ -10,7 +10,7 @@ export default function Header() {
             <div className="banner">
                 <div className='row'>
                     <div className='col-md logo'>
-                        <img height='37px' width='309px' src='https://wallpapers.com/wp-content/themes/wallpapers.com/src/Logo.svg' />
+                        <img height='37px' width='309px' src='logo.png' />
                     </div>
                     <div className='col-md sectionReception'>
                         <div className='row'>Приёмная</div>
@@ -23,8 +23,8 @@ export default function Header() {
                     <div className='col-md iconsInfo'>
                         <div className='row'>
                             <div className='icons'>
-                                <img height="51px" width="51px" src="https://img.icons8.com/fluency/48/000000/walter-white.png" />
-                                <img height="51px" width="51px" src="https://img.icons8.com/fluency/48/000000/mummy.png" />
+                                <img height="51px" width="51px" src="gerb1.png" />
+                                <img height="51px" width="51px" src="gerb.png" />
                                 <div className='col-sm-10 boldText'>
                                     Министерство Промышленности Республики Беларусь
                                 </div>

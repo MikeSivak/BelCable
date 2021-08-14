@@ -1,11 +1,12 @@
-import Carousel from '../Carousel/Carousel';
+import CustomCarousel from '../Carousel/CustomCarousel';
 import Styles from './HomePage.css';
 // import { Carousel } from 'react-bootstrap'
 
 export default function HomePage() {
     return (
         <>
-            <Carousel/>
+            <CustomCarousel/>
+            {/* <br></br> */}
         </>
     )
 }

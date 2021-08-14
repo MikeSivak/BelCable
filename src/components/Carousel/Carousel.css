@@ -1,74 +1,44 @@
-/* RC TABS START */
-
-.rc-tabs {
-    border: none !important;
+.carousel-caption {
+    top: 5%;
+    left: 9% !important;
+    /* width: 100% !important; */
+    text-align: left !important;
+    color: #343753 !important;
+    font-size: 2em;
   }
-  .rc-tabs-tab .rc-tabs-tab-btn {
-    font-weight: normal;
-  }
 
-.rc-tabs-tabpane .rc-tabs-tabpane-active{
-    width: 100%;
+.carousel-caption div{
+  width: 80%;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.rc-tabs-tabpane>img{
-    width: 100%;
+.carousel-item img{
+  /* opacity: 0.6; */
 }
 
-  .rc-tabs-tab{
-      margin-left: 0px !important;
-  }
+/* check gradient */
 
-  .rc-tabs-tab-btn{
-    white-space: normal;
-    font-size: 14px;
-    padding: 0 14px;
-    text-align: left;
-    /* background: white !important; */
-  }
-  .rc-tabs-tab.rc-tabs-tab-active{
-    background: white;
-    color: #00a6f8;
-    font-weight: 700 !important;
-    /* border-bottom: 1px red !important; */
-  }
-  .rc-tabs-ink-bar {
-    display: none;
-  }
-  
-  .rc-tabs-nav-list{
-    height: 132px;
-    max-width: fit-content;
-    /* background: white !important; */
-  }
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to left, #ffffff77, #ffffffda);
+	opacity: 0.8;
+}
 
-  .rc-tabs-nav-measure-ping-right::after, .rc-tabs-nav-wrap-ping-right::after{
-      display: none;
-  }
-
-  .rc-tabs-nav-wrap{
-      background: white !important;
-      opacity: 0.9 !important;
-  }
-
-  /* Регулировать высоту панели управления */
-  .rc-tabs-nav-wrap{
-      margin-top: -65px;
-  }
-
-  .rc-tabs-nav-operations{
-      display: none !important;
-  }
-
-  .rc-tabs-nav{
-    padding: 0 11%;
-    /* background: white; */
-  }
-
-  .rc-tabs-content-holder {
-    /* background: #ececec; */
-  }
-  .rc-tabs-content {
-  }
-  
-  /* RC TABS STOP */
+.photoButton{
+  background: #E74137;
+  border-radius: 50px;
+  width:20%;
+}
