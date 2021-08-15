@@ -1,0 +1,44 @@
+.searchBlock{
+    /* width: 50% !important; */
+    text-align: center;
+}
+
+.searchBlock img{
+    width: 80% !important;
+    height: 179px;
+    /* height: auto; */
+}
+
+.searchImage{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.searchButton{
+    background: rgb(59, 59, 59);
+    border: 1px solid red;
+    width: 9.7%;
+    height: 7.6%;
+    position: absolute;
+    margin-top: 68px;
+    margin-left: -25%;
+    border-radius: 10px;
+}
+
+.searchButton:hover{
+    background: rgb(49, 49, 49);
+    border: none;
+}
+
+.seacrhInput{
+    background: rgb(41, 41, 41);
+    border-bottom: 3px solid red;
+    color: white;
+    position: absolute;
+    width: 49%;
+    height: 7.5%;
+    margin-top: 69px;
+    margin-left: -76%;
+    border-radius: 10px;
+}
