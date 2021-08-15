@@ -1,4 +1,5 @@
 import CustomCarousel from '../Carousel/CustomCarousel';
+import FirstBanner from '../FirstBanner/FirstBanner';
 import ProductCarousel from '../ProductCarousel/ProductCarousel';
 import Search from '../Search/Search';
 import Styles from './HomePage.css';
@@ -9,8 +10,8 @@ export default function HomePage() {
         <>
             <CustomCarousel />
             <Search />
-            <br></br>
             <ProductCarousel />
+            <FirstBanner />
         </>
     )
 }

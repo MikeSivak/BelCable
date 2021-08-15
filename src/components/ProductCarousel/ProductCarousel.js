@@ -4,6 +4,9 @@ import './Carousel.css'
 export default function ProductCarousel() {
     return (
         <>
+            <div className='productLabel'>
+                <p>ПРОДУКЦИЯ</p>
+            </div>
             <Carousel className='product'>
                 <Carousel.Item interval={1000}>
                     <Row xs={1} md={4} className="g-4">
@@ -23,7 +26,7 @@ export default function ProductCarousel() {
                         ))}
                     </Row>
                     <Carousel.Caption>
-                        
+
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
@@ -31,7 +34,8 @@ export default function ProductCarousel() {
                         {Array.from({ length: 8 }).map((_, idx) => (
                             <Col>
                                 <Card>
-                                    <Card.Img variant="top" src="itemCable.png" />
+                                    {/* <Card.Img variant="top" src="itemCable.png" /> */}
+                                    <Image src="itemCable.png" style={{ background: '#CDDBEC' }} roundedCircle />
                                     <Card.Body>
                                         <Card.Title>КАБЕЛИ И ПРОВОДА МОНТАЖНЫЕ</Card.Title>
                                         <Card.Text>
@@ -43,7 +47,7 @@ export default function ProductCarousel() {
                         ))}
                     </Row>
                     <Carousel.Caption>
-                        
+
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
@@ -51,7 +55,8 @@ export default function ProductCarousel() {
                         {Array.from({ length: 8 }).map((_, idx) => (
                             <Col>
                                 <Card>
-                                    <Card.Img variant="top" src="itemCable.png" />
+                                    {/* <Card.Img variant="top" src="itemCable.png" /> */}
+                                    <Image src="itemCable.png" style={{ background: '#CDDBEC' }} roundedCircle />
                                     <Card.Body>
                                         <Card.Title>КАБЕЛИ И ПРОВОДА МОНТАЖНЫЕ</Card.Title>
                                         <Card.Text>
@@ -63,11 +68,13 @@ export default function ProductCarousel() {
                         ))}
                     </Row>
                     <Carousel.Caption>
-                        
+
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Button className='catalogButton' variant="danger">Перейти в каталог</Button>
+            <div className='catalogButton'>
+                <Button className='cB' variant="danger">Перейти в каталог</Button>
+            </div>
         </>
     )
 }
