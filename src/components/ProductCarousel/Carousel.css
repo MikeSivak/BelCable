@@ -1,0 +1,52 @@
+.product{
+    /* height: 1000px; */
+    /* padding: 0 9em; */
+}
+
+.product .carousel-indicators{
+    /* padding: 0.5em 3em !important; */
+    justify-content: center !important;
+    background:none;
+    backdrop-filter: none;
+  }
+  
+ .product .carousel-indicators button{
+    width: 23px !important;
+    border-radius: 200px;
+    background: #343753 !important;
+  }
+
+  /* .product .carousel-caption {
+    text-align: center !important;
+    color:#E74137 !important;
+    font-size: 2em;
+  }
+
+.product .carousel-caption p{
+  font-weight: 900;
+  font-size: 36px;
+  font-style: normal;
+} */
+
+.product .carousel-item{
+    padding: 7em 0;
+}
+
+.product .card-body{
+    text-align: center;
+    width: 297px;
+}
+
+.product .carousel-control-prev-icon{
+    display: none;
+  }
+  
+.product .carousel-control-next-icon{
+    display: none;
+  }
+
+.catalogButton{
+    background: #E74137;
+    border-radius: 50px !important;
+    padding: 0.7em 2em !important;
+}

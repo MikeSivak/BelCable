@@ -1,8 +1,6 @@
 import { Button } from 'react-bootstrap'
 import './Search.css'
 
-import { InputGroup, FormControl } from 'react-bootstrap'
-
 export default function Search() {
     return (
         <>

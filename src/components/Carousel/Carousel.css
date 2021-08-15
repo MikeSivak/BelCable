@@ -14,7 +14,7 @@
 }
 
 .carousel-indicators{
-  background: rgb(73, 3, 3);
+  /* background: rgb(73, 3, 3); */
   border-radius: 50px;
   padding: 0.5em 3em !important;
   justify-content: space-between !important;
@@ -25,6 +25,11 @@
 .carousel-indicators button{
   width: 80px !important;
   border-radius: 200px;
+  /* background: #E74137 !important; */
+  background: #333333 !important;
+}
+
+.carousel-indicators button.active{
   background: #E74137 !important;
 }
 
@@ -66,4 +71,19 @@
   height: 440px;
   width: auto;
   bottom: 6px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background: rgb(0, 0, 0);
+  padding: 2em !important;
+  border-radius: 36px;
+  /* margin-top: 60%; */
+}
+
+.carousel-control-prev-icon{
+  margin-right: 80px;
+}
+
+.carousel-control-next-icon{
+  margin-left: 80px;
 }
