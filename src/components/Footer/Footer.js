@@ -13,18 +13,18 @@ export default function Footer() {
 
                         <div class="row mt-3">
 
-                            <div class="col-md col-lg-4 col-xl-8 mx-auto mb-4">
+                            <div class="col-md col-lg-4 col-xl-6 mx-auto mb-4">
 
                                 <h6 class="text-uppercase fw-bold mb-4" style={{ color: 'red' }}>
-                                    <img height='37px' width='309px' src='logo.png' />
+                                    <img height='37px' width='309px' src='lbl.png' />
                                 </h6>
                                 <p>
                                     Более 50 лет ОАО "Беларускабель" - одно из ведущих кабельных предприятий в Республике Беларусь, которое изготавливает и поставляет кабельную продукцию для отраслей и сфер потребления - таких как радиоэлектроника, приборостроение, связь, авиационная техника, строительство, телекоммуникация и электротехника.  Мы всегда рады новым проектам и партнёрам! Изготавливаем кабель и провод по ГОСТу, принимаем заказы на разработку и производство по Вашим ТЗ и ТУ, всегда готовы предоставить консультацию по любым вопросам.
                                 </p>
                             </div>
 
-                            <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4">
-                                <a href="#!" class="text-reset company">Компания</a>
+                            <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4" style={{ whiteSpace: 'nowrap' }}>
+                                {/* <a href="#!" class="text-reset company">Компания</a>
                                 <br />
                                 <a href="#!" class="text-reset">Производство</a>
                                 <br />
@@ -34,17 +34,30 @@ export default function Footer() {
                                 <br />
                                 <a href="#!" class="text-reset">Пресс-центр</a>
                                 <br />
-                                <a href="#!" class="text-reset">Контакты</a>
-
+                                <a href="#!" class="text-reset">Контакты</a> */}
+                                <p><a href="#!" class="text-reset company">Компания</a></p>
+                                <p><a href="#!" class="text-reset">Производство</a></p>
+                                <p><a href="#!" class="text-reset">Продукция</a></p>
+                                <p><a href="#!" class="text-reset">Заказчикам</a></p>
+                                <p><a href="#!" class="text-reset">Пресс-центр</a></p>
+                                <p><a href="#!" class="text-reset">Контакты</a></p>
                             </div>
-                            <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4 linkBlock">
-                                <a href="#!" class="text-reset">Приёмная</a>
+
+                            <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4" style={{ whiteSpace: 'nowrap' }}>
+                                <p><a href="#!" class="text-reset">Наши клиенты</a></p>
+                                <p><a href="#!" class="text-reset">История</a></p>
+                                <p><a href="#!" class="text-reset">Пресс-Центр</a></p>
+                                <p><a href="#!" class="text-reset">Наши награды</a></p>
+                                <p><a href="#!" class="text-reset">Клиентам</a></p>
+                                <p><a href="#!" class="text-reset">Контакты</a></p>
+                            </div>
+
+                            <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4 linkBlock" style={{ whiteSpace: 'nowrap' }}>
+                                <p><a href="#!" class="text-reset">Приёмная</a></p>
+                                <p><a href="#!" class="text-reset">+375-236-24-77-29</a></p>
                                 <br />
-                                <a href="#!" class="text-reset" style={{ whiteSpace: 'nowrap' }}>+375-236-24-77-29</a>
-                                <br /><br />
-                                <a href="#!" class="text-reset" style={{ whiteSpace: 'nowrap' }}>Отдел продаж</a>
-                                <br />
-                                <a href="#!" class="text-reset" style={{ whiteSpace: 'nowrap' }}>800 123 12 12</a>
+                                <p><a href="#!" class="text-reset">Отдел продаж</a></p>
+                                <p><a href="#!" class="text-reset">800 123 12 12</a></p>
                             </div>
                         </div>
                         <div class="col-md col-lg-4 mx-2 p-4" style={{ color: 'white' }}>

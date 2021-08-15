@@ -18,7 +18,10 @@ export default function CustomCarousel() {
                         src="poezd.png"
                         alt="First slide"
                     /> */}
-                    <a className="gradient" href="#"><img className="d-block w-100" src="poezd.png" alt="" /></a>
+                    <a className="gradient" href="#">
+                        <img className="d-block w-100 backPic" src="poezd.png" alt="" />
+                    </a>
+                    <img className="frontPic" src="cable1.png" alt=""/>
                     <Carousel.Caption>
                         <div>
                             <p>Кабели для внутренних и наружных соединений подвижного состава РЕЛЬСОВОГО ТРАНСПОРТА И ТРОЛЛЕЙБУСОВ</p>
@@ -33,7 +36,8 @@ export default function CustomCarousel() {
                         alt="Second slide"
                         style={{marginTop:'-7px'}}
                     /> */}
-                    <a className="gradient" href="#"><img className="d-block w-100" src="tower.png" alt="" /></a>
+                    <a className="gradient" href="#"><img className="d-block w-100 backPic" src="tower.png" alt="" /></a>
+                    <img className="frontPic" src="cable2.png" alt=""/>
                     <Carousel.Caption>
                         <div>
                             <p>КАБЕЛИ И ПРОВОДА СВЯЗИ</p>
@@ -48,7 +52,8 @@ export default function CustomCarousel() {
                         src="pipes.png"
                         alt="Third slide"
                     /> */}
-                    <a className="gradient" href="#"><img className="d-block w-100" src="pipes.png" alt="" /></a>
+                    <a className="gradient" href="#"><img className="d-block w-100 backPic" src="pipes.png" alt="" /></a>
+                    <img className="frontPic" style={{left:'20%', top:'22%'}} src="cable3.png" alt=""/>
                     <Carousel.Caption>
                         <div>
                             <p style={{ maxWidth: '50%' }}>КАБЕЛИ И ПРОВОДА МОНТАЖНЫЕ</p>
@@ -62,7 +67,8 @@ export default function CustomCarousel() {
                         src="network.png"
                         alt="First slide"
                     /> */}
-                    <a className="gradient" href="#"><img className="d-block w-100" src="network.png" alt="" /></a>
+                    <a className="gradient" href="#"><img className="d-block w-100 backPic" src="network.png" alt="" /></a>
+                    <img className="frontPic" style={{left:'20%', top:'24%'}} src="cable4.png" alt=""/>
                     <Carousel.Caption>
                         <div>
                             <p style={{ maxWidth: '49%' }}>КАБЕЛИ УПРАВЛЕНИЯ И ПЕРЕДАЧИ ДАННЫХ</p>
@@ -76,7 +82,8 @@ export default function CustomCarousel() {
                         src="towerLines.png"
                         alt="First slide"
                     /> */}
-                    <a className="gradient" href="#"><img className="d-block w-100" src="towerLines.png" alt="" /></a>
+                    <a className="gradient" href="#"><img className="d-block w-100 backPic" src="towerLines.png" alt="" /></a>
+                    <img className="frontPic" style={{left:'12%', top:'18%'}} src="cable5.png" alt=""/>
                     <Carousel.Caption>
                         <div>
                             <p style={{ maxWidth: '49%' }}>КАБЕЛИ СИЛОВЫЕ</p>
@@ -90,7 +97,8 @@ export default function CustomCarousel() {
                         src="security.png"
                         alt="First slide"
                     /> */}
-                    <a className="gradient" href="#"><img className="d-block w-100" src="security.png" alt="" /></a>
+                    <a className="gradient" href="#"><img className="d-block w-100 backPic" src="security.png" alt="" /></a>
+                    <img className="frontPic" style={{left:'20%', top:'18%'}} src="cable6.png" alt=""/>
                     <Carousel.Caption>
                         <div>
                             <p style={{ maxWidth: '80%' }}>КАБЕЛИ И ПРОВОДА ДЛЯ СИГНАЛИЗАЦИИ И БЛОКИРОВКИ</p>
@@ -99,7 +107,8 @@ export default function CustomCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <a className="gradient" href="#"><img className="d-block w-100" src="control.png" alt="" /></a>
+                    <a className="gradient" href="#"><img className="d-block w-100 backPic" src="control.png" alt="" /></a>
+                    <img className="frontPic" style={{left:'20%', top:'18%'}} src="cable7.png" alt=""/>
                     <Carousel.Caption>
                         <div style={{ marginTop: '70px' }}>
                             <p>КАБЕЛИ КОНТРОЛЬНЫЕ</p>

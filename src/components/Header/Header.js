@@ -10,7 +10,7 @@ export default function Header() {
             <div className="banner">
                 <div className='row'>
                     <div className='col-md logo'>
-                        <img height='37px' width='309px' src='logo.png' />
+                        <img height='37px' width='309px' src='lbl.png' />
                     </div>
                     <div className='col-md sectionReception'>
                         <div className='row'>Приёмная</div>
