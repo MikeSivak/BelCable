@@ -1,0 +1,19 @@
+.industryLabel{
+    height: 100%;
+    margin-top: 5%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.industryLabel p{
+    color: #E74137;
+}
+
+.indList{
+    width: 83%;
+    text-align: center; 
+    margin: 0 auto !important;
+}
