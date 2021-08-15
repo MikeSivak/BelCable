@@ -69,9 +69,6 @@
 /* ---------------------------------------------------- */
 
 /*------------------- reviews carousel -----------------*/
-/* .revCarousel{
-    padding: 0em 0 4em 0;
-} */
 .revCarousel .carousel-indicators{
     justify-content: center !important;
     background:none;
