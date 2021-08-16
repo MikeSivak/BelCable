@@ -1,5 +1,5 @@
 import './ProductPage.css'
-import { Card, Col, Row, Dropdown, Tabs, Tab } from 'react-bootstrap'
+import { Card, Col, Row, Dropdown, Tabs, Tab, Breadcrumb } from 'react-bootstrap'
 
 export default function ProductPage() {
 
@@ -39,6 +39,11 @@ export default function ProductPage() {
         <>
             <div className='product-page-container'>
                 <div class="container content">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/HomePage">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/ProductPage">Продукция</Breadcrumb.Item>
+                </Breadcrumb>
+                <br></br>
                     <div class="row">
                         <Col md={4}>
                             <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example">
