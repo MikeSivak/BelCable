@@ -1,0 +1,41 @@
+.product-page-container{
+    width: 83%;
+    margin: 0 auto;
+}
+
+.product-page-container .content{
+	margin-top: 50px;
+}
+
+.product-page-container .product:hover {
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.product-page-container .drop-buttons{
+    background: #CDDBEC;
+    border: none;
+    color: black;
+    width: 100% !important;
+    text-align: left;
+}
+
+.product-page-container .drop-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: normal;
+}
+
+.product-page-container .nav-tabs{
+    border: none;
+}
+
+.product-page-container .nav-tabs .nav-link.active{
+    border: none;
+    background: #CDDBEC;
+}
+
+.product-page-container .show>.btn-primary.dropdown-toggle {
+    color: black;
+    background: #CDDBEC !important;
+}

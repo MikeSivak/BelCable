@@ -1,5 +1,5 @@
 import './Certificates.css'
-import { Row, Col, Carousel, Card, Image } from 'react-bootstrap'
+import { Row, Col, Carousel } from 'react-bootstrap'
 
 export default function Certificates() {
     return (
