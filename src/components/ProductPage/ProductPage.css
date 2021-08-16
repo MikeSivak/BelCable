@@ -1,6 +1,7 @@
 .product-page-container{
     width: 83%;
     margin: 0 auto;
+    padding: 0 0 6em 0;
 }
 
 .product-page-container .content{
@@ -9,6 +10,17 @@
 
 .product-page-container .product:hover {
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #E74137;
+}
+
+.product-page-container .cardImg{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.product-page-container .product{
+    padding: 2em 0;
 }
 
 .product-page-container .drop-buttons{
@@ -38,4 +50,25 @@
 .product-page-container .show>.btn-primary.dropdown-toggle {
     color: black;
     background: #CDDBEC !important;
+}
+
+.product-page-container .productsLabel{
+    color: #E74137;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    margin-left: 14%;
+}
+
+.product-page-container .cardsBlock{
+    margin-top: 20px;
+}
+
+.product-page-container .cardsTab{
+    margin-top: 5%;
+}
+
+.product-page-container .cardsBlock{
+    margin-left: 10%;
 }

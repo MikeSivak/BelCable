@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <HomePage/> */}
-      <ProductPage />
+      <HomePage/>
+      {/* <ProductPage /> */}
       <Footer />
     </>
   );

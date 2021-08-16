@@ -36,11 +36,6 @@ export default function TrustList() {
                     </Row>
                 </Carousel.Item>
             </Carousel>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
         </>
     )
 }

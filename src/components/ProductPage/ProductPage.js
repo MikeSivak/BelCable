@@ -1,12 +1,6 @@
 import './ProductPage.css'
 import { Card, Col, Row, Dropdown, Tabs, Tab } from 'react-bootstrap'
 
-
-
-// const industryImages = [
-
-// ]
-
 export default function ProductPage() {
 
     const industry = [
@@ -87,8 +81,9 @@ export default function ProductPage() {
                             </Tabs>
                         </Col>
                         <div class="col-md-8 products">
-                            <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example">
-                                <Tab eventKey="byIndustry" title="По отраслям" className=''>
+                            <div className='productsLabel'>ПРОДУКЦИЯ</div>
+                            <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example" className='cardsBlock'>
+                                <Tab eventKey="byIndustry" title="По отраслям" className='cardsTab'>
                                     <Row xs={1} md={3} className="g-4">
                                         {industry.map((data) => (
                                             <Col>
@@ -107,7 +102,7 @@ export default function ProductPage() {
                                         }
                                     </Row>
                                 </Tab>
-                                <Tab eventKey="byPurpose" title="По назначению">
+                                <Tab eventKey="byPurpose" title="По назначению" className='cardsTab'>
                                     <Row xs={1} md={3} className="g-4">
                                         {purpose.map((data) => (
                                             <Col>

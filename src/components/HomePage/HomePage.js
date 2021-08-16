@@ -11,14 +11,16 @@ import Styles from './HomePage.css';
 export default function HomePage() {
     return (
         <>
-            <CustomCarousel />
-            <Search />
-            <ProductCarousel />
-            <FirstBanner />
-            <IndustriesList />
-            <Certificates />
-            <SecondBanner />
-            <TrustList/>
+            <div className='HomePage'>
+                <CustomCarousel />
+                <Search />
+                <ProductCarousel />
+                <FirstBanner />
+                <IndustriesList />
+                <Certificates />
+                <SecondBanner />
+                <TrustList />
+            </div>
         </>
     )
 }
