@@ -44,7 +44,7 @@
 .calculator-container .calculator-buttons{
     text-align: center;
     margin-top: 10%;
-    padding: 0em 18em;
+    /* padding: 0em 18em; */
 }
 
 .calculator-container .calculator-button{
@@ -52,7 +52,14 @@
     border-color: #E74137;
     color:#E74137;
     border-radius: 50px;
-    width:70%
+    width:269px;
+    height: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .calculator-container .calculator-button:hover{
@@ -67,4 +74,10 @@
     border-color: #af2720;
     color:rgb(255, 255, 255);
     border-radius: 50px;
+}
+
+@media (max-width:677px) {
+    .calculator-container .button-col{
+        margin-top: 5%;
+    }
 }

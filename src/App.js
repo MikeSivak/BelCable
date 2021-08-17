@@ -22,3 +22,12 @@ function App() {
 }
 
 export default App;
+
+// HomePage:
+// -fix adaptive layout
+// ProductPage:
+// -fix adaptive layout
+// CardPage:
+// -add dinamic changed data
+// Calculator:
+// -add only one selected checkbox

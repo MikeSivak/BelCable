@@ -102,10 +102,10 @@ export default function Calculator() {
                     ))}
                 </div>
                 <Row className='calculator-buttons'>
-                    <Col>
+                    <Col className='button-col'>
                         <Button className='calculator-button'>Подобрать</Button>
                     </Col>
-                    <Col>
+                    <Col className='button-col'>
                         <Button className='calculator-button'>Очистить</Button>
                     </Col>
                 </Row>
