@@ -41,7 +41,7 @@ export default function ProductPage() {
                 <div class="container content">
                 <Breadcrumb>
                     <Breadcrumb.Item href="/HomePage">Главная</Breadcrumb.Item>
-                    <Breadcrumb.Item href="/ProductPage">Продукция</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/ProductPage" active>Продукция</Breadcrumb.Item>
                 </Breadcrumb>
                 <br></br>
                     <div class="row">
