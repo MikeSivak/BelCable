@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import HomePage from './components/HomePage/HomePage';
 import ProductPage from './components/ProductPage/ProductPage';
 import CardPage from './components/CardPage/CardPage';
+import Calculator from './components/Calculator/Calculator';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Header />
       {/* <HomePage/> */}
       {/* <ProductPage /> */}
-      <CardPage />
+      {/* <CardPage /> */}
+      <Calculator />
       <Footer />
     </>
   );
