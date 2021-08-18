@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <Breadcrumb />
-      <SwitchRouter routes={routes} />
+      <SwitchRouter component={<Breadcrumb />} routes={routes} />
       <Footer />
     </>
   );

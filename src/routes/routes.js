@@ -10,6 +10,7 @@ import Cooperation from "../components/Сooperation/Сooperation";
 import Documentation from "../components/Documentation/Documentation";
 import Certificates from "../components/Certificates/Certificates";
 import PurchasePlace from "../components/PurchasePlace/PurchasePlace";
+import Projects from "../components/Projects/Projects";
 
 const routes = [
     {
@@ -50,12 +51,6 @@ const routes = [
         id: 5
     },
     {
-        path: '/management',
-        name: 'Management',
-        component: Management,
-        id: 5
-    },
-    {
         path: '/production',
         name: 'Production',
         component: Production,
@@ -86,10 +81,16 @@ const routes = [
         id: 10
     },
     {
-        path: '/PurchasePlace',
-        name: 'PurchasePlace',
+        path: '/places',
+        name: 'Purchase Places',
         component: PurchasePlace,
         id: 11
+    },
+    {
+        path: '/projects',
+        name: 'Projects',
+        component: Projects,
+        id: 12
     }
 ]
 
