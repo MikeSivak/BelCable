@@ -5,13 +5,13 @@ import Footer from './components/Footer/Footer';
 import routes, { SwitchRouter } from './routes';
 
 // Bad practice breadcrumb
-// import Breadcrumb from './components/Breadcrumb/Breadcrumb';
+import Breadcrumb from './components/Breadcrumb/Breadcrumb';
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Breadcrumb /> */}
+      <Breadcrumb />
       <SwitchRouter routes={routes} />
       <Footer />
     </>

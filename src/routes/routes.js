@@ -4,6 +4,7 @@ import CardPage from "../components/CardPage/CardPage";
 import Calculator from "../components/Calculator/Calculator";
 import HistoryPage from "../components/HistoryPage/HistoryPage";
 import Management from "../components/Management/Management";
+import Production from "../components/Production/Production";
 
 const routes = [
     {
@@ -42,6 +43,18 @@ const routes = [
         name: 'Management',
         component: Management,
         id: 5
+    },
+    {
+        path: '/management',
+        name: 'Management',
+        component: Management,
+        id: 5
+    },
+    {
+        path: '/production',
+        name: 'Production',
+        component: Production,
+        id: 6
     }
 ]
 

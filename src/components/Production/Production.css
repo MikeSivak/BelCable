@@ -1,0 +1,38 @@
+.production-page-container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.production-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}
+
+.production-page-info{
+    margin-top: 5%;
+}
+
+.production-page-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+.production-page-text span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26.18px;
+}
+
+.production-page-row{
+    margin-top: 30px;
+}
