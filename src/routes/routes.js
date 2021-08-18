@@ -5,6 +5,7 @@ import Calculator from "../components/Calculator/Calculator";
 import HistoryPage from "../components/HistoryPage/HistoryPage";
 import Management from "../components/Management/Management";
 import Production from "../components/Production/Production";
+import QualityPolicy from "../components/QualityPolicy/QualityPolicy";
 
 const routes = [
     {
@@ -55,6 +56,12 @@ const routes = [
         name: 'Production',
         component: Production,
         id: 6
+    },
+    {
+        path: '/qualitypolicy',
+        name: 'Quality Policy',
+        component: QualityPolicy,
+        id: 7
     }
 ]
 
