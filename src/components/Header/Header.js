@@ -46,7 +46,7 @@ export default function Header() {
                                 <Nav.Link href="#">ПРОИЗВОДСТВО</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">ПРОДУКЦИЯ</Nav.Link>
+                                <Nav.Link href="/products">ПРОДУКЦИЯ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="#">ЗАКАЗЧИКАМ</Nav.Link>

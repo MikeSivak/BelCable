@@ -1,21 +1,18 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import HomePage from './components/HomePage/HomePage';
-import ProductPage from './components/ProductPage/ProductPage';
-import CardPage from './components/CardPage/CardPage';
-import Calculator from './components/Calculator/Calculator';
+import routes, { SwitchRouter } from './routes';
+
+// Bad practice breadcrumb
+// import Breadcrumb from './components/Breadcrumb/Breadcrumb';
 
 function App() {
   return (
     <>
       <Header />
-      {/* <HomePage/> */}
-      {/* <ProductPage /> */}
-      {/* <CardPage /> */}
-      <Calculator />
+      {/* <Breadcrumb /> */}
+      <SwitchRouter routes={routes} />
       <Footer />
     </>
   );
@@ -25,8 +22,10 @@ export default App;
 
 // HomePage:
 // -fix adaptive layout
+// -add dinamic data in carousels
 // ProductPage:
-// -fix adaptive layout
+// -add dropdown dinamical menues
+// -think about product description
 // CardPage:
 // -add dinamic changed data
 // Calculator:

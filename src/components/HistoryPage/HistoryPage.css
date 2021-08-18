@@ -1,0 +1,53 @@
+.history-page-container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.history-page-images{
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+.graphic{
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    margin-top: 110px;
+}
+
+.history-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}
+
+.history-page-info{
+    margin-top: 5%;
+}
+
+.history-page-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 26.18px;
+    /* margin-top: 10%; */
+    padding: 2em 0 0 0;
+}
+
+.history-page-text span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26.18px;
+}
+
+.history-page-row{
+    margin-top: 30px;
+}
