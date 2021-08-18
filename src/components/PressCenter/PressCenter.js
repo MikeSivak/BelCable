@@ -1,22 +1,26 @@
 import './PressCenter.css'
 import { Row, Col, Card, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 export default function PressCenter() {
 
     const pressInfo = [
         {
+            id: 1,
             title: 'ЭТО НАШ ПРАЗДНИК!',
             date: '05.07.2021',
             image: 'pc1.png',
             text: '3 июля 2021 г. работники ОАО «Беларускабель» приняли участие в шествии  трудовых коллективов Мозырского района на центральной площади В.И.Ленина в рамках торжественного открытия мероприятий, посвященных Дню Независимости Республики Беларусь и 77-й годовщине освобождения Республики Беларусь от немецко-фашистских захватчиков.'
         },
         {
+            id: 2,
             title: 'ОТКРЫТИЕ ФЛАГШТОКА',
             date: '05.07.2021',
             image: 'pc2.png',
             text: 'Ко Дню Независимости Республики Беларусь (Дню Республики) у центрального входа ОАО «Беларускабель» установлен уличный флагшток, на котором размещены флаги Республики Беларусь, города Мозыря и  ОАО «Беларускабель».'
         },
         {
+            id: 3,
             title: 'ЭКСКУРСИОННАЯ ПОЕЗДКА',
             date: '28.06.2021',
             image: 'pc3.png',
@@ -40,9 +44,10 @@ export default function PressCenter() {
                                     <Card.Text>
                                         <p className='info-text'>{info.text}</p>
                                     </Card.Text>
-                                    <Button bsPrefix='read-button'>Читать</Button>
+                                    <Link to='/presscard'>
+                                        <Button bsPrefix='read-button'>Читать</Button>
+                                    </Link>
                                 </Card.Body>
-                                {/* <Button className='read-button'>Читать</Button> */}
                             </Card>
                         </Col>
                     ))

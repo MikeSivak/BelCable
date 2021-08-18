@@ -13,6 +13,7 @@ import PurchasePlace from "../components/PurchasePlace/PurchasePlace";
 import Projects from "../components/Projects/Projects";
 import Clients from "../components/Clients/Clients";
 import PressCenter from "../components/PressCenter/PressCenter";
+import PressCard from "../components/PressCard/PressCard";
 
 const routes = [
     {
@@ -105,7 +106,14 @@ const routes = [
         name: 'Press Center',
         component: PressCenter,
         id: 14
+    },
+    {
+        path: '/presscard',
+        name: 'Press Card',
+        component: PressCard,
+        id: 15
     }
+
 ]
 
 export default routes;

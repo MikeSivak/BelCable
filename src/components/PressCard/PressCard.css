@@ -1,0 +1,67 @@
+.press-card-page-conteiner{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.press-card-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}
+
+.press-card-page-row{
+    margin-top: 3%;
+}
+
+.press-card-page-col{
+    margin-top: 20px;
+}
+
+.press-card-name{
+    text-transform: uppercase !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #343753;
+}
+
+.press-card-info-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.all-news{
+    background: #E74137;
+    border-color: #E74137;
+    padding: 1em 4em;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-style: none;
+}
+
+.all-news:hover{
+    background: #ff493f;
+    border-color: #ff493f;
+}
+
+.all-news:active{
+    background: #aa2d26;
+    border-color: #aa2d26;
+}
