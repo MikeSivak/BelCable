@@ -29,6 +29,10 @@
     text-align: center;
 }
 
+.press-center:hover .read-button{
+    display: inline-block;
+}
+
 .press-center-name{
     text-transform: uppercase !important;
     font-style: normal;
@@ -54,6 +58,7 @@
 }
 
 .read-button{
+    display: none;
     background: #E74137;
     border-color: #E74137;
     padding: 1em 3em;
