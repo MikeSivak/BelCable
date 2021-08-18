@@ -1,0 +1,40 @@
+.management-page-container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.human{
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+}
+
+.human-name{
+    text-transform: uppercase !important;
+    font-size: 0.8em;
+}
+
+.human:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #E74137;
+}
+
+.management-page-row{
+    margin-top: 3%;
+}
+
+.management-page-col{
+    margin-top: 20px;
+}
+
+.management-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}

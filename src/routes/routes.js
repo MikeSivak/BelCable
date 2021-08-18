@@ -3,6 +3,7 @@ import ProductPage from "../components/ProductPage/ProductPage";
 import CardPage from "../components/CardPage/CardPage";
 import Calculator from "../components/Calculator/Calculator";
 import HistoryPage from "../components/HistoryPage/HistoryPage";
+import Management from "../components/Management/Management";
 
 const routes = [
     {
@@ -35,6 +36,12 @@ const routes = [
         name: 'History',
         component: HistoryPage,
         id: 4
+    },
+    {
+        path: '/management',
+        name: 'Management',
+        component: Management,
+        id: 5
     }
 ]
 
