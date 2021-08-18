@@ -1,0 +1,30 @@
+.place-page-container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.place-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}
+
+.place-page-row{
+    margin-top: 3%;
+}
+
+/* .place-page-image{
+    width: 410px;
+    height: 579px;
+} */
+
+.place-page-info p{
+    font-size: 24px;
+    color: black;
+}

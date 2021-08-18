@@ -1,0 +1,30 @@
+.documentation-page-container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.documentation-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}
+
+.documentation-page-row{
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.documentation-page-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #343753;
+}

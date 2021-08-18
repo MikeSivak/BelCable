@@ -6,6 +6,10 @@ import HistoryPage from "../components/HistoryPage/HistoryPage";
 import Management from "../components/Management/Management";
 import Production from "../components/Production/Production";
 import QualityPolicy from "../components/QualityPolicy/QualityPolicy";
+import Cooperation from "../components/Сooperation/Сooperation";
+import Documentation from "../components/Documentation/Documentation";
+import Certificates from "../components/Certificates/Certificates";
+import PurchasePlace from "../components/PurchasePlace/PurchasePlace";
 
 const routes = [
     {
@@ -62,6 +66,30 @@ const routes = [
         name: 'Quality Policy',
         component: QualityPolicy,
         id: 7
+    },
+    {
+        path: '/cooperation',
+        name: 'Сooperation',
+        component: Cooperation,
+        id: 8
+    },
+    {
+        path: '/documentation',
+        name: 'Documentation',
+        component: Documentation,
+        id: 9
+    },
+    {
+        path: '/Certificates',
+        name: 'Certificates',
+        component: Certificates,
+        id: 10
+    },
+    {
+        path: '/PurchasePlace',
+        name: 'PurchasePlace',
+        component: PurchasePlace,
+        id: 11
     }
 ]
 
