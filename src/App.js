@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <Breadcrumb />
-      <SwitchRouter component={<Breadcrumb />} routes={routes} />
+      <SwitchRouter routes={routes} />
       <Footer />
     </>
   );
@@ -28,5 +28,3 @@ export default App;
 // -think about product description
 // CardPage:
 // -add dinamic changed data
-// Calculator:
-// -add only one selected checkbox

@@ -1,0 +1,29 @@
+.clients-page-conteiner{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0 6em 0;
+}
+
+.clients-page-label{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    margin-top: 5%;
+}
+
+.clients-page-row{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.clients-page-col{
+    margin-top: 5%;;
+}
+
+.client-image{
+    
+}

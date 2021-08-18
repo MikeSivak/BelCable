@@ -11,6 +11,8 @@ import Documentation from "../components/Documentation/Documentation";
 import Certificates from "../components/Certificates/Certificates";
 import PurchasePlace from "../components/PurchasePlace/PurchasePlace";
 import Projects from "../components/Projects/Projects";
+import Clients from "../components/Clients/Clients";
+import PressCenter from "../components/PressCenter/PressCenter";
 
 const routes = [
     {
@@ -75,7 +77,7 @@ const routes = [
         id: 9
     },
     {
-        path: '/Certificates',
+        path: '/certificates',
         name: 'Certificates',
         component: Certificates,
         id: 10
@@ -91,6 +93,18 @@ const routes = [
         name: 'Projects',
         component: Projects,
         id: 12
+    },
+    {
+        path: '/clients',
+        name: 'Clients',
+        component: Clients,
+        id: 13
+    },
+    {
+        path: '/presscenter',
+        name: 'Press Center',
+        component: PressCenter,
+        id: 14
     }
 ]
 
