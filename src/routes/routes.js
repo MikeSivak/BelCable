@@ -16,6 +16,7 @@ import PressCenter from "../components/PressCenter/PressCenter";
 import PressCard from "../components/PressCard/PressCard";
 import Reviews from "../components/Reviews/Reviews";
 import Contacts from "../components/Contacts/Contacts";
+import Awards from "../components/Awards/Awards";
 
 const routes = [
     {
@@ -126,6 +127,12 @@ const routes = [
         name: 'Contacts',
         component: Contacts,
         id: 17
+    },
+    {
+        path: '/awards',
+        name: 'Awards',
+        component: Awards,
+        id: 18
     }
 
 ]
