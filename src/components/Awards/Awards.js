@@ -1,10 +1,15 @@
 import './Awards.css'
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 
 export default function Awards() {
     return (
         <>
             <div className='awards-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Наши награды</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='awards-label'>
                     Наши награды
                 </div>

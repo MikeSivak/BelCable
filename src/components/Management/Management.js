@@ -1,5 +1,5 @@
 import './Management.css'
-import { Row, Col, Image, Card } from 'react-bootstrap';
+import { Row, Col, Image, Card, Breadcrumb } from 'react-bootstrap';
 
 export default function Management() {
 
@@ -9,47 +9,52 @@ export default function Management() {
             info: 'Директор ОАО «Беларускабель»',
             phone: '+375-236-24-77-29',
             email: '',
-            photo:'1human.png',
+            photo: '1human.png',
         },
         {
             name: 'Фиранчук Дмитрий Николаевич',
             info: 'Зам. директора по развитию',
             phone: '375-236-25-41-62',
             email: 'firanchuk@belaruskabel.by',
-            photo:'2human.png',
+            photo: '2human.png',
         },
         {
             name: 'Камеш Владимир Александрович',
             info: 'Зам. директора по снабжению и организации перевозок',
             phone: '+375-236-25-41-14',
             email: '',
-            photo:'3human.png',
+            photo: '3human.png',
         },
         {
             name: 'Барановский Сергей Григорьевич',
             info: 'Главный инженер',
             phone: '+375-236-25-23-04',
             email: '',
-            photo:'4human.png',
+            photo: '4human.png',
         },
         {
             name: 'Фещенко Светлана Леонидовна',
             info: 'Заместитель директора по идеологической работе, кадрам и социальным вопросам',
             phone: '+375-236-25-42-24',
             email: '',
-            photo:'5human.png',
+            photo: '5human.png',
         },
         {
             name: 'Белько Анна Александровна',
             info: 'Главный бухгалтер',
             phone: '+375-236-24-65-23',
             email: '',
-            photo:'6human.png',
+            photo: '6human.png',
         },
     ]
     return (
         <>
             <div className='management-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Руководство</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='management-page-label'>
                     Руководство
                 </div>

@@ -1,10 +1,15 @@
 import './Сooperation.css'
-import { Row } from 'react-bootstrap'
+import { Row, Breadcrumb } from 'react-bootstrap'
 
 export default function Сooperation() {
     return (
         <>
             <div className='cooperation-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Предложение к сотрудничеству</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='cooperation-page-label'>
                     Предложение к сотрудничеству
                 </div>

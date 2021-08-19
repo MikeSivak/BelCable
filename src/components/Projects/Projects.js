@@ -1,5 +1,5 @@
 import './Projects.css'
-import { Row, Col, Card } from 'react-bootstrap'
+import { Row, Col, Card, Breadcrumb} from 'react-bootstrap'
 
 export default function Projects() {
 
@@ -14,6 +14,11 @@ export default function Projects() {
     return (
         <>
             <div className='project-page-conteiner'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Реализованные проекты</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='project-page-label'>
                     Реализованные проекты
                 </div>

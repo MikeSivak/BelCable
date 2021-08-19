@@ -52,3 +52,40 @@
 .icons img{
     margin: auto 0;   
 }
+
+.company-button{
+    border: none;
+    font: inherit;
+    color: rgba(0,0,0,.55);
+    background-color: transparent;
+    height: 100% !important;
+    padding: .5rem 0.5rem;
+}
+
+.company-button:hover{
+    color:black;
+    border: none;
+    background-color: transparent;
+}
+
+.company-button:focus{
+    color: black;
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.company-button:active{
+    color: black;
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

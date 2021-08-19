@@ -1,7 +1,5 @@
 import Styles from './Header.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import { Nav } from 'react-bootstrap';
+import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
 
 export default function Header() {
     return (
@@ -40,10 +38,24 @@ export default function Header() {
                     <Navbar.Collapse id="navbars">
                         <Nav className='w-100 justify-content-between'>
                             <Nav.Item>
-                                <Nav.Link href="#">КОМПАНИЯ</Nav.Link>
+                                <Dropdown>
+                                    <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
+                                        КОМПАНИЯ
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu style={{background:'#EBEEF2'}}>
+                                        <Dropdown.Item href="/history">
+                                            История
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/production">
+                                            Производство
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">ПРОИЗВОДСТВО</Nav.Link>
+                                <Nav.Link href="/production">ПРОИЗВОДСТВО</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="/products">ПРОДУКЦИЯ</Nav.Link>
@@ -55,7 +67,7 @@ export default function Header() {
                                 <Nav.Link href="#">ПРОЕКТНЫМ ИНСТИТУТАМ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</Nav.Link>
+                                <Nav.Link href="/projects">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
@@ -67,22 +79,22 @@ export default function Header() {
                     <Navbar.Collapse id="navbars">
                         <Nav className='w-100 justify-content-between'>
                             <Nav.Item>
-                                <Nav.Link href="#">НАШИ КЛИЕНТЫ</Nav.Link>
+                                <Nav.Link href="/clients">НАШИ КЛИЕНТЫ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">ОТЗЫВЫ</Nav.Link>
+                                <Nav.Link href="/reviews">ОТЗЫВЫ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">ПРЕСС-ЦЕНТР</Nav.Link>
+                                <Nav.Link href="/presscenter">ПРЕСС-ЦЕНТР</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">НАШИ НАГРАДЫ</Nav.Link>
+                                <Nav.Link href="/awards">НАШИ НАГРАДЫ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="#">КЛИЕНТАМ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#">КОНТАКТЫ</Nav.Link>
+                                <Nav.Link href="/contacts">КОНТАКТЫ</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

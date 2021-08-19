@@ -1,11 +1,17 @@
 import './PressCard.css'
-import { Row, Col, Image, Button } from 'react-bootstrap';
+import { Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default function PressCard() {
     return (
         <>
             <div className='press-card-page-conteiner'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/presscenter">Пресс-Центр</Breadcrumb.Item>
+                    <Breadcrumb.Item active>(Динамический контент)</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='press-card-page-label'>
                     Пресс-центр
                 </div>

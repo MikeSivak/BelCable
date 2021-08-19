@@ -1,11 +1,16 @@
 import './Contacts.css'
-import { Row, Col, Image, Button } from 'react-bootstrap'
+import { Row, Col, Image, Button, Breadcrumb} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export default function Contacts() {
     return (
         <>
             <div className='contacts-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Контакты</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='contacts-label'>
                     Контакты
                 </div>

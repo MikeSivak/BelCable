@@ -1,5 +1,5 @@
 import './Clients.css'
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 
 export default function Clients() {
     const clients = [
@@ -16,13 +16,18 @@ export default function Clients() {
     return (
         <>
             <div className='clients-page-conteiner'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Наши клиенты</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='clients-page-label'>
                     Наши клиенты
                 </div>
                 <Row className='clients-page-row'>
                     {clients.map((client) => (
                         <Col className='clients-page-col'>
-                            <Image className='client-image' src={client} alt='image'/>
+                            <Image className='client-image' src={client} alt='image' />
                         </Col>
                     ))
                     }

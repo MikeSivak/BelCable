@@ -1,5 +1,5 @@
 import './PressCenter.css'
-import { Row, Col, Card, Button } from 'react-bootstrap'
+import { Row, Col, Card, Button, Breadcrumb } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 export default function PressCenter() {
@@ -30,6 +30,11 @@ export default function PressCenter() {
     return (
         <>
             <div className='press-center-page-conteiner'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Пресс-Центр</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='press-center-page-label'>
                     Пресс-центр
                 </div>

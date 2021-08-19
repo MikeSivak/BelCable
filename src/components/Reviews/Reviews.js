@@ -1,4 +1,4 @@
-import { Row, Col, Image, Button } from 'react-bootstrap';
+import { Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Reviews.css'
 
@@ -23,6 +23,11 @@ export default function Reviews() {
     return (
         <>
             <div className='reviews-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Отзывы</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='reviews-page-label'>
                     Отзывы
                 </div>

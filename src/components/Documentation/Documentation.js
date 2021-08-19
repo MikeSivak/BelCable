@@ -1,11 +1,16 @@
 import './Documentation.css'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Breadcrumb} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 export default function Documentation() {
     return (
         <>
             <div className='documentation-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Нормативная документация</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='documentation-page-label'>
                     Нормативная документация
                 </div>

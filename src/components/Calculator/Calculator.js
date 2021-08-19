@@ -1,5 +1,5 @@
 import './Calculator.css'
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col, Button, Breadcrumb } from 'react-bootstrap'
 
 export default function Calculator() {
 
@@ -83,6 +83,11 @@ export default function Calculator() {
     return (
         <>
             <div className='calculator-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Подбор продукции по характеристикам</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='calculator-label'>
                     ПОДБОР ПРОДУКЦИИ ПО ХАРАКТЕРИСТИКАМ
                 </div>

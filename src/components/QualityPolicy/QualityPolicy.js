@@ -1,10 +1,15 @@
 import './QualityPolicy.css'
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 
 export default function QualityPolicy() {
     return (
         <>
             <div className='quality-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Политика качества</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='quality-page-label'>
                     Политика качества
                 </div>

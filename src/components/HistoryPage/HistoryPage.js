@@ -1,10 +1,15 @@
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 import './HistoryPage.css'
 
 export default function HistoryPage() {
     return (
         <>
             <div className='history-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>История</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='history-page-label'>
                     История
                 </div>

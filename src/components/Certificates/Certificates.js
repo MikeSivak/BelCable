@@ -1,10 +1,15 @@
 import './Certificates.css'
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 
 export default function Certificates() {
     return (
         <>
             <div className='certificates-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Сертификаты</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='certificates-page-label'>
                     Сертификаты
                 </div>

@@ -4,14 +4,10 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import routes, { SwitchRouter } from './routes';
 
-// Bad practice breadcrumb
-import Breadcrumb from './components/Breadcrumb/Breadcrumb';
-
 function App() {
   return (
     <>
       <Header />
-      <Breadcrumb />
       <SwitchRouter routes={routes} />
       <Footer />
     </>

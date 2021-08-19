@@ -1,10 +1,17 @@
 import './CardPage.css'
-import { Row, Col, Image, Table } from 'react-bootstrap'
+import { Row, Col, Image, Table, Breadcrumb } from 'react-bootstrap'
 
 export default function CardPage() {
     return (
         <>
             <div className='card-page-container'>
+                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                    <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/products">Продукция</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">(Здесь будет динамически отображаться фильтр)</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/" active>(Здесь будет динамически отображаться название провода)</Breadcrumb.Item>
+                </Breadcrumb>
+                <br/>
                 <Row>
                     <Col style={{ marginTop: '0.6em' }}>
                         <Image src='cabelVertical.png' />
@@ -49,7 +56,7 @@ export default function CardPage() {
                             </div>
                             <div className='lbl-info'>
                                 Токопроводная жила должна быть скручена из семи медных проволок (диаметр 0.20 мм для КМС-1 и 0.15 мм для КМС-2).
-                                <ul style={{listStyle:'none', marginTop:'0.5em'}}>
+                                <ul style={{ listStyle: 'none', marginTop: '0.5em' }}>
                                     <li><span className='span-bold'>Трубка</span> - полиэтилен.</li>
                                     <li><span className='span-bold'>Экран</span> - медная проволока 0.12 мм (плотность экрана не менее 90%).</li>
                                 </ul>
@@ -61,7 +68,7 @@ export default function CardPage() {
                             </div>
                             <div className='lbl-info'>
                                 Изоляция — Полиэтилен
-                                <ul style={{listStyle:'none', marginTop:'0.5em'}}>
+                                <ul style={{ listStyle: 'none', marginTop: '0.5em' }}>
                                     <li><span className='span-bold'>Оболочка</span> кабеля — Поливинилхлоридный пластикат</li>
                                     <li><span className='span-bold'>С экраном</span> — Да</li>
                                 </ul>
