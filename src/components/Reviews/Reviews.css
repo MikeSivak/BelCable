@@ -84,17 +84,17 @@
     order: 0;
 }
 
-.xpand-button {
+.reviews-list .xpand-button {
     order: 1;
   }
-  input[type="checkbox"] {
+  .reviews-list input[type="checkbox"] {
    display: none;
   }
-  input[type="checkbox"]:checked + .personal-review {
+  .reviews-list input[type="checkbox"]:checked + .personal-review {
     height: auto;
   }
 
-  label {
+  .reviews-list label {
     order: 1;
     color: #E74137;
     text-decoration: underline;

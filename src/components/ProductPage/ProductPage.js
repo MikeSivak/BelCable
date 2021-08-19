@@ -38,9 +38,8 @@ export default function ProductPage() {
     return (
         <>
             <div className='product-page-container'>
-                <div class="container content">
-                    <div class="row">
-                        <Col md={4}>
+                    <Row className='product-page-row'>
+                        <Col md={4} className='product-menu'>
                             <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example">
                                 <Tab eventKey="byIndustry" title="По отраслям" className=''>
                                     {industry.map((data) => (
@@ -80,7 +79,7 @@ export default function ProductPage() {
                                 </Tab>
                             </Tabs>
                         </Col>
-                        <div class="col-md-8 products">
+                        <Col md={8} className='products'>
                             <div className='productsLabel'>ПРОДУКЦИЯ</div>
                             <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example" className='cardsBlock'>
                                 <Tab eventKey="byIndustry" title="По отраслям" className='cardsTab'>
@@ -122,9 +121,8 @@ export default function ProductPage() {
                                     </Row>
                                 </Tab>
                             </Tabs>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
             </div>
         </>
     )

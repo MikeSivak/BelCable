@@ -24,7 +24,7 @@ export default function PressCard() {
                         </Row>
                     </Col>
                     <Col md={6} className='press-card-page-col'>
-                        <Row>
+                        <Row className='card-photo-section'>
                             <Image className='press-card-photo' src='pc1.png' alt='photo' />
                         </Row>
                     </Col>

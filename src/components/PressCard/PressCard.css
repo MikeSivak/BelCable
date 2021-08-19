@@ -66,8 +66,15 @@
     border-color: #aa2d26;
 }
 
+.card-photo-section{
+    text-align: center;
+}
+
 @media screen and (max-width:1200px) {
     .press-card-page-row{
         display: block;
+    }    
+    .press-card-page-col{
+        width: 100%;
     }
 }

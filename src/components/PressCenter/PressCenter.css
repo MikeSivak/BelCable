@@ -87,3 +87,13 @@
     background: #E74137;
     border-color: #E74137;
 }
+
+@media screen and (max-width:1100px) {
+    .press-center-page-row{
+        display: block;
+    }
+    .press-center-page-col{
+        flex: 0;
+        width: 100%;
+    }
+}

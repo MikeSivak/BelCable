@@ -9,13 +9,13 @@ export default function HistoryPage() {
                     История
                 </div>
                 <div className='history-page-info'>
-                    <Row className='history-page-row'>
+                    <Row className='history-page-row hpr-1'>
                         <Col>
-                            <Row>
-                                <Col>
+                            <Row className='hpr-1-row'>
+                                <Col className='hpr-image-section'>
                                     <Image className='history-page-images' src='1.1.png' alt='1.1.png' />
                                 </Col>
-                                <Col>
+                                <Col className='hpr-image-section'>
                                     <Image className='history-page-images' src='1.2.png' alt='1.2.png' />
                                 </Col>
                             </Row>
@@ -25,12 +25,12 @@ export default function HistoryPage() {
                                 </div>
                             </Row>
                         </Col>
-                        <Col>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='2.png' alt='2.png' />
                         </Col>
                     </Row>
-                    <Row className='history-page-row'>
-                        <Col>
+                    <Row className='history-page-row hpr-2'>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='3.png' alt='3.png' />
                         </Col>
                         <Col>
@@ -39,29 +39,29 @@ export default function HistoryPage() {
                             </div>
                         </Col>
                     </Row>
-                    <Row className='history-page-row'>
-                        <Col>
+                    <Row className='history-page-row hpr-3'>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='4.1.png' alt='4.1.png' />
                         </Col>
-                        <Col>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='4.2.png' alt='4.2.png' />
                         </Col>
                     </Row>
-                    <Row className='history-page-row'>
+                    <Row className='history-page-row hpr-4'>
                         <Col>
                             <div className='history-page-text'>
                                 <span>В настоящее время</span> предприятие производит монтажные провода, терморадиационностойкие провода, малогабаритные и теплостойкие провода, силовые кабели и контрольные кабели, кабели связи, радиочастотные кабели, а также кабели и провода различного специального назначения с жилой из медной и алюминиевой проволоки. Сфера применения выпускаемых изделий охватывает такие отрасли народного хозяйства, как радиоэлектроника, авиационная техника, приборостроение, строительство, связь, телекоммуникация и электротехника.
                             </div>
                         </Col>
-                        <Col>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='5.png' alt='5.png' />
                         </Col>
                     </Row>
-                    <Row className='history-page-row'>
-                        <Col>
+                    <Row className='history-page-row hpr-5'>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='6.1.png' alt='6.1.png' />
                         </Col>
-                        <Col>
+                        <Col className='hpr-image-section'>
                             <Image className='history-page-images' src='6.2.png' alt='6.2.png' />
                         </Col>
                     </Row>

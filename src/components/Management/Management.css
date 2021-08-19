@@ -38,3 +38,9 @@
     color: #E74137;
     margin-top: 5%;
 }
+
+@media screen and (max-width:684px) {
+    .management-page-row{
+        display: block;
+    }
+}

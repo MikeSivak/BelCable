@@ -22,8 +22,10 @@ export default function Production() {
                             </Row>
                         </Col>
                         <Col>
-                            <Image className='production-page-images' src='prod1.png' alt='1.1.png' />
-                            <Image style={{ marginTop: '32px' }} className='production-page-images' src='prod2.png' alt='1.1.png' />
+                            <Row>
+                                <Image className='production-page-images' src='prod1.png' alt='1.1.png' />
+                                <Image style={{ marginTop: '32px' }} className='production-page-images' src='prod2.png' alt='1.1.png' />
+                            </Row>
                         </Col>
                     </Row>
                     <Row className='production-page-row'>
@@ -33,7 +35,9 @@ export default function Production() {
                     </Row>
                     <Row className='production-page-row'>
                         <Col>
-                            <Image className='production-page-images' src='prod4.png' alt='5.png' />
+                            <Row>
+                                <Image className='production-page-images' src='prod4.png' alt='5.png' />
+                            </Row>
                         </Col>
                         <Col>
                             <div className='production-page-text' style={{ marginTop: '5%' }}>

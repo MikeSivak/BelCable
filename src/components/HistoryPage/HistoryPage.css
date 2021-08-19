@@ -51,3 +51,35 @@
 .history-page-row{
     margin-top: 30px;
 }
+
+.hpr-image-section{
+    text-align: center;
+}
+
+@media screen and (max-width:1255px) {
+    .hpr-2{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1191px) {
+    .hpr-4{
+        display: block;
+    }
+    .hpr-image-section{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .hpr-1, .hpr-2, .hpr-3, .hpr-5 {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:720px) {
+    .hpr-1-row {
+        display: block;
+    }
+}

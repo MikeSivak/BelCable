@@ -37,12 +37,8 @@
     margin-top: 30px;
 }
 
-.production-image-section{
-    text-align: center;
-}
-
-@media (max-width:1276) {
-    .ppr1{
+@media screen and (max-width:1352px) {
+    .production-page-row{
         display: block;
     }
 }
