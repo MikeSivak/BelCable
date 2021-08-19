@@ -15,6 +15,7 @@ import Clients from "../components/Clients/Clients";
 import PressCenter from "../components/PressCenter/PressCenter";
 import PressCard from "../components/PressCard/PressCard";
 import Reviews from "../components/Reviews/Reviews";
+import Contacts from "../components/Contacts/Contacts";
 
 const routes = [
     {
@@ -119,6 +120,12 @@ const routes = [
         name: 'Reviews',
         component: Reviews,
         id: 16
+    },
+    {
+        path: '/contacts',
+        name: 'Contacts',
+        component: Contacts,
+        id: 17
     }
 
 ]

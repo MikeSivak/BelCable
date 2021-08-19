@@ -28,7 +28,7 @@ export default function PurchasePlace() {
                         </div>
                     </Col>
                     <Col>
-                        <Image className='place-page-image' src='map.png' alt='image' />
+                        <Image src='map.png' alt='image' />
                     </Col>
                 </Row>
             </div>
