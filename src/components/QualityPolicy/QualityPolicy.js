@@ -19,12 +19,12 @@ export default function QualityPolicy() {
                                 </div>
                             </Row>
                         </Col>
-                        <Col>
+                        <Col className='quality-image-section'>
                             <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
                         </Col>
                     </Row>
                     <Row className='quality-page-row'>
-                        <Col>
+                        <Col className='quality-image-section'>
                             <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
                         </Col>
                         <Col md={8}>
@@ -43,12 +43,12 @@ export default function QualityPolicy() {
                                 </div>
                             </Row>
                         </Col>
-                        <Col>
+                        <Col className='quality-image-section'>
                             <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
                         </Col>
                     </Row>
                     <Row className='quality-page-row'>
-                        <Col>
+                        <Col className='quality-image-section'>
                             <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
                         </Col>
                         <Col md={8}>

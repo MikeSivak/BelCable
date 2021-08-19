@@ -15,11 +15,12 @@
     margin-top: 5%;
 }
 
-.certificates-page-row{
+.certificates-page-row-col{
     margin-top: 3%;
 }
 
-.certificates-page-image{
-    width: 410px;
-    height: 579px;
+@media (max-width:767px) {
+    .certificates-page-image-list{
+        display: block;
+    }
 }

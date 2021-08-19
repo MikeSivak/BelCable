@@ -8,30 +8,42 @@ export default function Certificates() {
                 <div className='certificates-page-label'>
                     Сертификаты
                 </div>
-                <Row className='certificates-page-row'>
-                    <Row md={3}>
+                <div className='certificates-page-row-col'>
+                    <Row md={3} className='certificates-page-image-list'>
                         <Col>
-                            <Image className='certificates-page-image' src='c1.png' alt='image' />
+                            <Row>
+                                <Image className='certificates-page-image' src='c1.png' alt='image' />
+                            </Row>
                         </Col>
                         <Col>
-                            <Image className='certificates-page-image' src='c2.png' alt='image' />
+                            <Row>
+                                <Image className='certificates-page-image' src='c2.png' alt='image' />
+                            </Row>
                         </Col>
                         <Col>
-                            <Image className='certificates-page-image' src='c3.png' alt='image' />
-                        </Col>
-                    </Row>
-                    <Row md={3}>
-                        <Col>
-                            <Image className='certificates-page-image' src='c4.png' alt='image' />
-                        </Col>
-                        <Col>
-                            <Image className='certificates-page-image' src='c5.png' alt='image' />
-                        </Col>
-                        <Col>
-                            <Image className='certificates-page-image' src='c6.png' alt='image' />
+                            <Row>
+                                <Image className='certificates-page-image' src='c3.png' alt='image' />
+                            </Row>
                         </Col>
                     </Row>
-                </Row>
+                    <Row md={3} className='certificates-page-image-list'>
+                        <Col>
+                            <Row>
+                                <Image className='certificates-page-image' src='c4.png' alt='image' />
+                            </Row>
+                        </Col>
+                        <Col>
+                            <Row>
+                                <Image className='certificates-page-image' src='c5.png' alt='image' />
+                            </Row>
+                        </Col>
+                        <Col>
+                            <Row>
+                                <Image className='certificates-page-image' src='c6.png' alt='image' />
+                            </Row>
+                        </Col>
+                    </Row>
+                </div>
             </div>
         </>
     )

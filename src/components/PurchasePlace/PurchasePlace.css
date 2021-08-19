@@ -28,3 +28,9 @@
     font-size: 24px;
     color: black;
 }
+
+@media  screen and (max-width:972px) {
+    .place-page-row{
+        display: block;
+    }
+}

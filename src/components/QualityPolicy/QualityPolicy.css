@@ -41,3 +41,11 @@
 .indentation-blocks{
     padding: 7em 0;
 }
+
+.quality-image-section{
+    text-align: center;
+}
+
+.quality-page-row{
+    justify-content: center;
+}

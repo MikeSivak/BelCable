@@ -36,3 +36,13 @@
 .production-page-row{
     margin-top: 30px;
 }
+
+.production-image-section{
+    text-align: center;
+}
+
+@media (max-width:1276) {
+    .ppr1{
+        display: block;
+    }
+}
