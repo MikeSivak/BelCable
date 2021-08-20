@@ -41,21 +41,21 @@ export default function IndustriesList() {
                 <div className='industry-label'>
                     ПРОДУКЦИЯ
                 </div>
-                <Row xs={1} md={6} className="g-2">
+                <Row xs={1} md={6} className="g-1 industry-list-row">
                     {industry.map((data) => (
                         <Col>
-                            <Link className='custom-link' to='/product'>
-                                <Card className='industry-product'>
-                                    <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
-                                    <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
-                                    <Card.Body>
-                                        <Card.Title><span className='industry-name'>{data.name}</span></Card.Title>
-                                        <Card.Text>
-                                            {/* {data.info}     */}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Link>
+                            <div className='industry-block'>
+                                <Link className='custom-link' to='/product'>
+                                    <Row className='g-1 industry-images'>
+                                        <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
+                                        <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
+                                    </Row>
+                                    <Row style={{padding:'2em 0 0 0'}}>
+                                        <p><span className='industry-name'>{data.name}</span></p>
+                                        <p>{data.info}</p>
+                                    </Row>
+                                </Link>
+                            </div>
                         </Col>
                     ))
                     }
