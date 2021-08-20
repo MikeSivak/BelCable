@@ -17,3 +17,25 @@
     text-align: center; 
     margin: 0 auto !important;
 }
+
+.industry-list-card{
+    position: relative;
+    justify-items: center;
+}
+
+.industy-card-round{
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    margin-top: 2.5em;
+}
+
+.industy-card-image{
+    padding: 1em;
+    /* top: -1.5em; */
+    position: absolute;
+}
+
+.industry-name{
+    color: #E74137;;
+}

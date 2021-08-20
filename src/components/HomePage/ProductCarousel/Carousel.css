@@ -1,34 +1,34 @@
-.product .carousel-indicators{
+.product-carousel .carousel-indicators{
     justify-content: center !important;
     background:none;
     backdrop-filter: none;
   }
   
- .product .carousel-indicators button{
+ .product-carousel .carousel-indicators button{
     width: 23px !important;
     border-radius: 200px;
     background: #343753 !important;
   }
 
-.product .carousel-item{
+.product-carousel .carousel-item{
     padding: 0em 0;
 }
 
-.product .carousel-item .row{
+.product-carousel .carousel-item .row{
     padding: 0em 0em 6em 0em;
     width: 83%;
     margin: 0 auto;
 }
 
-.product .card-body{
+.product-carousel .card-body{
     text-align: center;
 }
 
-.product .carousel-control-prev-icon{
+.product-carousel .carousel-control-prev-icon{
     display: none;
   }
   
-.product .carousel-control-next-icon{
+.product-carousel .carousel-control-next-icon{
     display: none;
   }
 
@@ -49,4 +49,33 @@
   color: #E74137;
   font-weight: 900;
   font-size: 36px;
+}
+
+.product-carousel-round{
+
+}
+
+.product-carousel-round-2{
+  display: none;
+}
+
+.product-carousel-card{
+  z-index: 100000;
+}
+
+.round-image{
+  padding: 1em;
+}
+
+.product-carousel-card:hover .product-carousel-round{
+  display: none;
+}
+
+.product-carousel-card:hover{
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #E74137;
+}
+
+.product-carousel-card:hover .product-carousel-round-2{
+  display:block;
 }
