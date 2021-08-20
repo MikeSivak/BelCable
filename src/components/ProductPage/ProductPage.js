@@ -1,5 +1,5 @@
 import './ProductPage.css'
-import { Card, Col, Row, Dropdown, Tabs, Tab, Breadcrumb } from 'react-bootstrap'
+import { Card, Col, Row, Dropdown, Tabs, Tab, Breadcrumb, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 export default function ProductPage() {
@@ -30,7 +30,7 @@ export default function ProductPage() {
         { name: 'Коммуникации', image: 'phone.png', menu: [] },
         { name: 'Нефтегазовая промышленность', image: 'platform.png', menu: [] },
         { name: 'Транспортная инфраструктура', image: 'train.png', menu: [] },
-        { name: 'Машиностроение', image: 'car.png', menu: [] },
+        { name: 'Машиностроение', image: 'industryCar.png', menu: [] },
     ]
 
     const purpose = [
@@ -112,7 +112,9 @@ export default function ProductPage() {
                                         <Col>
                                             <Link className='custom-link' to='/product'>
                                                 <Card className='product'>
-                                                    <Card.Img className='cardImg' variant="top" src={data.image} />
+                                                    <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
+                                                    <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
+                                                    {/* <Card.Img className='cardImg' variant="top" src={data.image} /> */}
                                                     <Card.Body>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
                                                         <Card.Text>
@@ -133,7 +135,8 @@ export default function ProductPage() {
                                         <Col>
                                             <Link className='custom-link' to='/product'>
                                                 <Card className='product'>
-                                                    <Card.Img className='cardImg' variant="top" src='itemCable.png' />
+                                                    <Image className='product-card-image round-image' src='round1.png' alt='img' />
+                                                    <Image className='product-card-image-2 round-image' src='round2.png' alt='img' />
                                                     <Card.Body>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
                                                         <Card.Text>

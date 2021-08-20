@@ -1,4 +1,14 @@
-.industryLabel{
+.industry-list-container{
+    width: 83%;
+    margin: 0 auto 0 auto;
+    margin-top: 10%;
+}
+
+.industry-list-row{
+    margin-top: 5%;
+}
+
+.industry-label{
     height: 100%;
     margin-top: 5%;
     font-style: normal;
@@ -6,36 +16,47 @@
     font-size: 36px;
     line-height: 43px;
     text-align: center;
-}
-
-.industryLabel p{
     color: #E74137;
 }
 
-.indList{
-    width: 83%;
-    text-align: center; 
-    margin: 0 auto !important;
+.industry-product{
+    text-align: center;
 }
 
-.industry-list-card{
-    position: relative;
-    justify-items: center;
+.industry-product:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #E74137;
 }
 
-.industy-card-round{
+.industry-product:hover .industry-name{
+    color: #E74137;;
+}
+
+/* =================================================== */
+
+.product-page-container .industry-product{
+    padding: 0 0;
+    text-align: center;
+}
+
+.industry-product .round-image{
+  /* padding: 1em; */
+}
+
+.industry-product .product-card-image-industry{
     position: relative;
     width: 100%;
-    padding: 1em;
-    margin-top: 2.5em;
 }
 
-.industy-card-image{
-    padding: 1em;
-    /* top: -1.5em; */
-    position: absolute;
+.industry-product .product-card-image-industry-2{
+    position:absolute;
+    margin-top: -80px;
+    z-index: 10000;
 }
 
-.industry-name{
-    color: #E74137;;
+.industry-product{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }

@@ -1,5 +1,6 @@
 import './IndustriesList.css'
 import { Row, Col, Image, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function IndustriesList() {
     const industry = [
@@ -36,39 +37,30 @@ export default function IndustriesList() {
     ]
     return (
         <>
-            <div className='industryLabel'>
-                <p>ПО ОТРАСЛЯМ</p>
+            <div className='industry-list-container'>
+                <div className='industry-label'>
+                    ПРОДУКЦИЯ
+                </div>
+                <Row xs={1} md={6} className="g-2">
+                    {industry.map((data) => (
+                        <Col>
+                            <Link className='custom-link' to='/product'>
+                                <Card className='industry-product'>
+                                    <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
+                                    <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
+                                    <Card.Body>
+                                        <Card.Title><span className='industry-name'>{data.name}</span></Card.Title>
+                                        <Card.Text>
+                                            {/* {data.info}     */}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Link>
+                        </Col>
+                    ))
+                    }
+                </Row>
             </div>
-            <Row xs={1} md={6} className="g-4 indList">
-                {industry.map((data) => (
-                    <Col>
-                        <Card className='industry-list-card'>
-                            <Image className='industy-card-round' src='circle.png' alt='img' />
-                            <Image className='industy-card-image' src={data.image} alt='img' />
-                            <Card.Body>
-                                <Card.Title><span className='industry-name'>{data.name}</span></Card.Title>
-                                <Card.Text>
-                                    {data.info}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-                {/* {Array.from({ length: 6 }).map((_, idx) => (
-                    <Col>
-                        <Card className='industry-list-card'>
-                            <Image className='industy-card-round' src='circle.png' alt='img' />
-                            <Image className='industy-card-image' src='industryTower.png' alt='img' />
-                            <Card.Body>
-                                <Card.Title>Энергетика</Card.Title>
-                                <Card.Text>
-                                    Продукция для строительства и реконструкции кабельных линий
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))} */}
-            </Row>
         </>
     )
 }
