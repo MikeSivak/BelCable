@@ -133,7 +133,7 @@ export default function ProductPage() {
                                 <Row xs={1} md={3} className="g-4">
                                     {purpose.map((data) => (
                                         <Col>
-                                            <Link className='custom-link' to='/product'>
+                                            <Link className='custom-link' to={`/product`}>
                                                 <Card className='product'>
                                                     <Image className='product-card-image round-image' src='round1.png' alt='img' />
                                                     <Image className='product-card-image-2 round-image' src='round2.png' alt='img' />

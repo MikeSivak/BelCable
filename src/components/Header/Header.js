@@ -48,8 +48,8 @@ export default function Header() {
                                             История
                                         </Dropdown.Item>
                                         <Dropdown.Divider />
-                                        <Dropdown.Item href="/production">
-                                            Производство
+                                        <Dropdown.Item href="/management">
+                                            Руководство
                                         </Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
