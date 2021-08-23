@@ -13,13 +13,13 @@ export default function HomePage() {
         <>
             <div className='HomePage'>
                 <CustomCarousel />
-                {/* <Search /> */}
-                {/* <ProductCarousel /> */}
-                {/* <FirstBanner /> */}
-                {/* <IndustriesList /> */}
-                {/* <Certificates /> */}
-                {/* <SecondBanner /> */}
-                {/* <TrustList /> */}
+                <Search />
+                <ProductCarousel />
+                <FirstBanner />
+                <IndustriesList />
+                <Certificates />
+                <SecondBanner />
+                <TrustList />
             </div>
         </>
     )

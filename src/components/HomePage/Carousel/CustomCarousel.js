@@ -1,4 +1,5 @@
 import './Carousel.css'
+import '../../../fonts/fonts.css'
 
 import { Carousel, Button, Image, Row, Col } from "react-bootstrap"
 
