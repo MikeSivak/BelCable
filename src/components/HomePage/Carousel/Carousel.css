@@ -1,4 +1,4 @@
-.carousel-caption {
+.custom-carousel .carousel-caption {
     top: 5%;
     left: 9% !important;
     text-align: left !important;
@@ -6,86 +6,80 @@
     font-size: 2em;
   }
 
-.carousel-caption div{
+  .custom-carousel .carousel-caption div{
   width: 80%;
   font-weight: 800;
   font-style: normal;
 }
 
-.carousel-indicators{
-  border-radius: 50px;
-  padding: 0.5em 3em !important;
-  justify-content: space-between !important;
-  background: rgba(244, 249, 255, 0.7);
-  backdrop-filter: blur(40px);
+.custom-carousel .carousel-indicators{
+  width: 83%;
+  margin: 0px auto 0 auto;
+  margin-bottom: -65px;
 }
 
-.carousel-indicators button{
-  width: 80px !important;
-  border-radius: 200px;
-  background: #333333 !important;
+.custom-carousel .carousel-indicators button{
+  width: 100%;
 }
 
-.carousel-indicators button.active{
-  background: #E74137 !important;
+.custom-carousel .carousel-indicators li {
+  /* margin: 10px; */
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #0000ff;   
+}
+.custom-carousel .carousel-indicators .active {
+  width: 100%;
+  background-color: #E74137;
 }
 
-/* check gradient */
-
-.gradient {
-	display: inline-block;
-	position: relative;    
-	line-height: 0;
-}
-.gradient:after {
-	content: "";
-	display: block;    
-	width: 100%;
-	height: 100%;    
-	position: absolute;
-	top: 0;      
-	left: 0;   
-	background: transparent;
-	background-image: linear-gradient(to left, #99c8ca88, #ffffff);
-	opacity: 0.8;
-}
-
-.photoButton{
+.custom-carousel .photoButton{
   background: #E74137;
   border-radius: 50px !important;
-  width:20%;
+  width:238px;
+  height:59px;
 }
 
-.photoButton:hover{
+.custom-carousel .photoButton:hover{
   filter: drop-shadow(0px 15px 29px rgba(231, 65, 55, 0.51));
 }
 
-.backPic{
-  position: relative;
-  top: 0;
-  left: 0;
+.custom-carousel .frontPic{
+  height:100%;
 }
 
-.frontPic{
-  position: absolute;
-  left: 28%;
-  height: 440px;
-  width: auto;
-  bottom: 6px;
+.custom-carousel .carousel-control-prev-icon, .custom-carousel .carousel-control-next-icon{
+  display: none;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
-  background: rgb(0, 0, 0);
-  padding: 2em !important;
-  border-radius: 36px;
+.custom-carousel .control-block{
+  background: rgba(244, 249, 255, 0.7);
+  backdrop-filter: blur(40px);
+  width: 83%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 133.4%;
+  text-transform: uppercase;
+  color: #343753;
+  margin: 0 auto;
+  height: 132px;
+  margin-top:-80px;
 }
 
-.carousel-control-prev-icon{
-  margin-right: 80px;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+.control-block-row{
+  height: 100%;
+  align-items: center;
 }
 
-.carousel-control-next-icon{
-  margin-left: 80px;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+.custom-carousel .control-block-info{
+  height: 87.34px;
+  padding: 1em 0em;
+  text-align: center;
+}
+
+.control-block-info+.control-block-info{
+  border-left: 2px solid #CECECE;
 }
