@@ -1,52 +1,48 @@
 import './SecondBanner.css'
+import '../../../fonts/fonts.css'
+import { Row, Col } from 'react-bootstrap';
 
 export default function SecondBanner() {
     return (
         <>
-            <div class="second-banner">
-                <div class='bannerlbl'>
-                    <p class='lbl'>ПРЕИМУЩЕСТВА</p>
-                    <div class='row bannerText'>
-                        <div class='col-md'>
-                            <div class='row infolbl'>100 293</div>
-                            <div class='row infoValue'>
-                                КИЛЛОМЕТРОВ
-                                кабельной продукции высокого качества реализовано в 2020 году
-                            </div>
-                        </div>
-                        <div class='col-md'>
-                            <div class='row infolbl'>1859</div>
-                            <div class='row infoValue'>ТОН</div>
-                        </div>
-                        <div class='col-md'>
-                            <div class='row infolbl'>30000</div>
-                            <div class='row infoValue'>
-                                КИЛЛОМЕТРОВ
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <div class='row bannerText'>
-                        <div class='col'>
-                            <div class='row infolbl'>683</div>
-                            <div class='row infoValue'>СОТРУДНИКОВ</div>
-                        </div>
-                        <div class='col'>
-                            <div class='row infolbl'>345</div>
-                            <div class='row infoValue'>
-                                МОДЕРНЕЗИРОВАННОГО ОБОРУДОВАНИЯ
-                            </div>
-                        </div>
-                        <div class='col'>
-                            <div class='row infolbl'>867</div>
-                            <div class='row infoValue'>ИННОВАЦИОННАЯ ПРОДУКЦИЯ</div>
-                        </div>
-                    </div>
+            <div className="second-banner-container">
+                <img className="second-banner-image" src="hpBanner2.png" />
+                <div className='second-banner-info'>
+                    <Row>
+                        <Col>
+                            <Row className='second-banner-label'>Преимущества</Row>
+                        </Col>
+                    </Row>
+                    <Row className='second-banner-grid-1'>
+                        <Col>
+                            <Row className='label-amount'>100 293</Row>
+                            <Row className='label-value'>киллометров</Row>
+                            <Row className='value-description'>кабельной продукции высокого качества реализовано в 2020 году</Row>
+                        </Col>
+                        <Col>
+                            <Row className='label-amount'>1859</Row>
+                            <Row className='label-value'>тон</Row>
+                        </Col>
+                        <Col>
+                            <Row className='label-amount'>30 000</Row>
+                            <Row className='label-value'>киллометров</Row>
+                        </Col>
+                    </Row>
+                    <Row className='second-banner-grid-2'>
+                        <Col>
+                            <Row className='label-amount'>683</Row>
+                            <Row className='label-value'>сотрудников</Row>
+                        </Col>
+                        <Col>
+                            <Row className='label-amount'>345</Row>
+                            <Row className='label-value'>модернизированного оборудования</Row>
+                        </Col>
+                        <Col>
+                            <Row className='label-amount'>867</Row>
+                            <Row className='label-value'>инновационная продукция</Row>
+                        </Col>
+                    </Row>
                 </div>
-
-                <img class="image1" src="backBanner2.png" />
-                <img class="image2" src="frontBanner2.png" />
-                <img class='image3' src='bannerImage2.png' />
             </div>
         </>
     )

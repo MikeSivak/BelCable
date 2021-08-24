@@ -1,64 +1,221 @@
-.second-banner {
-    position: relative;
-    margin-top: 100px;
-    width: 100%;
-  }
-  .second-banner  .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .second-banner  .image2 {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 30%;
-    height: 100%;
-  }
-  .second-banner .image3{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 33%;
-    height: auto;
-  }
+.second-banner-container {
+  position: relative;
+  margin-top: 200px;
+  overflow-x:hidden;
+}
 
-  .second-banner .bannerlbl{
+.second-banner-image{
+  position: relative;
+  width: 100%;
+}
+
+.second-banner-info{
+  position: absolute;
+  top:15%;
+  width: 65%;
+  right: 0;
+}
+
+.second-banner-label{
+  color:#E74137 !important;
+  font-family: 'Lato-900-normal';
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+}
+
+.label-amount{
+  color: #E74137;
+  font-family: 'Raleway-800-normal';
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.label-value{
+  font-family: 'Raleway-400-normal';
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  width: 200px;
+  margin-top: 4px;
+}
+
+.second-banner-grid-1{
+  margin-top: 24px;
+}
+
+.second-banner-grid-2{
+  margin-top: 43px;
+}
+
+.value-description{
+  font-family: 'Raleway-300-normal';
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 10px;
+  width: 242px;
+  text-align: left;
+}
+
+@media screen and (max-width:1672px) {
+  .second-banner-info{
     position: absolute;
-    z-index: 1;
-    width: 70%;
-    height: 100%;
-    text-align: left;
+    top:10%;
+    width: 65%;
     right: 0;
-    bottom: 15px !important;
+  }
+  
+  .second-banner-label{
+    font-size: 34px;
+    line-height: 40px;
+  }
+  
+  .label-amount{
+    font-size: 34px;
+    line-height: 40px;
+  }
+  
+  .label-value{
+    font-size: 16px;
+    line-height: 19px;
+    width: 200px;
+    margin-top: 2px;
+  }
+  
+  .second-banner-grid-1{
+    margin-top: 24px;
+  }
+  
+  .second-banner-grid-2{
+    margin-top: 30px;
+  }
+  
+  .value-description{
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 8px;
+  }
 }
 
-.second-banner .lbl{
-    color:#E74137 !important;
-    font-size: 1.4em;
-    font-weight: 900;
-    font-style: normal;
-    line-height: 43px;
-    margin-left: 10%;
+@media screen and (max-width:1400px) {
+  .second-banner-info{
+    position: absolute;
+    top:10%;
+    width: 62%;
+    right: 0;
+  }
+  
+  .second-banner-label{
+    font-size: 28px;
+    line-height: 38px;
+  }
+  
+  .label-amount{
+    font-size: 30px;
+    line-height: 38px;
+  }
+  
+  .label-value{
+    font-size: 16px;
+    line-height: 17px;
+  }
+  
+  .second-banner-grid-1{
+    margin-top: 24px;
+  }
+  
+  .second-banner-grid-2{
+    margin-top: 30px;
+  }
+  
+  .value-description{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 6px;
+  }
 }
 
-.second-banner .bannerText{
-    font-size: 1.4em;
-    font-weight: 600;
-    line-height: 42px;
-    color: #343753;
-    margin-left: 10%;
+@media screen and (max-width:1200px) {
+  .second-banner-info{
+    position: absolute;
+    top:8%;
+    width: 65%;
+    right: 0;
+  }
+  
+  .second-banner-label{
+    font-size: 22px;
+    line-height: 34px;
+  }
+  
+  .label-amount{
+    font-size: 24px;
+    line-height: 38px;
+  }
+  
+  .label-value{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .second-banner-grid-1{
+    margin-top: 10px;
+  }
+  
+  .second-banner-grid-2{
+    margin-top: 20px;
+  }
+  
+  .value-description{
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
-.infolbl{
-    color: #E74137;
-    font-weight: 600;
+@media screen and (max-width:1000px) {
+  .second-banner-image{
+    display: none;
+  }
+
+  .second-banner-container{
+    background: #F4F9FF;
+    height: 350px;
+  }
+
+  .second-banner-info{
+    position:relative;
+    top:50px;
+    width: 90%;
+    margin: 0 auto;
+    left: 40px;
+  }
 }
 
-.infoValue{
-    font-size: 0.6em;
-    line-height: 20px;
-    width: 80%;
+@media screen and (max-width:778px) {
+  .second-banner-info{
+    top:0;
+    text-align: center;
+    padding: 2em 0;
+    left: 25px;
+  }
+  .second-banner-grid-1, .second-banner-grid-2{
+    display: block;
+  }
+
+  .second-banner-info div.row{
+    width: 100%;
+    display: block;
+  }
+
+  .second-banner-grid-2{
+    margin-top: 0;
+  }
+
+  .second-banner-grid-1.row div.col, .second-banner-grid-2.row div.col{
+    margin-top: 50px;
+  }
+
+  .value-description{
+    text-align: center !important;
+  }
 }

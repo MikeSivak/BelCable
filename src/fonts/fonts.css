@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'Raleway-300-normal';
+    src: url('./raleway/Raleway-Bold.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Raleway-400-normal';
     src: url('./raleway/Raleway-Bold.ttf');
     font-weight: 400;
@@ -43,5 +50,12 @@
     font-family: 'Raleway-700-normal';
     src: url('./raleway/Raleway-Bold.ttf');
     font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-800-normal';
+    src: url('./raleway/Raleway-Bold.ttf');
+    font-weight: 800;
     font-style: normal;
 }

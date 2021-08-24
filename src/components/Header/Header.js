@@ -32,7 +32,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <Navbar expand="lg" style={{ background: '#EBEEF2' }}>
+            <Navbar expand="lg" className='header-nav' style={{ background: '#EBEEF2' }}>
                 <Container>
                     <Navbar.Toggle aria-controls="navbars" />
                     <Navbar.Collapse id="navbars">
@@ -73,7 +73,7 @@ export default function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Navbar expand="lg" style={{ background: '#CDDBEC' }}>
+            <Navbar expand="lg" className='header-nav' style={{ background: '#CDDBEC' }}>
                 <Container>
                     <Navbar.Toggle aria-controls="navbars" />
                     <Navbar.Collapse id="navbars">

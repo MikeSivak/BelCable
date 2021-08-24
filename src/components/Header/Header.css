@@ -89,3 +89,38 @@
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+nav.navbar-expand-lg.navbar-light div.container button.navbar-toggler{
+    border: none;
+}
+
+.header-nav{
+    font-family: 'Raleway-600-normal';
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+nav.navbar-expand-lg.navbar-light div.container button{
+    margin:0 auto;
+}
+
+.navbar-collapse{
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:464px) {
+    .banner{
+        display: none;
+    }
+    nav.navbar-expand-lg.navbar-light div.container button{
+        margin:0;
+    }
+}
+
+@media (max-width: 992px){
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+}
