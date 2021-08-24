@@ -2,35 +2,44 @@
     position: relative;
     margin-top: 100px;
     width: 100%;
+    overflow-x: hidden;
   }
-  .image1 {
+  .banner-image-1{
+    display: inline-block;
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .image2 {
-    position: absolute;
-    top: 0px;
-    right: 0;
-    width: 50%;
-    height: 100%;
-  }
-  .image3{
-    position: absolute;
-    right: 0;
-    bottom: -55px;
-    width: 40%;
-    height: auto;
   }
 
 .bannerlbl{
     position: absolute;
     z-index: 1;
-    width: 54%;
-    height: 100%;
-    text-align: right;
+    width: 80%;
+    text-align: center;
+    /* margin-top: 200px; */
+    margin-top:15%;
+}
+
+.bannerlbl .lbl{
+    color:#E74137 !important;
+    font-family: 'Lato-900-normal';
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.bannerText{
+  font-family: 'Raleway-600-normal';
+    font-size: 36px;
+    line-height: 42px;
+    color: #343753;
+    margin-right: 260px;
+}
+
+@media screen and (max-width:1200px) {
+  .bannerlbl{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
 }
 
 .bannerlbl .lbl{
@@ -39,7 +48,6 @@
     font-weight: 900;
     font-style: normal;
     line-height: 43px;
-    margin-top: 5%;
 }
 
 .bannerText{
@@ -47,5 +55,6 @@
     font-weight: 600;
     line-height: 42px;
     color: #343753;
-    margin-right: 10%;
+    margin-right: 0px !important;
+}
 }

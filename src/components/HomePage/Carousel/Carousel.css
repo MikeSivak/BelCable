@@ -20,7 +20,6 @@
 }
 
 .custom-carousel .carousel-indicators li {
-  /* text-indent: 0; */
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -48,7 +47,7 @@
 }
 
 .custom-carousel .frontPic{
-  height:100%;
+  width: 100%;
 }
 
 .custom-carousel .carousel-control-prev, .custom-carousel .carousel-control-next{
@@ -96,12 +95,25 @@
   line-height: 28px;
 }
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:1484px) {
+  .custom-carousel p {
+    font-family: 'Lato-800-normal';
+    line-height: 48.03px;
+    font-size: 38px;
+}
+}
+
+@media screen and (max-width:1248px) {
+  .custom-carousel p {
+    font-family: 'Lato-800-normal';
+    line-height: 42.03px;
+    font-size: 34px;
+}
+}
+
+@media screen and (max-width:1200px) {
   .custom-carousel .control-block{
     display: none;
-  }
-  .custom-carousel p{
-    text-align: left !important;
   }
   .custom-carousel .carousel-indicators{
     margin-bottom:20px;
@@ -111,72 +123,143 @@
   .custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
     height: 5px;
   }
-
 }
 
-
-@media screen and (max-width:843px) {
-  .custom-carousel p{
-    text-align: left !important;
-    font-family: 'Lato-800-normal';
-    line-height: 48.03px;
-    font-size: 36px;
-    text-align: left;
+@media screen and (max-width:1064px) {
+    .custom-carousel p {
+      font-family: 'Lato-800-normal';
+      line-height: 38.03px;
+      font-size: 28px;
   }
-  
   .custom-carousel h5{
     font-family: 'Raleway-500-normal';
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
   }
-  
 }
 
-@media screen and (max-width:632px) {
-  .custom-carousel p{
-    text-align: left !important;
+@media screen and (max-width:976px) {
+  .custom-carousel p {
     font-family: 'Lato-800-normal';
-    font-size: 28px;
-  }
-  
-  .custom-carousel h5{
-    font-family: 'Raleway-500-normal';
-    font-size: 16px;
-    line-height: 18px;
-  }
-  
+    line-height: 34.03px;
+    font-size: 24px;
+}
+.custom-carousel h5{
+  font-family: 'Raleway-500-normal';
+  font-size: 16px;
+  line-height: 28px;
+}
+.custom-carousel .frontPic{
+  height:358.38px;
+  width:976px;
+}
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:656px) {
+  .custom-carousel p {
+    font-family: 'Lato-800-normal';
+    line-height: 28.03px;
+    font-size: 24px;
+}
+.custom-carousel h5{
+  font-family: 'Raleway-500-normal';
+  font-size: 16px;
+  line-height: 20px;
+}
+.custom-carousel .frontPic{
+  height:358.38px;
+  width:976px;
+}
+.custom-carousel .photoButton{
+  width:218px;
+  height:49px;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+}
+
+@media screen and (max-width:454px) {
   .custom-carousel .carousel-caption{
-    text-align: center !important;
     width: 100%;
-    margin-top: 0 auto !important;
   }
-  .custom-carousel p{
+  .custom-carousel p {
     font-family: 'Lato-800-normal';
-    line-height: 40px;
-    font-size: 28px;
-    max-width: 100%;
+    line-height: 28.03px;
+    font-size: 24px;
     text-align: center !important;
     margin: 0 auto;
-  }
-  
-  .custom-carousel h5{
-    font-family: 'Raleway-500-normal';
-    font-size: 16px;
-    line-height: 18px;
-    margin: 0 auto;
-  }
+}
+.custom-carousel h5{
+  font-family: 'Raleway-500-normal';
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.custom-carousel div{
+  width: 100%;
+  text-align: center;
+}
+.custom-carousel .photoButton{
+  width:218px;
+  height:49px;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.custom-carousel .carousel-indicators{
+  margin-bottom:20px;
+  border-radius: 50px;
+  justify-content: center;
+}
+.custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+}
 
-  .custom-carousel .carousel-indicators{
-    margin-bottom:20px;
-    border-radius: 50px;
+@media screen and (max-width:454px) {
+  .custom-carousel .carousel-caption{
+    width: 100%;
   }
-  .custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-  }
-  
+  .custom-carousel p {
+    font-family: 'Lato-800-normal';
+    line-height: 26.03px;
+    font-size: 22px;
+    text-align: center !important;
+    margin: 0 auto;
+}
+.custom-carousel h5{
+  font-family: 'Raleway-500-normal';
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+.custom-carousel div{
+  width: 100%;
+  text-align: center;
+}
+.custom-carousel .photoButton{
+  width:218px;
+  height:49px;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.custom-carousel .carousel-indicators{
+  margin-bottom:20px;
+  border-radius: 50px;
+  justify-content: center;
+}
+.custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
 }

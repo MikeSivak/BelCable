@@ -6,9 +6,36 @@
 }
 
 @font-face {
+    font-family: 'Lato-900-normal';
+    src: url('./lato/Lato-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-400-normal';
+    src: url('./raleway/Raleway-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-medium';
+    src: url('./raleway/Raleway-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Raleway-500-normal';
     src: url('./raleway/Raleway-Bold.ttf');
     font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-600-normal';
+    src: url('./raleway/Raleway-Bold.ttf');
+    font-weight: 600;
     font-style: normal;
 }
 

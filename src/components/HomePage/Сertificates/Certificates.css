@@ -3,11 +3,11 @@
 }
 
 .labels p{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2em;
-    line-height: 43px;
+    font-family: 'Lato-900-normal';
     color: #E74137;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
 }
 
 .certList{

@@ -11,12 +11,12 @@
 .industry-label{
     height: 100%;
     margin-top: 5%;
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'Lato-900-normal';
     font-size: 36px;
     line-height: 43px;
     text-align: center;
     color: #E74137;
+    text-transform: uppercase;
 }
 
 /* =================================================== */
@@ -74,6 +74,13 @@
   .industry-product-card:hover{
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid #E74137;
+}
+
+
+.product-name{
+    font-family: 'Raleway-600-normal';
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .industry-product-card:hover .product-name{

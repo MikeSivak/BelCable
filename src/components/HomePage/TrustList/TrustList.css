@@ -6,14 +6,14 @@
 .trustLabel{
     height: 100%;
     margin-top: 10%;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2em;
-    line-height: 43px;
     text-align: center;
 }
 
 .trustLabel p{
+    font-family: 'Lato-900-normal';
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
     color: #E74137;
 }
 

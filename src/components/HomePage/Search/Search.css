@@ -1,11 +1,9 @@
 .searchBlock{
-    /* width: 50% !important; */
     text-align: center;
 }
 
 .searchBlock img{
-    width: 80% !important;
-    height: 179px;
+    /* height: 179px; */
     /* height: auto; */
 }
 
@@ -18,11 +16,11 @@
 .searchButton{
     background: rgb(59, 59, 59);
     border: 1px solid red;
-    width: 9.7%;
-    height: 7.6%;
+    width: 170px;
+    height: 50px;
     position: absolute;
     margin-top: 68px;
-    margin-left: -25%;
+    margin-left: -420px;
     border-radius: 10px;
 }
 
@@ -36,9 +34,9 @@
     border-bottom: 3px solid red;
     color: white;
     position: absolute;
-    width: 49%;
-    height: 7.5%;
+    width: 800px;
+    height: 50px;
     margin-top: 69px;
-    margin-left: -76%;
+    left: 350px;
     border-radius: 10px;
 }

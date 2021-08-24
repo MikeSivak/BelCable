@@ -16,9 +16,9 @@ export default function ProductCarousel() {
                                     <Image className='product-carousel-round round-image' src='round1.png' alt='img'/>
                                     <Image className='product-carousel-round-2 round-image' src='round2.png' alt='img'/>
                                     <Card.Body>
-                                        <Card.Title>КАБЕЛИ И ПРОВОДА МОНТАЖНЫЕ</Card.Title>
+                                        <Card.Title><span className='card-title'>КАБЕЛИ И ПРОВОДА МОНТАЖНЫЕ</span></Card.Title>
                                         <Card.Text>
-                                            Объединяют специальную группу кабельной продукции, предназначенной для передачи электрической энергии в пределах одной электрической установки, электрического прибора или аппарата.
+                                            <span className='card-text'>Объединяют специальную группу кабельной продукции, предназначенной для передачи электрической энергии в пределах одной электрической установки, электрического прибора или аппарата.</span>
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>

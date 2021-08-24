@@ -1,4 +1,5 @@
 import './FirstBanner.css'
+import '../../../fonts/fonts.css'
 
 export default function FirstBanner() {
     return (
@@ -8,9 +9,7 @@ export default function FirstBanner() {
                     <p class='lbl'>ОТВЕЧАЕМ ЗА КАЧЕСТВО</p>
                     <p class='bannerText'>Проверь, не купили ли контрафакт</p>
                 </div>
-                <img class="image1" src="backBanner1.png" />
-                <img class="image2" src="frontBanner1.png" />
-                <img class='image3' src='bannerImage1.png' />
+                <img src='hpBanner1.png' className='banner-image-1' alt='image'/>
             </div>
         </>
     )

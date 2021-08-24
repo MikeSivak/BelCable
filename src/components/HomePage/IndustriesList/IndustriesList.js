@@ -1,6 +1,8 @@
 import './IndustriesList.css'
 import { Row, Col, Image, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../../../fonts/fonts.css'
+import '../../../index.css'
 
 export default function IndustriesList() {
     const industry = [
@@ -39,7 +41,7 @@ export default function IndustriesList() {
         <>
             <div className='industry-list-container'>
                 <div className='industry-label'>
-                    ПРОДУКЦИЯ
+                    По отраслям
                 </div>
                 <Row xs={1} md={2} className="g-2 industry-list-row">
                     <Col className='industry-list-col-blocks'>
@@ -52,7 +54,7 @@ export default function IndustriesList() {
                                         <Card.Body>
                                             <Card.Title><span className='product-name'>Энергетика</span></Card.Title>
                                             <Card.Text>
-                                                Продукция для строительства и реконструкции кабельных линий
+                                                <span className='card-text'>Продукция для строительства и реконструкции кабельных линий</span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -66,7 +68,7 @@ export default function IndustriesList() {
                                         <Card.Body>
                                             <Card.Title><span className='product-name'>Строительство</span></Card.Title>
                                             <Card.Text>
-                                                Продукция для энергоснабжения объектов гражданского
+                                            <span className='card-text'>Продукция для энергоснабжения объектов гражданского</span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -80,7 +82,7 @@ export default function IndustriesList() {
                                         <Card.Body>
                                             <Card.Title><span className='product-name'>Коммуникации</span></Card.Title>
                                             <Card.Text>
-                                                Продукция общепромышленного назначения
+                                            <span className='card-text'>Продукция общепромышленного назначения</span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -98,7 +100,7 @@ export default function IndustriesList() {
                                         <Card.Body>
                                             <Card.Title><span className='product-name'>Нефтегазовая промышленность</span></Card.Title>
                                             <Card.Text>
-                                                Кабели для питания насосов в нефтескважинах
+                                            <span className='card-text'>Кабели для питания насосов в нефтескважинах</span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -112,7 +114,7 @@ export default function IndustriesList() {
                                         <Card.Body>
                                             <Card.Title><span className='product-name'>Транспортная инраструктура</span></Card.Title>
                                             <Card.Text>
-                                                Для внутренних и наружных соединений подвижного состава рельсового транспорта и троллейбусов
+                                            <span className='card-text'>Для внутренних и наружных соединений подвижного состава рельсового транспорта и троллейбусов</span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -126,7 +128,7 @@ export default function IndustriesList() {
                                         <Card.Body>
                                             <Card.Title><span className='product-name'>Машиностроение</span></Card.Title>
                                             <Card.Text>
-                                                Продукция для энергоснабжения инфраструктуры предприятия
+                                            <span className='card-text'>Продукция для энергоснабжения инфраструктуры предприятия</span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>

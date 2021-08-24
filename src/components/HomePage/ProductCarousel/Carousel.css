@@ -39,16 +39,22 @@
 .catalogButton .cB{
     background: #E74137;
     border-radius: 50px !important;
-    padding: 0.7em 2em !important;
     margin-top: 20px;
+    width: 298px;
+    height: 95px;
+    font-family: 'Raleway-700-normal';
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
 }
 
 .productLabel{
   text-align: center;
   width: 100%;
   color: #E74137;
-  font-weight: 900;
+  font-family: 'Lato-900-normal';
   font-size: 36px;
+  line-height: 43px;
 }
 
 .product-carousel-round{
@@ -61,6 +67,7 @@
 
 .product-carousel-card{
   z-index: 100000;
+  border: none;
 }
 
 .round-image{
@@ -74,6 +81,10 @@
 .product-carousel-card:hover{
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid #E74137;
+}
+
+.product-carousel-card:hover .card-title{
+  color: #E74137;
 }
 
 .product-carousel-card:hover .product-carousel-round-2{
