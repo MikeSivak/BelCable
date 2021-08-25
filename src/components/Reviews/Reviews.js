@@ -23,7 +23,7 @@ export default function Reviews() {
     return (
         <>
             <div className='reviews-page-container'>
-                <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
+                <Breadcrumb className='custom-breadcrumb'>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Отзывы</Breadcrumb.Item>

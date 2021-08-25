@@ -76,6 +76,14 @@
     text-align: right;
 }
 
+.reviews-list{
+    margin-top: 100px;
+}
+
+.custom-breadcrumb{
+    margin-top: 38px;
+}
+
 /* test hide/show text */
 
 .personal-review{
@@ -100,4 +108,11 @@
     text-decoration: underline;
     font-size: 18px;
     cursor: pointer;
+  }
+
+  @media screen and (max-width:624px) {
+      .reviews-col-image img{
+          width: 100%;
+          height: auto;
+      }
   }
