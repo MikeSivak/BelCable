@@ -114,8 +114,9 @@
 
 @media screen and (max-width:400px) {
     .search-inputs{
-        font-size: 13px;
-        margin-top: -42.5px;
+        font-size: 15px;
+        height: 36px;
+        margin-top: -45px;
     }
     .search-inputs>*{
         padding-left: 20px;   
