@@ -128,3 +128,9 @@
         top: 12%;
     }
 }
+
+@media screen and (max-width:691px) {
+    .industry-list-row{
+        margin-top: 100px;
+    }
+}

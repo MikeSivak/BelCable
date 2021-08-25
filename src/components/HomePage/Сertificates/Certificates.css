@@ -1,5 +1,5 @@
 .labels{
-    /* width: 83%; */
+    text-align: center;
 }
 
 .labels p{
@@ -114,4 +114,33 @@
 
 .listCol{
     padding: 0 4em !important;
+}
+
+@media screen and (max-width:964px) {
+  .certList{
+    display: block;
+  }
+  .listCol{
+    width: 100%;
+    padding: 0;
+  }
+  .revCol{
+    margin-top: 150px;
+  }
+  .certCarousel.carousel.slide.carousel-dark a.carousel-control-prev,
+  .certCarousel.carousel.slide.carousel-dark a.carousel-control-next{
+    display: none;
+  }
+  .revCarousel.carousel.slide.carousel-dark a.carousel-control-prev,
+  .revCarousel.carousel.slide.carousel-dark a.carousel-control-next{
+    display: none;
+  }
+  .labels p{
+    font-family: 'Lato-900-normal';
+    color: #E74137;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
 }

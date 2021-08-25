@@ -33,7 +33,7 @@ export default function Certificates() {
                         </Carousel.Item>
                     </Carousel>
                 </Col>
-                <Col className="listCol" md={6}>
+                <Col className="listCol revCol" md={6}>
                     <div className='labels'>
                         <p>ОТЗЫВЫ</p>
                     </div>
