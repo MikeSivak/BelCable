@@ -1,3 +1,7 @@
+.product-carousel-container{
+  margin-top: 80px;
+}
+
 .product-carousel .carousel-indicators{
     justify-content: center !important;
     background:none;
