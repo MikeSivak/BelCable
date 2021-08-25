@@ -181,3 +181,12 @@
 .product{
     align-items: center;
 }
+
+.product-type-link{
+    color: #000;
+    text-decoration: none
+}
+
+.product-type-link:hover{
+    color: #E74137;
+}

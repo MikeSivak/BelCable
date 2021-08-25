@@ -13,7 +13,7 @@ export default function HomePage() {
         <>
             <div className='HomePage'>
                 <CustomCarousel />
-                {/* <Search /> */}
+                <Search />
                 <ProductCarousel />
                 <FirstBanner />
                 <IndustriesList />

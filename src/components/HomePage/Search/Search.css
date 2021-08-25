@@ -16,12 +16,12 @@
 .searchButton{
     background: rgb(59, 59, 59);
     border: 1px solid red;
-    width: 170px;
+    width: 10%;
     height: 50px;
     position: absolute;
     margin-top: 68px;
-    margin-left: -420px;
-    border-radius: 10px;
+    margin-left: -22%;
+    border-radius: 8px;
 }
 
 .searchButton:hover{
@@ -34,9 +34,12 @@
     border-bottom: 3px solid red;
     color: white;
     position: absolute;
-    width: 800px;
+    width: 42%;
     height: 50px;
     margin-top: 69px;
-    left: 350px;
-    border-radius: 10px;
+    left: 19%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 2em;
 }
