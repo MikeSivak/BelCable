@@ -1,41 +1,62 @@
-import './TrustList.css'
-import { Carousel, Row, Col, Image } from 'react-bootstrap'
+import Carousel from './Carousel'
 
 export default function TrustList() {
     return (
         <>
-            <div className='trustLabel'>
-                <p>НАМ ДОВЕРЯЮТ</p>
+            <div className='trust-list-container'>
+                <div className='trust-list-label'>
+                    <p>НАМ ДОВЕРЯЮТ</p>
+                </div>
+                <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+                    <Carousel show={6}>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='trust-list-image-block'>
+                                <img src="gazprom.png" alt="placeholder" className='trust-list-image' />
+                            </div>
+                        </div>
+                    </Carousel>
+                </div>
             </div>
-            <Carousel className='trust' variant='dark'>
-                <Carousel.Item interval={1000}>
-                    <Row  xs={1} md={6} className="g-4 trustRow">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
-                                <Image src="gazprom.png" />
-                            </Col>
-                        ))}
-                    </Row>
-                </Carousel.Item>
-                <Carousel.Item interval={1000}>
-                    <Row xs={1} md={6} className="g-4 trustRow">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
-                                <Image src="gazprom.png" />
-                            </Col>
-                        ))}
-                    </Row>
-                </Carousel.Item>
-                <Carousel.Item interval={1000}>
-                    <Row xs={1} md={6} className="g-4 trustRow">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
-                                <Image src="gazprom.png" />
-                            </Col>
-                        ))}
-                    </Row>
-                </Carousel.Item>
-            </Carousel>
         </>
     )
 }
