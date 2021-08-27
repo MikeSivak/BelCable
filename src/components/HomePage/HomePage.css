@@ -1,3 +1,19 @@
-.HomePage{
-    padding: 0 0 6em 0;
+.trust-carousel-contaier{
+    width: 83%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.trust-carousel{
+    margin: 0 auto;
+}
+
+.trust-label{
+    font-family: 'Lato-900-normal';
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E74137;
+    padding: 0 0 2em 0;
 }
