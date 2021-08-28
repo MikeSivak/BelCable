@@ -1,5 +1,7 @@
 .product-carousel-container{
-  margin-top: 80px;
+  width: 83%;
+  text-align: center;
+  margin: 80px auto 0 auto;
 }
 
 .product-carousel .carousel-indicators{
@@ -43,7 +45,7 @@
 .catalogButton .cB{
     background: #E74137;
     border-radius: 50px !important;
-    margin-top: 20px;
+    margin-top: 100px;
     width: 298px;
     height: 95px;
     font-family: 'Raleway-700-normal';
@@ -93,4 +95,58 @@
 
 .product-carousel-card:hover .product-carousel-round-2{
   display:block;
+}
+
+.product-carousel-row{
+  margin-top: 50px;
+}
+
+.product-carousel-card{
+  width: 83%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:997px) {
+  .product-carousel-col{
+    flex: 0;
+  }
+  .product-carousel-container{
+    width: 100%;
+  }
+  .product-carousel-row{
+    justify-content:center;
+  }
+  .product-carousel-container .card-text{
+    display: none;
+  }
+  .product-carousel-col{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:602px) {
+  .product-carousel-container .card-title{
+    font-size: 16px;
+  }
+  .catalogButton .cB{
+    width: 278px;
+    height: 75px;
+    font-size: 16px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width:354px) {
+  .product-carousel-row{
+    margin-left: 0;
+  }
+  .product-carousel-container .card-title{
+    font-size: 14px;
+  }
+  .catalogButton .cB{
+    width: 258px;
+    height: 55px;
+    font-size: 12px;
+    margin-top: 60px;
+  }
 }
