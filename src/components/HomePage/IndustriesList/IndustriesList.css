@@ -121,6 +121,10 @@
         top:-5%;
         width: 70%;
     }
+    .industry-list-row-blocks .col{
+        width: 32%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width:1366px) {
@@ -136,5 +140,25 @@
 }
 
 @media screen and (max-width:514px) {
-    
+    .industry-list-container{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .industry-list-row-blocks .col{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .industry-list-row-blocks .col{
+        width: 20%;
+    }
+    .product-name{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
 }
