@@ -13,29 +13,37 @@ export default function SecondBanner() {
                             <Row className='second-banner-label'>Преимущества</Row>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row className='second-banner-common-grid'>
                         <Col>
-                            <Row className='label-amount'>100 293</Row>
-                            <Row className='label-value'>киллометров</Row>
-                            <Row className='value-description'>кабельной продукции высокого качества реализовано в 2020 году</Row>
-                            <br></br>
-                            <Row className='label-amount'>1859</Row>
-                            <Row className='label-value'>тон</Row>
+                            <div>
+                                <Row className='label-amount'>100 293</Row>
+                                <Row className='label-value'>киллометров</Row>
+                                <Row className='value-description'>кабельной продукции высокого качества реализовано в 2020 году</Row>
+                            </div>
+                            <div className='second-rows-section' style={{marginTop:'20px'}}>
+                                <Row className='label-amount'>1859</Row>
+                                <Row className='label-value'>тон</Row>
+                            </div>
                         </Col>
                         <Col>
-                            <Row className='label-amount'>30 000</Row>
-                            <Row className='label-value'>киллометров</Row>
-                            <br></br>
-                            <Row className='label-amount'>683</Row>
-                            <Row className='label-value'>сотрудников</Row>
+                            <div>
+                                <Row className='label-amount'>30 000</Row>
+                                <Row className='label-value'>киллометров</Row>
+                            </div>
+                            <div className='second-rows-section' style={{marginTop:'50px'}}>
+                                <Row className='label-amount'>683</Row>
+                                <Row className='label-value'>сотрудников</Row>
+                            </div>
                         </Col>
                         <Col>
-                            <Row className='label-amount'>345</Row>
-                            <Row className='label-value'>модернизированного оборудования</Row>
-                            <br></br>
-                            <Row className='label-amount'>867</Row>
-                            <Row className='label-value'>инновационная продукция</Row>
+                            <div>
+                                <Row className='label-amount'>345</Row>
+                                <Row className='label-value'>модернизированного оборудования</Row>
+                            </div>
+                            <div className='second-rows-section' style={{marginTop:'30px'}}>
+                                <Row className='label-amount'>867</Row>
+                                <Row className='label-value'>инновационная продукция</Row>
+                            </div>
                         </Col>
                     </Row>
                 </div>

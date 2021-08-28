@@ -22,6 +22,7 @@
   font-size: 36px;
   line-height: 43px;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .label-amount{
@@ -40,13 +41,9 @@
   margin-top: 4px;
 }
 
-/* .second-banner-grid-1{
-  margin-top: 24px;
-}
-
-.second-banner-grid-2{
+.second-banner-common-grid{
   margin-top: 43px;
-} */
+}
 
 .value-description{
   font-family: 'Raleway-300-normal';
@@ -82,13 +79,9 @@
     margin-top: 2px;
   }
   
-  /* .second-banner-grid-1{
-    margin-top: 24px;
-  }
-  
-  .second-banner-grid-2{
+  .second-banner-common-grid{
     margin-top: 30px;
-  } */
+  }
   
   .value-description{
     font-size: 12px;
@@ -106,27 +99,24 @@
   }
   
   .second-banner-label{
-    font-size: 28px;
+    font-size: 22px;
     line-height: 38px;
+    margin-top: 24px;
   }
   
   .label-amount{
     font-size: 30px;
     line-height: 38px;
   }
+
+  .second-banner-common-grid{
+    margin-top: 18px;
+  }
   
   .label-value{
     font-size: 16px;
     line-height: 17px;
   }
-  
-  /* .second-banner-grid-1{
-    margin-top: 24px;
-  }
-  
-  .second-banner-grid-2{
-    margin-top: 30px;
-  } */
   
   .value-description{
     font-size: 12px;
@@ -146,6 +136,7 @@
   .second-banner-label{
     font-size: 22px;
     line-height: 34px;
+    margin-top: 10px;
   }
   
   .label-amount{
@@ -158,13 +149,9 @@
     line-height: 14px;
   }
   
-  /* .second-banner-grid-1{
+  .second-banner-common-grid{
     margin-top: 10px;
   }
-  
-  .second-banner-grid-2{
-    margin-top: 20px;
-  } */
   
   .value-description{
     font-size: 12px;
@@ -199,15 +186,10 @@
     left: 25px;
     height: 100%;
   }
-  .second-banner-grid-1 .col, .second-banner-grid-2 .col{
-    /* display: inline-block;
-    float: none; */
-    display: none;
-  }
 
-  /* .second-banner-grid-1 .col .row, .second-banner-grid-2 .col .row{
-    white-space:normal;
-  } */
+  .second-banner-label{
+    margin-top: 20px;
+  }
 
   .second-banner-info div.row{
     width: 100%;
@@ -217,18 +199,23 @@
     overflow-y: hidden;
   }
 
+  .second-banner-common-grid{
+    margin-top: 30px;
+  }
+
   .second-banner-common-grid .col{
     display: inline-block;
     float: none;
+    padding-bottom: 50px;
   }
 
-  /* .second-banner-grid-2{
-    margin-top: 0;
-  } */
+  .second-banner-common-grid .col .row{
+    white-space:normal;
+  }
 
-  /* .second-banner-grid-1.row div.col, .second-banner-grid-2.row div.col{
-    margin-top: 50px;
-  } */
+  .second-rows-section{
+    margin-top: 40px;
+  }
 
   .value-description{
     text-align: center !important;

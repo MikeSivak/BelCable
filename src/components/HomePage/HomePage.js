@@ -15,11 +15,11 @@ import { useState } from 'react';
 export default function HomePage() {
     const responsive = {
         maxLargeDesktop: {
-            breakpoint: { max: 3000, min: 1920 },
+            breakpoint: { max: 4000, min: 2448 },
             items: 10
         },
         middleLargeDesktop: {
-            breakpoint: { max: 1920, min: 1640 },
+            breakpoint: { max: 2448, min: 1640 },
             items: 6
         },
         desktop: {
