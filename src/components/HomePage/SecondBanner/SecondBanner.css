@@ -1,7 +1,7 @@
 .second-banner-container {
   position: relative;
   margin-top: 200px;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .second-banner-image{
@@ -197,15 +197,30 @@
     text-align: center;
     padding: 2em 0;
     left: 25px;
+    height: 100%;
   }
-  .second-banner-grid-1, .second-banner-grid-2{
-    display: block;
+  .second-banner-grid-1 .col, .second-banner-grid-2 .col{
+    /* display: block; */
+    display: inline-block;
+    float: none;
+  }
+
+  .second-banner-grid-1 .col .row, .second-banner-grid-2 .col .row{
+    white-space:normal;
   }
 
   .second-banner-info div.row{
     width: 100%;
     display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
   }
+
+  /* .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
+.col-xs-4:nth-child(3n+1) { background: #c69; }
+.col-xs-4:nth-child(3n+2) { background: #9c6; }
+.col-xs-4:nth-child(3n+3) { background: #69c; } */
 
   .second-banner-grid-2{
     margin-top: 0;
