@@ -6,3 +6,15 @@ a{
     color: #E74137 !important;
     font-weight: 700;
 }
+
+.belcable-history{
+    /* font-family: 'Raleway'; */
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-links{
+    font-family: 'Raleway-600-normal';
+    font-size: 16px;
+    line-height: 19px;
+}
