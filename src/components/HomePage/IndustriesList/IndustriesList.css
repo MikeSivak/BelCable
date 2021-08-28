@@ -160,11 +160,11 @@
     .industry-list-row-blocks .col{
         width: 20%;
     }
-    .product-name{
+    .industry-list-container .product-name{
         font-size: 16px;
         line-height: 18px;
     }
-    .card-text{
+    .industry-list-container .card-text{
         font-size: 14px;
     }
 }
