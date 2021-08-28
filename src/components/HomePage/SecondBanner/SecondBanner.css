@@ -40,13 +40,13 @@
   margin-top: 4px;
 }
 
-.second-banner-grid-1{
+/* .second-banner-grid-1{
   margin-top: 24px;
 }
 
 .second-banner-grid-2{
   margin-top: 43px;
-}
+} */
 
 .value-description{
   font-family: 'Raleway-300-normal';
@@ -82,13 +82,13 @@
     margin-top: 2px;
   }
   
-  .second-banner-grid-1{
+  /* .second-banner-grid-1{
     margin-top: 24px;
   }
   
   .second-banner-grid-2{
     margin-top: 30px;
-  }
+  } */
   
   .value-description{
     font-size: 12px;
@@ -120,13 +120,13 @@
     line-height: 17px;
   }
   
-  .second-banner-grid-1{
+  /* .second-banner-grid-1{
     margin-top: 24px;
   }
   
   .second-banner-grid-2{
     margin-top: 30px;
-  }
+  } */
   
   .value-description{
     font-size: 12px;
@@ -158,13 +158,13 @@
     line-height: 14px;
   }
   
-  .second-banner-grid-1{
+  /* .second-banner-grid-1{
     margin-top: 10px;
   }
   
   .second-banner-grid-2{
     margin-top: 20px;
-  }
+  } */
   
   .value-description{
     font-size: 12px;
@@ -200,14 +200,14 @@
     height: 100%;
   }
   .second-banner-grid-1 .col, .second-banner-grid-2 .col{
-    /* display: block; */
-    display: inline-block;
-    float: none;
+    /* display: inline-block;
+    float: none; */
+    display: none;
   }
 
-  .second-banner-grid-1 .col .row, .second-banner-grid-2 .col .row{
+  /* .second-banner-grid-1 .col .row, .second-banner-grid-2 .col .row{
     white-space:normal;
-  }
+  } */
 
   .second-banner-info div.row{
     width: 100%;
@@ -217,18 +217,18 @@
     overflow-y: hidden;
   }
 
-  /* .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
-.col-xs-4:nth-child(3n+1) { background: #c69; }
-.col-xs-4:nth-child(3n+2) { background: #9c6; }
-.col-xs-4:nth-child(3n+3) { background: #69c; } */
+  .second-banner-common-grid .col{
+    display: inline-block;
+    float: none;
+  }
 
-  .second-banner-grid-2{
+  /* .second-banner-grid-2{
     margin-top: 0;
-  }
+  } */
 
-  .second-banner-grid-1.row div.col, .second-banner-grid-2.row div.col{
+  /* .second-banner-grid-1.row div.col, .second-banner-grid-2.row div.col{
     margin-top: 50px;
-  }
+  } */
 
   .value-description{
     text-align: center !important;
