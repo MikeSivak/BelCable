@@ -7,6 +7,7 @@
 
   .custom-carousel .carousel-caption div{
   width: 80%;
+  /* margin: 0 auto; */
 }
 
 .custom-carousel .carousel-indicators{
@@ -46,7 +47,11 @@
   filter: drop-shadow(0px 15px 29px rgba(231, 65, 55, 0.51));
 }
 
-.custom-carousel .frontPic{
+.custom-carousel .frontPic-mobile{
+  display: none;
+}
+
+.custom-carousel .frontPic, .custom-carousel .frontPic-mobile{
   width: 100%;
 }
 
@@ -149,7 +154,7 @@
   font-size: 16px;
   line-height: 28px;
 }
-.custom-carousel .frontPic{
+.custom-carousel .frontPic, .custom-carousel .frontPic-mobile{
   height:358.38px;
   width:976px;
 }
@@ -167,8 +172,10 @@
   line-height: 20px;
 }
 .custom-carousel .frontPic{
-  height:358.38px;
-  width:976px;
+  display: none;
+}
+.custom-carousel .frontPic-mobile{
+  display: block;
 }
 .custom-carousel .photoButton{
   width:218px;
@@ -177,6 +184,10 @@
   line-height: 21px;
   text-transform: uppercase;
   margin-top: 10px;
+}
+
+.custom-carousel p, .custom-carousel h5{
+  width: 100%;
 }
 }
 
