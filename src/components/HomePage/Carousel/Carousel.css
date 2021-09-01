@@ -1,37 +1,38 @@
-.custom-carousel .carousel-caption {
+.custom-carousel-container .carousel-caption {
     top: 5%;
-    left: 9% !important;
+    left: 8% !important;
     text-align: left !important;
     color: #343753 !important;
   }
 
-  .custom-carousel .carousel-caption div{
+  .custom-carousel-container .carousel-caption div{
   width: 80%;
   /* margin: 0 auto; */
 }
 
-.custom-carousel .carousel-indicators{
+.custom-carousel-container .carousel-indicators{
   width: 83%;
-  margin: 0px auto 0 auto;
+  /* margin: 0px auto 0 auto; */
+  margin-left: 8%;
   margin-bottom: -65px;
 }
 
-.custom-carousel .carousel-indicators button{
+.custom-carousel-container .carousel-indicators button{
   width: 100%;
 }
 
-.custom-carousel .carousel-indicators li {
+.custom-carousel-container .carousel-indicators li {
   cursor: pointer;
   border: none;
   border-radius: 50%;
   background-color: #a1a1a1;   
 }
-.custom-carousel .carousel-indicators .active {
+.custom-carousel-container .carousel-indicators .active {
   width: 100%;
   background-color: #E74137;
 }
 
-.custom-carousel .photoButton{
+.custom-carousel-container .photoButton{
   background: #E74137;
   border-radius: 50px !important;
   width:238px;
@@ -43,42 +44,51 @@
   margin-top: 26px;
 }
 
-.custom-carousel .photoButton:hover{
+.custom-carousel-container .photoButton:hover{
   filter: drop-shadow(0px 15px 29px rgba(231, 65, 55, 0.51));
 }
 
-.custom-carousel .frontPic-mobile{
+.custom-carousel-container .frontPic-mobile{
   display: none;
 }
 
-.custom-carousel .frontPic, .custom-carousel .frontPic-mobile{
+.custom-carousel-container .frontPic, .custom-carousel-container .frontPic-mobile{
   width: 100%;
 }
 
-.custom-carousel .carousel-control-prev, .custom-carousel .carousel-control-next{
+.custom-carousel-container .carousel-control-prev, .custom-carousel-container .carousel-control-next{
   display: none;
 }
 
-.custom-carousel .control-block{
-  background: rgba(244, 249, 255, 0.7);
-  backdrop-filter: blur(40px);
+.check{
+  position: relative;
+}
+
+.custom-carousel-container .control-block{
+  /* background: rgba(244, 249, 255, 0.7);
+  backdrop-filter: blur(40px) !important;
+  -webkit-backdrop-filter: blur(40px) !important; */
   width: 83%;
   font-family: 'Lato-800-normal';
   font-size: 14px;
   line-height: 16.8px;
   text-transform: uppercase;
   color: #343753;
-  margin: 0 auto;
   height: 132px;
   margin-top:-80px;
+  position: absolute;
+  margin-left: 8%;
 }
 
 .control-block-row{
   height: 100%;
   align-items: center;
+  background: rgba(244, 249, 255, 0.7);
+  backdrop-filter: blur(40px) !important;
+  -webkit-backdrop-filter: blur(40px) !important;
 }
 
-.custom-carousel .control-block-info{
+.custom-carousel-container .control-block-info{
   height: 87.34px;
   padding: 1em 1em 0 1.5em;
 }
@@ -87,21 +97,21 @@
   border-left: 2px solid #CECECE;
 }
 
-.custom-carousel p{
+.custom-carousel-container p{
   font-family: 'Lato-800-normal';
   line-height: 64.03px;
   font-size: 48px;
   text-align: left !important;
 }
 
-.custom-carousel h5{
+.custom-carousel-container h5{
   font-family: 'Raleway-500-normal';
   font-size: 24px;
   line-height: 28px;
 }
 
 @media screen and (max-width:1484px) {
-  .custom-carousel p {
+  .custom-carousel-container p {
     font-family: 'Lato-800-normal';
     line-height: 48.03px;
     font-size: 38px;
@@ -109,7 +119,7 @@
 }
 
 @media screen and (max-width:1248px) {
-  .custom-carousel p {
+  .custom-carousel-container p {
     font-family: 'Lato-800-normal';
     line-height: 42.03px;
     font-size: 34px;
@@ -117,26 +127,26 @@
 }
 
 @media screen and (max-width:1200px) {
-  .custom-carousel .control-block{
+  .custom-carousel-container .control-block{
     display: none;
   }
-  .custom-carousel .carousel-indicators{
+  .custom-carousel-container .carousel-indicators{
     margin-bottom:20px;
     border-radius: 50px;
     justify-content: space-between;
   }
-  .custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
+  .custom-carousel-container .carousel-indicators button,.custom-carousel-container .carousel-indicators button.active{
     height: 5px;
   }
 }
 
 @media screen and (max-width:1064px) {
-    .custom-carousel p {
+    .custom-carousel-container p {
       font-family: 'Lato-800-normal';
       line-height: 38.03px;
       font-size: 28px;
   }
-  .custom-carousel h5{
+  .custom-carousel-container h5{
     font-family: 'Raleway-500-normal';
     font-size: 16px;
     line-height: 28px;
@@ -144,40 +154,40 @@
 }
 
 @media screen and (max-width:976px) {
-  .custom-carousel p {
+  .custom-carousel-container p {
     font-family: 'Lato-800-normal';
     line-height: 34.03px;
     font-size: 24px;
 }
-.custom-carousel h5{
+.custom-carousel-container h5{
   font-family: 'Raleway-500-normal';
   font-size: 16px;
   line-height: 28px;
 }
-.custom-carousel .frontPic, .custom-carousel .frontPic-mobile{
+.custom-carousel-container .frontPic, .custom-carousel-container .frontPic-mobile{
   height:358.38px;
   width:976px;
 }
 }
 
 @media screen and (max-width:656px) {
-  .custom-carousel p {
+  .custom-carousel-container p {
     font-family: 'Lato-800-normal';
     line-height: 28.03px;
     font-size: 24px;
 }
-.custom-carousel h5{
+.custom-carousel-container h5{
   font-family: 'Raleway-500-normal';
   font-size: 16px;
   line-height: 20px;
 }
-.custom-carousel .frontPic{
+.custom-carousel-container .frontPic{
   display: none;
 }
-.custom-carousel .frontPic-mobile{
+.custom-carousel-container .frontPic-mobile{
   display: block;
 }
-.custom-carousel .photoButton{
+.custom-carousel-container .photoButton{
   width:218px;
   height:49px;
   font-size: 16px;
@@ -186,34 +196,34 @@
   margin-top: 10px;
 }
 
-.custom-carousel p, .custom-carousel h5{
+.custom-carousel-container p, .custom-carousel-container h5{
   width: 100%;
 }
 }
 
 @media screen and (max-width:454px) {
-  .custom-carousel .carousel-caption{
+  .custom-carousel-container .carousel-caption{
     width: 100%;
   }
-  .custom-carousel p {
+  .custom-carousel-container p {
     font-family: 'Lato-800-normal';
     line-height: 28.03px;
     font-size: 24px;
     text-align: center !important;
     margin: 0 auto;
 }
-.custom-carousel h5{
+.custom-carousel-container h5{
   font-family: 'Raleway-500-normal';
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   margin: 0 auto;
 }
-.custom-carousel div{
+.custom-carousel-container div{
   width: 100%;
   text-align: center;
 }
-.custom-carousel .photoButton{
+.custom-carousel-container .photoButton{
   width:218px;
   height:49px;
   font-size: 16px;
@@ -221,12 +231,12 @@
   text-transform: uppercase;
   margin-top: 20px;
 }
-.custom-carousel .carousel-indicators{
+.custom-carousel-container .carousel-indicators{
   margin-bottom:20px;
   border-radius: 50px;
   justify-content: center;
 }
-.custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
+.custom-carousel-container .carousel-indicators button,.custom-carousel-container .carousel-indicators button.active{
   height: 20px;
   width: 20px;
   border-radius: 100%;
@@ -234,28 +244,28 @@
 }
 
 @media screen and (max-width:454px) {
-  .custom-carousel .carousel-caption{
+  .custom-carousel-container .carousel-caption{
     width: 100%;
   }
-  .custom-carousel p {
+  .custom-carousel-container p {
     font-family: 'Lato-800-normal';
     line-height: 26.03px;
     font-size: 22px;
     text-align: center !important;
     margin: 0 auto;
 }
-.custom-carousel h5{
+.custom-carousel-container h5{
   font-family: 'Raleway-500-normal';
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   margin: 0 auto;
 }
-.custom-carousel div{
+.custom-carousel-container div{
   width: 100%;
   text-align: center;
 }
-.custom-carousel .photoButton{
+.custom-carousel-container .photoButton{
   width:218px;
   height:49px;
   font-size: 16px;
@@ -263,12 +273,12 @@
   text-transform: uppercase;
   margin-top: 20px;
 }
-.custom-carousel .carousel-indicators{
+.custom-carousel-container .carousel-indicators{
   margin-bottom:20px;
   border-radius: 50px;
   justify-content: center;
 }
-.custom-carousel .carousel-indicators button,.custom-carousel .carousel-indicators button.active{
+.custom-carousel-container .carousel-indicators button,.custom-carousel-container .carousel-indicators button.active{
   height: 20px;
   width: 20px;
   border-radius: 100%;

@@ -6,8 +6,8 @@ import { Carousel, Button, Image, Row, Col } from "react-bootstrap"
 export default function CustomCarousel() {
     return (
         <>
-            <div className='custom-carousel'>
-                <Carousel>
+            <div className='custom-carousel-container'>
+                <Carousel className='check'>
                     <Carousel.Item>
                         <img className="frontPic" src="h1.png" alt="" />
                         <img className="frontPic-mobile" src="mc1.png" alt="" />
