@@ -17,6 +17,8 @@ import PressCard from "../components/PressCard/PressCard";
 import Reviews from "../components/Reviews/Reviews";
 import Contacts from "../components/Contacts/Contacts";
 import Awards from "../components/Awards/Awards";
+import IndustryPurpose from "../components/IndustryPurpose/IndustryPurpose";
+import Wires from "../components/Wires/Wires";
 
 const routes = [
     {
@@ -133,8 +135,19 @@ const routes = [
         name: 'Awards',
         component: Awards,
         id: 18
+    },
+    {
+        path: '/indpurpose',
+        name: 'IndustryPurpose',
+        component: IndustryPurpose,
+        id: 19,
+    },
+    {
+        path: '/wires',
+        name: 'Wires',
+        component: Wires,
+        id: 20,
     }
-
 ]
 
 export default routes;

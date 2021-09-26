@@ -6,40 +6,69 @@ export default function ProductPage() {
 
     const industry = [
         {
+            id:1,
             name: 'Энергетика',
             image: 'tow.png',
+            description: `
+            Продукция для строительства и реконструкции кабельных линий
+            `,
             menu: []
         },
         {
+            id:2,
             name: 'Строительство',
             image: 'crane.png',
+            description: `
+            Продукция для энергоснабжения объектов гражданского
+            `,
             menu: []
         },
         {
+            id:3,
             name: 'Коммуникации',
             image: 'phone.png',
+            description: `
+            Продукция общепромышленного назначения
+            `,
             menu: []
         },
         {
+            id:4,
             name: 'Нефтегазовая промышленность',
             image: 'platform.png',
+            description: `
+            Кабели для питания насосов в нефтескважинах
+            `,
             menu: []
         },
         {
+            id:5,
             name: 'Транспортная инфраструктура',
             image: 'train.png',
+            description: `
+            Для внутренних и наружных соединений подвижного состава рельсового транспорта и троллейбусов
+            `,
             menu: []
         },
         {
+            id:6,
             name: 'Машиностроение',
             image: 'industryCar.png',
+            description: `
+            Продукция для энергоснабжения инфраструктуры предприятия
+            `,
             menu: []
         },
     ]
 
     const purpose = [
         {
+            id:1,
             name: 'Кабели и провода монтажные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели симметричные станционные для межстоечного и внутрестоечного монтажа',
                 'Провода высоковольтные монтажные телевизионные',
@@ -56,10 +85,15 @@ export default function ProductPage() {
                 'Провода монтажные терморадиационностойкие',
                 'Провода с поливинилхлоридной изоляцией и оболочкой плоские',
                 'Шнуры для ламп автомобилей (высоковольтные)',
-            ]
+            ],
         },
         {
+            id:2,
             name: 'Кабели и провода связи',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели городские телефонные с полиэтиленовой изоляцией в пластмассовой оболочке',
                 'Кабели местной связи высокочастотные',
@@ -69,7 +103,12 @@ export default function ProductPage() {
             ]
         },
         {
+            id:3,
             name: 'Кабели управления и передачи данных',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели высокочастотные для цифровых сетей абонентского доступа',
                 'Кабели высокочастотные малопарные для цифровых сетей абонентского доступа',
@@ -78,7 +117,12 @@ export default function ProductPage() {
             ]
         },
         {
+            id:4,
             name: 'Кабели силовые',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели силовые бронированные',
                 'Кабели силовые не распространяющие горение с низким дымо и газовыделением',
@@ -88,7 +132,12 @@ export default function ProductPage() {
             ]
         },
         {
+            id:5,
             name: 'Кабели и провода для сигнализации и блокировки',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели для монтажа систем сигнализации',
                 'Кабели для сигнализации и блокировки',
@@ -97,74 +146,149 @@ export default function ProductPage() {
             ]
         },
         {
+            id:6,
             name: 'Кабели контрольные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели контрольные огнестойкие не распространяющие горение',
                 'Кабели контрольные с пластмассовой изоляцией',
             ]
         },
         {
+            id:7,
             name: 'Кабели комбинированные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Кабели высокочастотные комбинированые для систем видеонаблюдения'
             ]
         },
         {
+            id:8,
             name: 'Провода и шнуры соединительные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Шнуры гибкие со скрученными жилами в ПВХ оболочке, в оплетке'
             ]
         },
         {
+            id:9,
             name: 'Кабели и многожильные подвесные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
 
             ]
         },
         {
+            id:10,
             name: 'Кабели, провода, шнуры микрофонные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:11,
             name: 'Провода автотракторные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:12,
             name: 'Провода бортовые облученные',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:13,
             name: 'Провода для промышленных взрывных работ',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: [
                 'Провода саперные'
             ]
         },
         {
+            id:14,
             name: 'Провода для щёток электрических машин, провода для платы',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:15,
             name: 'Провода контактные для экранизирующих элементов',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:16,
             name: 'Провода кроссовые станционные с изоляцией из ПВХ пластика',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
-            name: 'Провода обмоточные для погруженных электродвигателей', menu:
-                []
+            id:17,
+            name: 'Провода обмоточные для погруженных электродвигателей',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
+            menu: []
         },
         {
+            id:18,
             name: 'Провода трансляционные с пластмассовой изоляцией',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:19,
             name: 'Провода установочные для водопогружных электродвигателей',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         },
         {
+            id:20,
             name: 'Радиочастотные кабели',
+            image1: '',
+            image2: '',
+            label: 'ТУ 345-684-2010',
+            description: ``,
             menu: []
         }
     ]
@@ -187,9 +311,9 @@ export default function ProductPage() {
                                                 <Link to='/#' className='product-type-link'>{data.name}</Link> <img src='vectorDown.png' alt='image' />
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu className='drop-menu'>
-                                                    {data.menu.map((item) => (
-                                                        <Dropdown.Item href="/product">{item}</Dropdown.Item>
-                                                    ))}
+                                                {data.menu.map((item) => (
+                                                    <Dropdown.Item href="/product">{item}</Dropdown.Item>
+                                                ))}
                                             </Dropdown.Menu>
                                         </Dropdown>
                                     </>
@@ -201,7 +325,7 @@ export default function ProductPage() {
                                     <>
                                         <Dropdown >
                                             <Dropdown.Toggle className='drop-buttons mt-1' id="dropdown-basic">
-                                            <Link to='/#' className='product-type-link'>{data.name}</Link> <img src='vectorDown.png' alt='image' />
+                                                <Link to='/#' className='product-type-link'>{data.name}</Link> <img src='vectorDown.png' alt='image' />
                                             </Dropdown.Toggle>
 
                                             <Dropdown.Menu className='drop-menu'>
@@ -220,7 +344,7 @@ export default function ProductPage() {
                         <div className='productsLabel'>ПРОДУКЦИЯ</div>
                         <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example" className='cardsBlock'>
                             <Tab eventKey="byIndustry" title="По отраслям" className='cardsTab'>
-                                <Row xs={1} md={3} className="g-4">
+                                <Row xs={1} md={3} className="g-2">
                                     {industry.map((data) => (
                                         <Col>
                                             <Link className='custom-link' to='/#'>
@@ -228,11 +352,10 @@ export default function ProductPage() {
                                                     <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
                                                     <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
                                                     {/* <Card.Img className='cardImg' variant="top" src={data.image} /> */}
-                                                    <Card.Body>
+                                                    <Card.Body className='product-carousel-card-body'>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
                                                         <Card.Text>
-                                                            This is a longer card with supporting text below as a natural
-                                                            lead-in to additional content. This content is a little bit longer.
+                                                            {data.description}
                                                         </Card.Text>
                                                     </Card.Body>
                                                 </Card>
@@ -243,18 +366,18 @@ export default function ProductPage() {
                                 </Row>
                             </Tab>
                             <Tab eventKey="byPurpose" title="По назначению" className='cardsTab'>
-                                <Row xs={1} md={3} className="g-4">
+                                <Row xs={1} md={3} className="g-2">
                                     {purpose.map((data) => (
                                         <Col>
                                             <Link className='custom-link' to='/#'>
                                                 <Card className='product'>
                                                     <Image className='product-card-image round-image' src='round1.png' alt='img' />
                                                     <Image className='product-card-image-2 round-image' src='round2.png' alt='img' />
-                                                    <Card.Body>
+                                                    <Card.Body className='product-carousel-card-body'>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
                                                         <Card.Text>
-                                                            This is a longer card with supporting text below as a natural
-                                                            lead-in to additional content. This content is a little bit longer.
+                                                            <p className='product-card-label'>{data.label}</p>
+                                                            Для монтажа передающих и приемных антенн с радио- и телевизионных станций, в системах радиосвязи и радиолокации.
                                                         </Card.Text>
                                                     </Card.Body>
                                                 </Card>

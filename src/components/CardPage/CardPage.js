@@ -2,6 +2,31 @@ import './CardPage.css'
 import { Row, Col, Image, Table, Breadcrumb } from 'react-bootstrap'
 
 export default function CardPage() {
+    const product = [
+        {
+            name:'',            //Полное кабеля
+            outerSheath:'',     //Описание для внешней оболочки
+            purpose:'',         //Описание назначения кабеля
+            construction:'',    //Описание конструкции кабеля
+            tube:'',            //Трубка - (текст из бд)
+            shield:'',          //Экран - (текст из бд)
+            insulation:'',      //Изоляция - (тексе из бд)
+            cableSheath:'',     //Оболочка кабеля - (текст из бд)
+            widthShield:'',     //С экраном - (текст из бд: "Да" и "Нет")
+            specifications:[
+                //массив строк, каждая из которых - одна из характеристик
+            ],
+            cableLength:'',      //Строительная длина кабеля - (текст из бд)
+            temperatureRange:'', //Диапазон рабочих температур - (текст из бд)
+            lifeTime:'',         //Срок службы кабеля - (текст из бд)
+            guarantee:'',        //Гарантийный срок эксплуатации - (текст из бд)
+            section:'',          //Номинальное сечение жил, мм^2
+            numberOfCores:'',    //Число жил  
+            maxDiameter:'',      //Максимальный диаметр
+            weight:'',           //Масса
+            coreConstruction:''  //Конструкция жилы
+        }
+    ]
     return (
         <>
             <div className='card-page-container'>
@@ -69,7 +94,7 @@ export default function CardPage() {
                             <div className='lbl-info'>
                                 Изоляция — Полиэтилен
                                 <ul style={{ listStyle: 'none', marginTop: '0.5em' }}>
-                                    <li><span className='span-bold'>Оболочка</span> кабеля — Поливинилхлоридный пластикат</li>
+                                    <li><span className='span-bold'>Оболочка кабеля</span> — Поливинилхлоридный пластикат</li>
                                     <li><span className='span-bold'>С экраном</span> — Да</li>
                                 </ul>
                             </div>

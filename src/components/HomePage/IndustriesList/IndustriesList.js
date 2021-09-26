@@ -7,31 +7,37 @@ import '../../../index.css'
 export default function IndustriesList() {
     const industry = [
         {
+            id:1,
             name: 'Энергетика',
             info: 'Продукция для строительства и реконструкции кабельных линий ',
             image: 'industryTower.png'
         },
         {
+            id:2,
             name: 'Строительство',
             info: 'Продукция для энергоснабжения объектов гражданского ',
             image: 'industryCrane.png'
         },
         {
+            id:3,
             name: 'Коммуникации',
             info: 'Продукция общепромышленного назначения',
             image: 'industryPhone.png'
         },
         {
+            id:4,
             name: 'Нефтегазовая промышленность',
             info: 'Кабели для питания насосов в нефтескважинах',
             image: 'industryPlatform.png'
         },
         {
+            id:5,
             name: 'Транспортная инраструктура',
             info: 'Для внутренних и наружных соединений подвижного состава рельсового транспорта и троллейбусов',
             image: 'industryTrain.png'
         },
         {
+            id:6,
             name: 'Машиностроение',
             info: 'Продукция для энергоснабжения инфраструктуры предприятия',
             image: 'industryCar.png'

@@ -3,6 +3,12 @@ import { Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default function PressCard() {
+    const info = {
+        date:'',
+        name:'',
+        description:'',
+        photo:''
+    }
     return (
         <>
             <div className='press-card-page-conteiner'>

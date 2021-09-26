@@ -2,6 +2,20 @@ import './Certificates.css'
 import { Row, Col, Carousel } from 'react-bootstrap'
 
 export default function Certificates() {
+    const certificates = [
+        'img',
+        'img',
+        'img',
+        // ...
+    ]
+
+    const reviews = [
+        'img',
+        'img',
+        'img',
+        // ...
+    ]
+
     return (
         <>
             <Row xs={1} md={2} className="g-4 certList">

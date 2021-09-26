@@ -190,3 +190,11 @@
 .product-type-link:hover{
     color: #E74137;
 }
+
+.product-card-label{
+    font-family: 'Raleway-600-normal';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #343753;
+}
