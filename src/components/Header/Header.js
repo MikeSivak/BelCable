@@ -1,7 +1,59 @@
 import Styles from './Header.css';
-import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
+import React from 'react';
+import { Nav, Navbar, Container, Dropdown, Modal, Button, Form } from 'react-bootstrap';
 
 export default function Header() {
+    const [modalShow, setModalShow] = React.useState(false);
+
+    function MyVerticallyCenteredModal(props) {
+        return (
+            <Modal            
+                {...props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+            >
+                <Modal.Header closeButton className='authorize-header'>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        <div className='row'>
+                            <div className='col-md'>
+                                <a href='#' className='autorize-link'>Аторизация</a>
+                            </div>
+                            <div className='col-md'>
+                                <a href='#' className='register-link'>Регистрация</a>
+                            </div>
+                        </div>
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body className='authorize-window-body'>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control size='lg' type="email" placeholder="Имя" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control size='lg' type="email" placeholder="Наименование компания" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control size='lg' type="email" placeholder="Телефон" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control size='lg' type="email" placeholder="E-mail" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control size='lg' type="email" placeholder="Пароль" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control size='lg' type="email" placeholder="Повторите пароль" />
+                        </Form.Group>                    
+                        <Button className='authorize-button' variant="primary" type="submit">
+                            Регистрация
+                        </Button>
+                    </Form>
+                </Modal.Body>
+            </Modal>
+        );
+    }
+
     return (
 
         <>
@@ -17,6 +69,16 @@ export default function Header() {
                     <div className='col-md sectionSales'>
                         <div className='row'>Отдел продаж</div>
                         <div className='row boldText phones'>800 123 12 12</div>
+                    </div>
+                    <div className='col-md'>
+                        <Button variant="primary" onClick={() => setModalShow(true)}>
+                            Личный кабинет
+                        </Button>
+
+                        <MyVerticallyCenteredModal
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        />
                     </div>
                     <div className='col-md iconsInfo'>
                         <div className='row'>
@@ -43,7 +105,7 @@ export default function Header() {
                                         КОМПАНИЯ
                                     </Dropdown.Toggle>
 
-                                    <Dropdown.Menu style={{background:'#EBEEF2'}}>
+                                    <Dropdown.Menu style={{ background: '#EBEEF2' }}>
                                         <Dropdown.Item href="/history">
                                             История
                                         </Dropdown.Item>

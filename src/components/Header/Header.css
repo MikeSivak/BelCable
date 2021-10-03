@@ -105,6 +105,40 @@ nav.navbar-expand-lg.navbar-light div.container button{
     margin:0 auto;
 }
 
+.autorize-link{
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+}
+
+.register-link{
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+}
+
+.autorize-link:hover, .register-link:hover{
+    color: #E74137;
+    text-decoration: underline;
+}
+
+.authorize-window-body{
+    padding: 2em 10em;
+    text-align: center;
+}
+
+.authorize-button{
+    background-color:#E74137;
+    width: 238px;
+    height: 59px;
+    border: none;
+    border-radius: 50px;
+}
+
+.authorize-header{
+    padding: 2em 10em;
+}
+
 @media screen and (max-width:464px) {
     .banner{
         display: none;

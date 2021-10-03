@@ -24,7 +24,7 @@ export default function CustomCarousel() {
                         <Carousel.Caption>
                             <div>
                                 <p>КАБЕЛИ И ПРОВОДА СВЯЗИ</p>
-                                <h5 style={{ maxWidth: '90%' }}>Для эксплуатации в местных первичных сетях связи с номинальным напряжением дистанционного питания до 225 В и 145</h5>
+                                <h5 style={{ maxWidth: '90%' }}>Используется для прокладки линий телефонной связи и распределительных сетей</h5>
                                 <Button className='photoButton' variant="danger">Перейти</Button>
                             </div>
                         </Carousel.Caption>
