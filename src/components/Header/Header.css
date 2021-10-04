@@ -198,3 +198,7 @@ nav.navbar-expand-lg.navbar-light div.container button{
 .profile-button:hover{
     color: #E74137;
 }
+
+.authorize-close-button{
+    border: none;
+}

@@ -10,7 +10,7 @@ export default function FirstBanner() {
                     <p class='bannerText'>Проверь, не купили ли контрафакт</p>
                     {/* Вся продукция сертифицирована и производится в соответствии с ТУ и ГОСТ */}
                 </div>
-                <img src='hpBanner1.png' className='banner-image-1' alt='image'/>
+                <img src='hpBanner1.jpeg' className='banner-image-1' alt='image'/>
             </div>
         </>
     )

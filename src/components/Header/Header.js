@@ -13,6 +13,7 @@ export default function Header() {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
+                <Modal.Header className='authorize-close-button' closeButton></Modal.Header>
                 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" variant='pills' className="mb-3 authorize-tabs">
                     <Tab eventKey="home" title="Авторизация">
                         <Modal.Body className='authorize-window-body'>

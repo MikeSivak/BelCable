@@ -9,8 +9,8 @@ export default function CustomCarousel() {
             <div className='custom-carousel-container'>
                 <Carousel className='check'>
                     <Carousel.Item>
-                        <img className="frontPic" src="h1.png" alt="" />
-                        <img className="frontPic-mobile" src="mc1.png" alt="" />
+                        <img className="frontPic" src="h1.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc1.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p>Кабели для внутренних и наружных соединений подвижного состава РЕЛЬСОВОГО ТРАНСПОРТА И ТРОЛЛЕЙБУСОВ</p>
@@ -19,8 +19,8 @@ export default function CustomCarousel() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="frontPic" src="h2.png" alt="" />
-                        <img className="frontPic-mobile" src="mc2.png" alt="" />
+                        <img className="frontPic" src="h2.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc2.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p>КАБЕЛИ И ПРОВОДА СВЯЗИ</p>
@@ -30,8 +30,8 @@ export default function CustomCarousel() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="frontPic" src="h3.png" alt="" />
-                        <img className="frontPic-mobile" src="mc3.png" alt="" />
+                        <img className="frontPic" src="h3.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc3.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p style={{ maxWidth: '100%' }}>КАБЕЛИ И ПРОВОДА МОНТАЖНЫЕ</p>
@@ -43,8 +43,8 @@ export default function CustomCarousel() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="frontPic" src="h4.png" alt="" />
-                        <img className="frontPic-mobile" src="mc4.png" alt="" />
+                        <img className="frontPic" src="h4.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc4.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p style={{ maxWidth: '100%' }}>КАБЕЛИ УПРАВЛЕНИЯ И ПЕРЕДАЧИ ДАННЫХ</p>
@@ -56,8 +56,8 @@ export default function CustomCarousel() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="frontPic" src="h5.png" alt="" />
-                        <img className="frontPic-mobile" src="mc5.png" alt="" />
+                        <img className="frontPic" src="h5.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc5.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p style={{ maxWidth: '49%' }}>КАБЕЛИ СИЛОВЫЕ</p>
@@ -69,8 +69,8 @@ export default function CustomCarousel() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="frontPic" src="h6.png" alt="" />
-                        <img className="frontPic-mobile" src="mc6.png" alt="" />
+                        <img className="frontPic" src="h6.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc6.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p style={{ maxWidth: '80%' }}>КАБЕЛИ И ПРОВОДА ДЛЯ СИГНАЛИЗАЦИИ И БЛОКИРОВКИ</p>
@@ -82,8 +82,8 @@ export default function CustomCarousel() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="frontPic" src="h7.png" alt="" />
-                        <img className="frontPic-mobile" src="mc7.png" alt="" />
+                        <img className="frontPic" src="h7.jpeg" alt="" />
+                        <img className="frontPic-mobile" src="mc7.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
                                 <p>КАБЕЛИ КОНТРОЛЬНЫЕ</p>

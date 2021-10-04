@@ -6,7 +6,7 @@ export default function SecondBanner() {
     return (
         <>
             <div className="second-banner-container">
-                <img className="second-banner-image" src="hpBanner2.png" />
+                <img className="second-banner-image" src="hpBanner2.jpeg" />
                 <div className='second-banner-info'>
                     <Row>
                         <Col>
