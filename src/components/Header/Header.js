@@ -76,6 +76,9 @@ export default function Header() {
                     <div className='col-md logo'>
                         <img height='37px' width='309px' src='lbl.png' />
                     </div>
+                    <div className='col-md'>
+                        Производство кабельной продукции c 1959 года
+                    </div>
                     <div className='col-md sectionReception'>
                         <div className='row'>Приёмная</div>
                         <div className='row boldText phones'>+375-236-24-77-29</div>
