@@ -1,55 +1,68 @@
 import Styles from './Header.css';
 import React from 'react';
-import { Nav, Navbar, Container, Dropdown, Modal, Button, Form } from 'react-bootstrap';
+import { Nav, Navbar, Container, Dropdown, Modal, Button, Form, Tabs, Tab } from 'react-bootstrap';
 
 export default function Header() {
     const [modalShow, setModalShow] = React.useState(false);
 
     function MyVerticallyCenteredModal(props) {
         return (
-            <Modal            
+            <Modal style={{ zIndex: '100000' }}
                 {...props}
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                <Modal.Header closeButton className='authorize-header'>
-                    <Modal.Title id="contained-modal-title-vcenter">
-                        <div className='row'>
-                            <div className='col-md'>
-                                <a href='#' className='autorize-link'>Аторизация</a>
-                            </div>
-                            <div className='col-md'>
-                                <a href='#' className='register-link'>Регистрация</a>
-                            </div>
-                        </div>
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body className='authorize-window-body'>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size='lg' type="email" placeholder="Имя" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size='lg' type="email" placeholder="Наименование компания" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size='lg' type="email" placeholder="Телефон" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size='lg' type="email" placeholder="E-mail" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size='lg' type="email" placeholder="Пароль" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size='lg' type="email" placeholder="Повторите пароль" />
-                        </Form.Group>                    
-                        <Button className='authorize-button' variant="primary" type="submit">
-                            Регистрация
-                        </Button>
-                    </Form>
-                </Modal.Body>
+                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" variant='pills' className="mb-3 authorize-tabs">
+                    <Tab eventKey="home" title="Авторизация">
+                        <Modal.Body className='authorize-window-body'>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="email" placeholder="E-mail" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Control size='lg' type="password" placeholder="Пароль" />
+                                </Form.Group>
+                                <div className='authorize-button-container'>
+                                    <Button className='authorize-button' variant="primary" type="submit">
+                                        Авторизация
+                                    </Button>
+                                </div>
+                            </Form>
+                        </Modal.Body>
+
+
+                    </Tab>
+                    <Tab eventKey="profile" title="Регистрация">
+                        <Modal.Body className='authorize-window-body'>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="text" placeholder="Имя" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="text" placeholder="Наименование компания" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="number" placeholder="Телефон" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="email" placeholder="E-mail" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="password" placeholder="Пароль" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control size='lg' type="password" placeholder="Повторите пароль" />
+                                </Form.Group>
+                                <div className='authorize-button-container'>
+                                    <Button className='authorize-button' variant="primary" type="submit">
+                                        Регистрация
+                                    </Button>
+                                </div>
+                            </Form>
+                        </Modal.Body>
+                    </Tab>
+                </Tabs>
             </Modal>
         );
     }
@@ -71,7 +84,7 @@ export default function Header() {
                         <div className='row boldText phones'>800 123 12 12</div>
                     </div>
                     <div className='col-md'>
-                        <Button variant="primary" onClick={() => setModalShow(true)}>
+                        <Button className='profile-button' variant="link" onClick={() => setModalShow(true)}>
                             Личный кабинет
                         </Button>
 
