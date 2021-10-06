@@ -90,10 +90,12 @@ export default function ProductCarousel() {
                             {/* to={data.purposeLink} */}
                             <Link className='custom-link' to='/#'>
                                 <Card className='product-carousel-card'>
-                                    {/* src={data.image1} */}
-                                    <Image className='product-carousel-round round-image' src='round1.png' alt='img' />
-                                    {/* src={data.image2} */}
-                                    <Image className='product-carousel-round-2 round-image' src='round2.png' alt='img' />
+                                    <div className='image-box'>
+                                        {/* src={data.image1} */}
+                                        <Image className='product-carousel-round round-image' src='round1.png' alt='img' />
+                                        {/* src={data.image2} */}
+                                        <Image className='product-carousel-round-2 round-image' src='round2.png' alt='img' />
+                                    </div>
                                     <Card.Body className='product-carousel-card-body'>
                                         <Card.Title><span className='card-title'>{data.name}</span></Card.Title>
                                         <Card.Text>
