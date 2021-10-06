@@ -148,24 +148,15 @@
     display: none;
 }
 
-
-.product-card-image{
-
-}
-
-.product-card-image-2{
+.product-carousel-round-2{
   display: none;
 }
 
-.product .round-image{
-  padding: 1em;
-}
-
-.product:hover .product-card-image{
+.product:hover .product-carousel-round{
   display: none;
 }
 
-.product:hover .product-card-image-2{
+.product:hover .product-carousel-round-2{
   display:block;
 }
 
@@ -197,8 +188,4 @@
     line-height: 21px;
     text-align: center;
     color: #343753;
-}
-
-.product-page-container .product.card{
-    display: inline-flex;
 }

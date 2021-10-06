@@ -349,10 +349,8 @@ export default function ProductPage() {
                                         <Col>
                                             <Link className='custom-link' to='/#'>
                                                 <Card className='product'>
-                                                    {/* <div className='image-box'> */}
                                                         <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
-                                                        <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
-                                                    {/* </div> */}
+                                                        <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />                                                              
                                                     {/* <Card.Img className='cardImg' variant="top" src={data.image} /> */}
                                                     <Card.Body className='product-carousel-card-body'>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
@@ -373,8 +371,8 @@ export default function ProductPage() {
                                         <Col>
                                             <Link className='custom-link' to='/#'>
                                                 <Card className='product'>
-                                                    <Image className='product-card-image round-image' src='round1.png' alt='img' />
-                                                    <Image className='product-card-image-2 round-image' src='round2.png' alt='img' />
+                                                    <Image className='product-carousel-round round-image' src='round1.png' alt='img' />
+                                                    <Image className='product-carousel-round-2 round-image' src='round2.png' alt='img' />
                                                     <Card.Body className='product-carousel-card-body'>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
                                                         <Card.Text>
