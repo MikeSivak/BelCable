@@ -198,3 +198,7 @@
     text-align: center;
     color: #343753;
 }
+
+.product-page-container .product.card{
+    display: inline-flex;
+}

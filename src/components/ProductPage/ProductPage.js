@@ -310,11 +310,11 @@ export default function ProductPage() {
                                             <Dropdown.Toggle className='drop-buttons mt-1' id="dropdown-basic">
                                                 <Link to='/#' className='product-type-link'>{data.name}</Link> <img src='vectorDown.png' alt='image' />
                                             </Dropdown.Toggle>
-                                            <Dropdown.Menu className='drop-menu'>
+                                            {/* <Dropdown.Menu className='drop-menu'>
                                                 {data.menu.map((item) => (
                                                     <Dropdown.Item href="/product">{item}</Dropdown.Item>
                                                 ))}
-                                            </Dropdown.Menu>
+                                            </Dropdown.Menu> */}
                                         </Dropdown>
                                     </>
                                 ))
