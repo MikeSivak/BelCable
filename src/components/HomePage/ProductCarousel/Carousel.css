@@ -108,10 +108,10 @@
 }
 
 .product-carousel-card-body{
-  padding: 0.5rem 2em;
+  padding: 1rem 1em;
 }
 
-@media screen and (max-width:997px) {
+@media screen and (max-width:1200px) {
   .product-carousel-col{
     flex: 0;
   }

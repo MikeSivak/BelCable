@@ -6,7 +6,7 @@ export default function ProductPage() {
 
     const industry = [
         {
-            id:1,
+            id: 1,
             name: 'Энергетика',
             image: 'tow.png',
             description: `
@@ -15,7 +15,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:2,
+            id: 2,
             name: 'Строительство',
             image: 'crane.png',
             description: `
@@ -24,7 +24,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:3,
+            id: 3,
             name: 'Коммуникации',
             image: 'phone.png',
             description: `
@@ -33,7 +33,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:4,
+            id: 4,
             name: 'Нефтегазовая промышленность',
             image: 'platform.png',
             description: `
@@ -42,7 +42,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:5,
+            id: 5,
             name: 'Транспортная инфраструктура',
             image: 'train.png',
             description: `
@@ -51,7 +51,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:6,
+            id: 6,
             name: 'Машиностроение',
             image: 'industryCar.png',
             description: `
@@ -63,7 +63,7 @@ export default function ProductPage() {
 
     const purpose = [
         {
-            id:1,
+            id: 1,
             name: 'Кабели и провода монтажные',
             image1: '',
             image2: '',
@@ -88,7 +88,7 @@ export default function ProductPage() {
             ],
         },
         {
-            id:2,
+            id: 2,
             name: 'Кабели и провода связи',
             image1: '',
             image2: '',
@@ -103,7 +103,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:3,
+            id: 3,
             name: 'Кабели управления и передачи данных',
             image1: '',
             image2: '',
@@ -117,7 +117,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:4,
+            id: 4,
             name: 'Кабели силовые',
             image1: '',
             image2: '',
@@ -132,7 +132,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:5,
+            id: 5,
             name: 'Кабели и провода для сигнализации и блокировки',
             image1: '',
             image2: '',
@@ -146,7 +146,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:6,
+            id: 6,
             name: 'Кабели контрольные',
             image1: '',
             image2: '',
@@ -158,7 +158,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:7,
+            id: 7,
             name: 'Кабели комбинированные',
             image1: '',
             image2: '',
@@ -169,7 +169,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:8,
+            id: 8,
             name: 'Провода и шнуры соединительные',
             image1: '',
             image2: '',
@@ -180,7 +180,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:9,
+            id: 9,
             name: 'Кабели и многожильные подвесные',
             image1: '',
             image2: '',
@@ -191,7 +191,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:10,
+            id: 10,
             name: 'Кабели, провода, шнуры микрофонные',
             image1: '',
             image2: '',
@@ -200,7 +200,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:11,
+            id: 11,
             name: 'Провода автотракторные',
             image1: '',
             image2: '',
@@ -209,7 +209,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:12,
+            id: 12,
             name: 'Провода бортовые облученные',
             image1: '',
             image2: '',
@@ -218,7 +218,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:13,
+            id: 13,
             name: 'Провода для промышленных взрывных работ',
             image1: '',
             image2: '',
@@ -229,7 +229,7 @@ export default function ProductPage() {
             ]
         },
         {
-            id:14,
+            id: 14,
             name: 'Провода для щёток электрических машин, провода для платы',
             image1: '',
             image2: '',
@@ -238,7 +238,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:15,
+            id: 15,
             name: 'Провода контактные для экранизирующих элементов',
             image1: '',
             image2: '',
@@ -247,7 +247,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:16,
+            id: 16,
             name: 'Провода кроссовые станционные с изоляцией из ПВХ пластика',
             image1: '',
             image2: '',
@@ -256,7 +256,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:17,
+            id: 17,
             name: 'Провода обмоточные для погруженных электродвигателей',
             image1: '',
             image2: '',
@@ -265,7 +265,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:18,
+            id: 18,
             name: 'Провода трансляционные с пластмассовой изоляцией',
             image1: '',
             image2: '',
@@ -274,7 +274,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:19,
+            id: 19,
             name: 'Провода установочные для водопогружных электродвигателей',
             image1: '',
             image2: '',
@@ -283,7 +283,7 @@ export default function ProductPage() {
             menu: []
         },
         {
-            id:20,
+            id: 20,
             name: 'Радиочастотные кабели',
             image1: '',
             image2: '',
@@ -349,8 +349,10 @@ export default function ProductPage() {
                                         <Col>
                                             <Link className='custom-link' to='/#'>
                                                 <Card className='product'>
-                                                    <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
-                                                    <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
+                                                    {/* <div className='image-box'> */}
+                                                        <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
+                                                        <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />
+                                                    {/* </div> */}
                                                     {/* <Card.Img className='cardImg' variant="top" src={data.image} /> */}
                                                     <Card.Body className='product-carousel-card-body'>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
