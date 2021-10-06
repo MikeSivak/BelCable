@@ -21,7 +21,7 @@
 }
 
 .product-carousel .carousel-item .row{
-    padding: 0em 0em 6em 0em;
+    /* padding: 0em 0em 6em 0em; */
     width: 83%;
     margin: 0 auto;
 }
@@ -77,7 +77,7 @@
 }
 
 .round-image{
-  padding: 1em;
+  padding: 0em;
 }
 
 .product-carousel-card:hover .product-carousel-round{
@@ -103,6 +103,8 @@
 
 .product-carousel-card{
   width: 83%;
+  /* width:324px;
+  height: 501px; */
   margin: 0 auto;
 }
 
