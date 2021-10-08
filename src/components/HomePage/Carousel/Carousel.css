@@ -204,21 +204,6 @@
 }
 }
 
-/* @media screen and (max-width:727px) {
-  .custom-carousel-container p {
-    font-family: 'Lato-800-normal';
-    line-height: 34.03px;
-    font-size: 24px;
-}
-.custom-carousel-container h5{
-  width: 100%;
-}
-.custom-carousel-container .frontPic, .custom-carousel-container .frontPic-mobile{
-  height:358.38px;
-  width:976px;
-}
-} */
-
 @media screen and (max-width:454px) {
   .custom-carousel-container .carousel-caption{
     width: 100%;
