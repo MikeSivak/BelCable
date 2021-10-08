@@ -73,8 +73,8 @@ export default function CustomCarousel() {
                         <img className="frontPic-mobile" src="mc6.jpeg" alt="" />
                         <Carousel.Caption>
                             <div>
-                                <p style={{ maxWidth: '80%' }}>КАБЕЛИ И ПРОВОДА ДЛЯ СИГНАЛИЗАЦИИ И БЛОКИРОВКИ</p>
-                                <h5 style={{ maxWidth: '90%' }}>
+                                <p style={{ maxWidth: '100%' }}>КАБЕЛИ И ПРОВОДА ДЛЯ СИГНАЛИЗАЦИИ И БЛОКИРОВКИ</p>
+                                <h5 style={{ maxWidth: '98%' }}>
                                     Для монтажа систем сигнализации и эксплуатации в условиях стационарной и нестационарной прокладки
                                 </h5>
                                 <Button className='photoButton' variant="danger">Перейти</Button>

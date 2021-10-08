@@ -1,9 +1,9 @@
 import './ProductPage.css'
 import { Card, Col, Row, Dropdown, Tabs, Tab, Breadcrumb, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function ProductPage() {
-
     const industry = [
         {
             id: 1,
