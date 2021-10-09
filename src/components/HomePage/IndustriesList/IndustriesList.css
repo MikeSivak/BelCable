@@ -88,25 +88,31 @@
         height: 120px;
         float: left;
     }
-    .card-text{
-        /* display: none; */
-    }
     .industry-list-container{
-        width:98%;
+        width:96%;
     }
     .industry-list-col.col div.row{
-        --bs-gutter-x:none;
-        --bs-gutter-y:none;
+        /* --bs-gutter-x:none;
+        --bs-gutter-y:none; */
     }
 }
 
 @media screen and (max-width:444px) {
     .industry-product-card-circle{
-        height: 100px;
+        height: 90px;
         float: left;
     }
     .card-text{
         display: none;
+    }
+    .industry-product-card{
+        height: 110px;
+    }
+    .card-body{
+        /* margin-top: 20px; */
+    }
+    .product-name{
+        font-size: 14px;
     }
 }
 
