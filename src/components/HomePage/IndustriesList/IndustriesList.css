@@ -70,6 +70,12 @@
     .card-body{
         margin: auto;
     }
+    .industry-label{
+        font-size: 28px;
+    }
+    .industry-product-card{
+        margin-top: 10px;
+    }
 }
 
 
@@ -80,6 +86,9 @@
     }
     .industry-product-card.card .row.row-cols-md-2{
         display: block;
+    }
+    .card-body{
+        padding: 2em 1em;
     }
 }
 
@@ -92,8 +101,8 @@
         width:96%;
     }
     .industry-list-col.col div.row{
-        /* --bs-gutter-x:none;
-        --bs-gutter-y:none; */
+        /* --bs-gutter-x:none   ; */
+        --bs-gutter-y:none;
     }
 }
 
@@ -108,11 +117,14 @@
     .industry-product-card{
         height: 110px;
     }
-    .card-body{
-        /* margin-top: 20px; */
-    }
+    /* .card-body{
+        margin-top: 20px;
+    } */
     .product-name{
         font-size: 14px;
+    }
+    .industry-label{
+        font-size: 24px;
     }
 }
 
