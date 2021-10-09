@@ -295,6 +295,7 @@ export default function ProductPage() {
 
     return (
         <>
+      {/* style={{backgroundImage:'url("backCab.png")', backgroundPosition:'rigth'}} */}            
             <div className='product-page-container'>
                 <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>

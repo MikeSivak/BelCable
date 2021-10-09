@@ -148,7 +148,7 @@ export default function IndustriesList() {
                     </Col>
                 </Row> */}
                 <Row md={2} className="g-2 industry-list-row">
-                    <Col>
+                    <Col className='industry-list-col'>
                         <Row>
                             <Link className='custom-link' to='/product'>
                                 <Card className='industry-product-card'>
@@ -205,7 +205,7 @@ export default function IndustriesList() {
                             </Card>
                         </Link></Row>
                     </Col>
-                    <Col>
+                    <Col className='industry-list-col'>
                         <Row>
                             <Link className='custom-link' to='/product'>
                                 <Card className='industry-product-card'>
@@ -228,13 +228,13 @@ export default function IndustriesList() {
                         <Row>
                             <Link className='custom-link' to='/product'>
                                 <Card className='industry-product-card'>
-                                    <Row style={{ width: '100%' }}>
+                                    <Row style={{ width: '100%' }} md={2}>
                                         <Col md={3}>
-                                            <Image className='industry-product-card-circle' src='ind5.png' alt='img' />
+                                        <Image className='industry-product-card-circle' src='ind5.png' alt='img' />
                                         </Col>
-                                        <Col className='product-card-body' md={8}>
+                                        <Col className='product-card-body' md={9}>
                                             <Card.Body>
-                                                <Card.Title><span className='product-name'>Транспортная инраструктура</span></Card.Title>
+                                            <Card.Title><span className='product-name'>Транспортная инраструктура</span></Card.Title>
                                                 <Card.Text>
                                                     <span className='card-text'>Для внутренних и наружных соединений подвижного состава рельсового транспорта и троллейбусов</span>
                                                 </Card.Text>

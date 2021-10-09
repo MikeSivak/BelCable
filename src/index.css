@@ -9,6 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    /* background-image: url('backCab.png');
+    background-position: right;
+    background-repeat: no-repeat; */
 }
 
 code {
