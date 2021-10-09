@@ -23,8 +23,9 @@
   
 .industry-product-card-circle{
       position: relative;
-      width: 100%;
-      padding: 3em 1.5em 1em 1.5em;
+      /* width: 100%; */
+      height: 170px;
+      /* padding: 1em 0em; */
   }
 
 .industry-product-card-img-1{
@@ -69,6 +70,8 @@
       align-items: center;
       text-align: center;
       border: none;
+      height: 177px;
+      width: 100%;
   }
 
   .industry-product-card:hover{
@@ -167,4 +170,10 @@
     .industry-list-container .card-text{
         font-size: 14px;
     }
+}
+
+/*------------------------- changed design ---------------------------*/
+
+.product-card-body{
+    margin:auto;
 }
