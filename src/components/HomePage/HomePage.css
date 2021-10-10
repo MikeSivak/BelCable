@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+.HomePage{
+    overflow-x: hidden;
+}
+
 .trust-carousel{
     margin: 0 auto;
 }

@@ -2,7 +2,8 @@
   width: 83%;
   text-align: center;
   margin: 80px auto 0 auto;
-  display: none;
+  /* display: none; */
+  overflow-x: hidden;
 }
 
 .product-carousel .carousel-indicators{
@@ -91,6 +92,10 @@
   color: #E74137;
 }
 
+.product-carousel-card-body .card-title{
+  text-transform: uppercase;
+}
+
 .product-carousel-card:hover .product-carousel-round-2{
   display:inline-block;
 }
@@ -109,19 +114,15 @@
   padding: 1rem 1em;
 }
 
+@media screen and (max-width:1280px) {
+  .round-image{
+    width: 140px;
+  }
+}
+
 @media screen and (max-width:1200px) {
-  .product-carousel-col{
-    flex: 0;
-  }
-  .product-carousel-container{
-    width: 100%;
-    text-align: center;
-  }
   .product-carousel-row{
     justify-content:center;
-  }
-  .product-carousel-container .card-text{
-    display: none;
   }
   .product-carousel-col{
     width: 50%;
@@ -130,7 +131,7 @@
 
 @media screen and (max-width:602px) {
   .product-carousel-container .card-title{
-    font-size: 16px;
+    font-size: 14px;
   }
   .catalogButton .cB{
     width: 278px;
@@ -138,19 +139,32 @@
     font-size: 16px;
     margin-top: 80px;
   }
+  .round-image{
+    width: 120px;
+  }
+  .product-carousel-container .card-text{
+    display: none;
+  }
 }
 
-@media screen and (max-width:354px) {
+@media screen and (max-width:421px) {
   .product-carousel-row{
     margin-left: 0;
   }
+  .product-carousel-container{
+    width: 100%;
+    text-align: center;
+  }
   .product-carousel-container .card-title{
-    font-size: 14px;
+    font-size: 12px;
   }
   .catalogButton .cB{
     width: 258px;
     height: 55px;
     font-size: 12px;
     margin-top: 60px;
+  }
+  .round-image{
+    width: 110px;
   }
 }

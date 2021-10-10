@@ -39,6 +39,10 @@
     border-bottom: 1px solid #E74137;
 }
 
+.industry-list-col.col div.row{
+    margin-top:20px;
+}
+
 
 .product-name{
     font-family: 'Raleway-600-normal';
@@ -108,7 +112,7 @@
 
 @media screen and (max-width:444px) {
     .industry-product-card-circle{
-        height: 90px;
+        height: 100px;
         float: left;
     }
     .card-text{
