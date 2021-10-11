@@ -168,15 +168,6 @@
   display:inline-block;
 }
 
-.product-card-image-industry{
-    position: relative;
-    /* width: 100%; */
-}
-
-.product-card-image-industry-2{
-    position:absolute;
-}
-
 .product{
     align-items: center;
 }
@@ -197,3 +188,104 @@
     text-align: center;
     color: #343753;
 }
+
+.products .industry-product-card .card-body{
+    text-align: left;
+}
+
+.products .custom-link{
+    padding-right: 0;
+}
+
+@media screen and (max-width:1600px) {
+    .products .industry-product-card-circle{
+        height: 110px;
+    }
+    .products .card-text{
+        font-size: 16px;
+        line-height: 15px;
+    }
+    .products .product-name{
+        font-size: 18px;
+    }
+    .products .industry-product-card{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width:1124px) {
+    .products .industry-list-row{
+        display: block;
+    }
+
+    .products .industry-list-col{
+        width: 83%;
+    }
+
+    .products .industry-product-card.card .row.row-cols-md-2{
+        margin: auto;
+    }
+    .products .card-body{
+        margin: auto;
+    }
+    .products .industry-label{
+        font-size: 28px;
+    }
+    .products .industry-product-card{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .products .industry-list-col{
+        width: 100% ;
+        display: block;
+    }
+    .products .industry-product-card.card .row.row-cols-md-2{
+        display: block;
+    }
+    .products .card-body{
+        padding: 2em 1em;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .products .industry-product-card-circle{
+        height: 120px;
+        float: left;
+    }
+    .products .industry-list-container{
+        width:96%;
+    }
+    .products .industry-list-col.col div.row{
+        /* --bs-gutter-x:none   ; */
+        --bs-gutter-y:none;
+    }
+    .products .custom-link{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:444px) {
+    .products .industry-product-card-circle{
+        height: 100px;
+        float: left;
+    }
+    .products .card-text{
+        display: none;
+    }
+    .products .industry-product-card{
+        height: 110px;
+    }
+    /* .card-body{
+        margin-top: 20px;
+    } */
+    .products .product-name{
+        font-size: 14px;
+    }
+    .products .industry-label{
+        font-size: 24px;
+    }
+}
+

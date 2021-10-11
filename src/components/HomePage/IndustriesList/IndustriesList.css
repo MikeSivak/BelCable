@@ -85,7 +85,7 @@
 
 @media screen and (max-width:767px) {
     .industry-list-col{
-        width: 100%;
+        width: 100% ;
         display: block;
     }
     .industry-product-card.card .row.row-cols-md-2{

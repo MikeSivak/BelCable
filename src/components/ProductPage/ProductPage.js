@@ -295,7 +295,7 @@ export default function ProductPage() {
 
     return (
         <>
-      {/* style={{backgroundImage:'url("backCab.png")', backgroundPosition:'rigth'}} */}            
+            {/* style={{backgroundImage:'url("backCab.png")', backgroundPosition:'rigth'}} */}
             <div className='product-page-container'>
                 <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
@@ -309,7 +309,7 @@ export default function ProductPage() {
                                     <>
                                         <Dropdown >
                                             <Dropdown.Toggle className='drop-buttons mt-1' id="dropdown-basic">
-                                                <Link to='/#' className='product-type-link'>{data.name}</Link> <img src='vectorDown.png' alt='image' />
+                                                <Link to='/#' className='product-type-link'>{data.name}</Link> 
                                             </Dropdown.Toggle>
                                             {/* <Dropdown.Menu className='drop-menu'>
                                                 {data.menu.map((item) => (
@@ -345,14 +345,13 @@ export default function ProductPage() {
                         <div className='productsLabel'>ПРОДУКЦИЯ</div>
                         <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example" className='cardsBlock'>
                             <Tab eventKey="byIndustry" title="По отраслям" className='cardsTab'>
-                                <Row xs={1} md={3} className="g-2">
+                                {/* <Row xs={1} md={3} className="g-2">
                                     {industry.map((data) => (
                                         <Col>
                                             <Link className='custom-link' to='/#'>
                                                 <Card className='product'>
                                                         <Image className='product-card-image-industry round-image' src='circle.png' alt='img' />
                                                         <Image className='product-card-image-industry-2 round-image' src={data.image} alt='img' />                                                              
-                                                    {/* <Card.Img className='cardImg' variant="top" src={data.image} /> */}
                                                     <Card.Body className='product-carousel-card-body'>
                                                         <Card.Title><span className='product-name'>{data.name}</span></Card.Title>
                                                         <Card.Text>
@@ -364,6 +363,124 @@ export default function ProductPage() {
                                         </Col>
                                     ))
                                     }
+                                </Row> */}
+                                <Row md={2} className="g-2 industry-list-row">
+                                    <Col className='industry-list-col'>
+                                        <Row>
+                                            <Link className='custom-link' to='/product'>
+                                                <Card className='industry-product-card'>
+                                                    <Row style={{ width: '100%' }} md={2}>
+                                                        <Col md={3}>
+                                                            <Image className='industry-product-card-circle' src='ind11.png' alt='img' />
+                                                        </Col>
+                                                        <Col className='product-card-body' md={9}>
+                                                            <Card.Body>
+                                                                <Card.Title><span className='product-name'>Энергетика</span></Card.Title>
+                                                                <Card.Text>
+                                                                    <span className='card-text'>Продукция для строительства и реконструкции кабельных линий</span>
+                                                                </Card.Text>
+                                                            </Card.Body>
+                                                        </Col>
+                                                    </Row>
+                                                </Card>
+                                            </Link>
+                                        </Row>
+                                        <Row>
+                                            <Link className='custom-link' to='/product'>
+                                                <Card className='industry-product-card'>
+                                                    <Row style={{ width: '100%' }} md={2}>
+                                                        <Col md={3}>
+                                                            <Image className='industry-product-card-circle' src='ind22.png' alt='img' />
+                                                        </Col>
+                                                        <Col className='product-card-body' md={9}>
+                                                            <Card.Body>
+                                                                <Card.Title><span className='product-name'>Строительство</span></Card.Title>
+                                                                <Card.Text>
+                                                                    <span className='card-text'>Продукция для энергоснабжения объектов гражданского</span>
+                                                                </Card.Text>
+                                                            </Card.Body>
+                                                        </Col>
+                                                    </Row>
+                                                </Card>
+                                            </Link>
+                                        </Row>
+                                        <Row><Link className='custom-link' to='/product'>
+                                            <Card className='industry-product-card'>
+                                                <Row style={{ width: '100%' }} md={2}>
+                                                    <Col md={3}>
+                                                        <Image className='industry-product-card-circle' src='ind33.png' alt='img' />
+                                                    </Col>
+                                                    <Col className='product-card-body' md={9}>
+                                                        <Card.Body>
+                                                            <Card.Title><span className='product-name'>Коммуникации</span></Card.Title>
+                                                            <Card.Text>
+                                                                <span className='card-text'>Продукция общепромышленного назначения</span>
+                                                            </Card.Text>
+                                                        </Card.Body>
+                                                    </Col>
+                                                </Row>
+                                            </Card>
+                                        </Link></Row>
+                                    </Col>
+                                    <Col className='industry-list-col'>
+                                        <Row>
+                                            <Link className='custom-link' to='/product'>
+                                                <Card className='industry-product-card'>
+                                                    <Row style={{ width: '100%' }} md={2}>
+                                                        <Col md={3}>
+                                                            <Image className='industry-product-card-circle' src='ind44.png' alt='img' />
+                                                        </Col>
+                                                        <Col className='product-card-body' md={9}>
+                                                            <Card.Body>
+                                                                <Card.Title><span className='product-name'>Нефтегазовая промышленность</span></Card.Title>
+                                                                <Card.Text>
+                                                                    <span className='card-text'>Кабели для питания насосов в нефтескважинах</span>
+                                                                </Card.Text>
+                                                            </Card.Body>
+                                                        </Col>
+                                                    </Row>
+                                                </Card>
+                                            </Link>
+                                        </Row>
+                                        <Row>
+                                            <Link className='custom-link' to='/product'>
+                                                <Card className='industry-product-card'>
+                                                    <Row style={{ width: '100%' }} md={2}>
+                                                        <Col md={3}>
+                                                            <Image className='industry-product-card-circle' src='ind55.png' alt='img' />
+                                                        </Col>
+                                                        <Col className='product-card-body' md={9}>
+                                                            <Card.Body>
+                                                                <Card.Title><span className='product-name'>Транспортная инраструктура</span></Card.Title>
+                                                                <Card.Text>
+                                                                    <span className='card-text'>Для внутренних и наружных соединений подвижного состава рельсового транспорта и троллейбусов</span>
+                                                                </Card.Text>
+                                                            </Card.Body>
+                                                        </Col>
+                                                    </Row>
+                                                </Card>
+                                            </Link>
+                                        </Row>
+                                        <Row>
+                                            <Link className='custom-link' to='/product'>
+                                                <Card className='industry-product-card'>
+                                                    <Row style={{ width: '100%' }} md={2}>
+                                                        <Col md={3}>
+                                                            <Image className='industry-product-card-circle' src='ind66.png' alt='img' />
+                                                        </Col>
+                                                        <Col className='product-card-body' md={9}>
+                                                            <Card.Body>
+                                                                <Card.Title><span className='product-name'>Машиностроение</span></Card.Title>
+                                                                <Card.Text>
+                                                                    <span className='card-text'>Продукция для энергоснабжения инфраструктуры предприятия</span>
+                                                                </Card.Text>
+                                                            </Card.Body>
+                                                        </Col>
+                                                    </Row>
+                                                </Card>
+                                            </Link>
+                                        </Row>
+                                    </Col>
                                 </Row>
                             </Tab>
                             <Tab eventKey="byPurpose" title="По назначению" className='cardsTab'>
