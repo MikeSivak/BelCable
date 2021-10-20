@@ -35,13 +35,13 @@ export default function Production() {
                     </Row>
                     <Row className='production-page-row'>
                         <Row>
-                            <Image className='production-page-images' src='prod3.png' alt='3.png' />
+                            <Image className='production-page-images' src='prod3.jpeg' alt='3.png' />
                         </Row>
                     </Row>
                     <Row className='production-page-row'>
                         <Col>
                             <Row>
-                                <Image className='production-page-images' src='prod4.png' alt='5.png' />
+                                <Image className='production-page-images' src='prod4.jpeg' alt='5.png' />
                             </Row>
                         </Col>
                         <Col>
