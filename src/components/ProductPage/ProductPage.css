@@ -193,6 +193,10 @@
     text-align: left;
 }
 
+.products .industry-product-card{
+    border: 1px solid lightgrey;
+}
+
 .products .custom-link{
     padding-right: 0;
 }

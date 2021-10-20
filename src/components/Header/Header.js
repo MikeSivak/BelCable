@@ -134,7 +134,21 @@ export default function Header() {
                                 </Dropdown>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/production">ПРОИЗВОДСТВО</Nav.Link>
+                                <Dropdown>
+                                    <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
+                                        ПРОИЗВОДСТВО
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu style={{ background: '#EBEEF2' }}>
+                                        <Dropdown.Item href="/qualitypolicy">
+                                            Политика качества
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/production">
+                                            Испытательный центр
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="/products">ПРОДУКЦИЯ</Nav.Link>
@@ -142,8 +156,29 @@ export default function Header() {
                             <Nav.Item>
                                 <Nav.Link href="#">ЗАКАЗЧИКАМ</Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                                 <Nav.Link href="#">ПРОЕКТНЫМ ИНСТИТУТАМ</Nav.Link>
+                            </Nav.Item> */}
+                            <Nav.Item>
+                                <Dropdown>
+                                    <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
+                                        ПРОЕКТНЫМ ИНСТИТУТАМ
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu style={{ background: '#EBEEF2' }}>
+                                        <Dropdown.Item href="/#">
+                                            Электронный каталог
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/cooperation">
+                                            Предложение к сотрудничеству
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/calc">
+                                            Калькулятор кабеля
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="/projects">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</Nav.Link>
