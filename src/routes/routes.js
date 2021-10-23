@@ -19,6 +19,7 @@ import Contacts from "../components/Contacts/Contacts";
 import Awards from "../components/Awards/Awards";
 import IndustryPurpose from "../components/IndustryPurpose/IndustryPurpose";
 import Wires from "../components/Wires/Wires";
+import Admin from "../components/Admin/Admin";
 
 const routes = [
     {
@@ -147,6 +148,12 @@ const routes = [
         name: 'Wires',
         component: Wires,
         id: 20,
+    },
+    {
+        path: '/admin',
+        name: 'Admin',
+        component: Admin,
+        id: 21,
     }
 ]
 
