@@ -6,16 +6,33 @@
 
 .action-label{
     font-family: 'Lato-900-normal';
-    font-size: 28px;
+    font-size: 24px;
     line-height: 43px;
     text-align: center;
     text-transform: uppercase;
     color: #E74137;
     padding: 0 0 2em 0;
-    margin: 0 auto;
 }
 
-.add-product-section{
+.add-product-section, .add-category-section, .add-industry-section{
     width: 50%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.add-product-section input, .add-category-section input, .add-industry-section input{
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
+}
+
+.add-category-section, .add-industry-section{
+    margin-top: 100px;
+}
+
+.add-product-form{
+    margin-top: 20px;
+    padding: 1em;
+    border: 1px solid rgb(194, 194, 194);
+    box-shadow: 0px 0px 10px rgb(194, 194, 194);
 }
