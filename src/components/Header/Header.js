@@ -1,72 +1,72 @@
 import Styles from './Header.css';
-import React from 'react';
+import {useState} from 'react';
 import { Nav, Navbar, Container, Dropdown, Modal, Button, Form, Tabs, Tab } from 'react-bootstrap';
 
+function MyVerticallyCenteredModal(props) {
+    return (
+        <Modal style={{ zIndex: '100000' }}
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header className='authorize-close-button' closeButton></Modal.Header>
+            <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" variant='pills' className="mb-3 authorize-tabs">
+                <Tab eventKey="home" title="Авторизация">
+                    <Modal.Body className='authorize-window-body'>
+                        <Form>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="email" placeholder="E-mail" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                <Form.Control size='lg' type="password" placeholder="Пароль" />
+                            </Form.Group>
+                            <div className='authorize-button-container'>
+                                <Button className='authorize-button' variant="primary" type="submit">
+                                    Авторизация
+                                </Button>
+                            </div>
+                        </Form>
+                    </Modal.Body>
+
+
+                </Tab>
+                <Tab eventKey="profile" title="Регистрация">
+                    <Modal.Body className='authorize-window-body'>
+                        <Form>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="text" placeholder="Имя" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="text" placeholder="Наименование компания" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="number" placeholder="Телефон" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="email" placeholder="E-mail" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="password" placeholder="Пароль" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control size='lg' type="password" placeholder="Повторите пароль" />
+                            </Form.Group>
+                            <div className='authorize-button-container'>
+                                <Button className='authorize-button' variant="primary" type="submit">
+                                    Регистрация
+                                </Button>
+                            </div>
+                        </Form>
+                    </Modal.Body>
+                </Tab>
+            </Tabs>
+        </Modal>
+    );
+}
+
 export default function Header() {
-    const [modalShow, setModalShow] = React.useState(false);
-
-    function MyVerticallyCenteredModal(props) {
-        return (
-            <Modal style={{ zIndex: '100000' }}
-                {...props}
-                size="lg"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-            >
-                <Modal.Header className='authorize-close-button' closeButton></Modal.Header>
-                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" variant='pills' className="mb-3 authorize-tabs">
-                    <Tab eventKey="home" title="Авторизация">
-                        <Modal.Body className='authorize-window-body'>
-                            <Form>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="email" placeholder="E-mail" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                    <Form.Control size='lg' type="password" placeholder="Пароль" />
-                                </Form.Group>
-                                <div className='authorize-button-container'>
-                                    <Button className='authorize-button' variant="primary" type="submit">
-                                        Авторизация
-                                    </Button>
-                                </div>
-                            </Form>
-                        </Modal.Body>
-
-
-                    </Tab>
-                    <Tab eventKey="profile" title="Регистрация">
-                        <Modal.Body className='authorize-window-body'>
-                            <Form>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="text" placeholder="Имя" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="text" placeholder="Наименование компания" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="number" placeholder="Телефон" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="email" placeholder="E-mail" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="password" placeholder="Пароль" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control size='lg' type="password" placeholder="Повторите пароль" />
-                                </Form.Group>
-                                <div className='authorize-button-container'>
-                                    <Button className='authorize-button' variant="primary" type="submit">
-                                        Регистрация
-                                    </Button>
-                                </div>
-                            </Form>
-                        </Modal.Body>
-                    </Tab>
-                </Tabs>
-            </Modal>
-        );
-    }
+    const [modalShow, setModalShow] = useState(false);
 
     return (
 

@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
-export default function SwitchRouter({ routes }) {
-    return (
-        <Router>
-            <Switch>
-                {routes.map(({ path, component }, key) =>
-                    <Route exact path={path} key={key} render={component} />
-                )}
-            </Switch>
-        </Router>
-    )
-}
+const SwitchRouter = ({ routes }) => (
+    <Router>
+        <Switch>
+            {routes.map(({ id, ...rest }) =>
+                <Route key={id} {...rest} />
+            )}
+        </Switch>
+    </Router>
+);
+
+export default SwitchRouter;

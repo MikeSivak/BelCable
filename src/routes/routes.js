@@ -154,7 +154,7 @@ const routes = [
         name: 'Admin',
         component: Admin,
         id: 21,
-    }
+    },
 ]
 
 export default routes;

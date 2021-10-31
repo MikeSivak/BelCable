@@ -1,7 +1,75 @@
 import './Admin.css';
-import { Form, Button, Row, Col, InputGroup, FormControl, Tab, Tabs } from 'react-bootstrap';
+import react, { useState } from 'react';
+import { Form, Button, Row, Col, InputGroup, FormControl, Modal, Tab, Tabs, CloseButton, Badge } from 'react-bootstrap';
+
+let propsList = [];
+let colors = [
+    'rgb(236, 199, 204)',
+    'rgb(199, 216, 236)',
+    'rgb(199, 236, 204)',
+    'rgb(238, 232, 169)',
+    'rgb(195, 169, 238)',
+    'rgb(131, 224, 224)'
+];
+
+function ModalAddProps(props) {
+    return (
+        <Modal style={{ zIndex: '100000' }}
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header id='closeBut' className='authorize-close-button' closeButton></Modal.Header>
+            <Modal.Body className='authorize-window-body'>
+                <Form>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control id='productProp' size='lg' type="text" placeholder="Введите характеристику товара" />
+                    </Form.Group>
+                    <div className='authorize-button-container'>
+                        <Button className='authorize-button' variant="primary"
+                            onClick={
+                                () => {
+                                    let value = document.getElementById('productProp').value;
+                                    let propObj = {
+                                        id: propsList.length,
+                                        prop: value,
+                                        backgroundColor: colors[Math.floor(Math.random() * colors.length)]
+                                    }
+                                    propsList.push(propObj);
+                                }
+                            }
+                            type="button"
+                        >
+                            Ок
+                        </Button>
+                    </div>
+                </Form>
+            </Modal.Body>
+        </Modal>
+    );
+}
+
+function deleteProp(id) {
+    console.log('item id: ' + id);
+
+    propsList.map((item) => {
+        if (item.id == id) {
+            propsList.splice(propsList.indexOf(item), 1);
+            document.getElementById(id).remove();
+        }
+    })
+    console.log('LIST:');
+    propsList.map((item) => {
+        console.log(`id: ${item.id} | property: ${item.prop}`);
+    })
+
+    return propsList;
+}
 
 export default function Admin() {
+    const [modalProps, setModalProps] = useState(false);
+
     return (
         <>
             <div className='admin-page-container'>
@@ -39,24 +107,46 @@ export default function Admin() {
                                             <br></br>
                                             <h4>Нажмите на кнопку для добавления новой характеристики товара</h4>
                                             <br></br>
-                                            <Button style={{ borderRadius: '100%', height: '50px', width: '50px' }}>
-
+                                            <Button className='add-properties-button' onClick={() => setModalProps(true)}>
+                                                +
                                             </Button>
+                                            <Row sm={3} className='items-list-container' style={{ width: '100%' }}>
+                                                {propsList.map((item) => (
+                                                    <Col>
+                                                        <div id={item.id} style={{ backgroundColor: item.backgroundColor }} className='prop-item'>
+                                                            <span>{item.prop}</span><CloseButton onClick={()=>deleteProp(item.id)} className='prop-item-close' />
+                                                        </div>
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                            <ModalAddProps
+                                                show={modalProps}
+                                                onHide={() => setModalProps(false)}
+                                            />
                                         </div>
+                                        <br></br>
+                                        <Form.Control type="text" placeholder="Строительная длина кабеля" />
+                                        <br></br>
+                                        <Form.Control type="text" placeholder="Диапазон рабочих температур" />
+                                        <br></br>
+                                        <Form.Control type="text" placeholder="Срок службы кабаля" />
+                                        <br></br>
+                                        <Form.Control type="text" placeholder="Гарантийный срок эксплуатации" />
+
                                     </Form.Group>
-                                    <Button style={{marginTop:'20px', width:'50%'}} variant="primary" type="submit">
+                                    <Button style={{ marginTop: '20px', width: '300px', height: '50px' }} variant="primary" type="submit">
                                         Добавить
                                     </Button>
                                     <br></br>
                                     <br></br>
                                 </Form>
                             </div>
-                            
+
                             {/* add category only */}
                             <div className='add-category-section'>
-                                <Form>
+                                <span className='action-label'>Добавление категории</span>
+                                <Form className='add-category-form'>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Добавить категорию</Form.Label>
                                         <Form.Control type="text" placeholder="Введите имя категории" />
                                     </Form.Group>
                                     <Button variant="primary" type="submit">
@@ -66,9 +156,9 @@ export default function Admin() {
                             </div>
                             {/* add industry only */}
                             <div className='add-industry-section'>
-                                <Form>
+                                <span className='action-label'>Добавление отрасли</span>
+                                <Form className='add-industry-form'>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Добавить отрасль</Form.Label>
                                         <Form.Control type="text" placeholder="Введите имя отрасли" />
                                     </Form.Group>
                                     <Button variant="primary" type="submit">
