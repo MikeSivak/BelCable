@@ -1,5 +1,5 @@
 import './Admin.css';
-import react, { useState } from 'react';
+import react, { useState, useEffect } from 'react';
 import { Form, Button, Row, Col, InputGroup, FormControl, Modal, Tab, Tabs, CloseButton, Badge } from 'react-bootstrap';
 
 let propsList = [];
@@ -12,63 +12,92 @@ let colors = [
     'rgb(131, 224, 224)'
 ];
 
-function ModalAddProps(props) {
-    return (
-        <Modal style={{ zIndex: '100000' }}
-            {...props}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-        >
-            <Modal.Header id='closeBut' className='authorize-close-button' closeButton></Modal.Header>
-            <Modal.Body className='authorize-window-body'>
-                <Form>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control id='productProp' size='lg' type="text" placeholder="Введите характеристику товара" />
-                    </Form.Group>
-                    <div className='authorize-button-container'>
-                        <Button className='authorize-button' variant="primary"
-                            onClick={
-                                () => {
-                                    let value = document.getElementById('productProp').value;
-                                    let propObj = {
-                                        id: propsList.length,
-                                        prop: value,
-                                        backgroundColor: colors[Math.floor(Math.random() * colors.length)]
-                                    }
-                                    propsList.push(propObj);
-                                }
-                            }
-                            type="button"
-                        >
-                            Ок
-                        </Button>
-                    </div>
-                </Form>
-            </Modal.Body>
-        </Modal>
-    );
-}
-
-function deleteProp(id) {
-    console.log('item id: ' + id);
-
-    propsList.map((item) => {
-        if (item.id == id) {
-            propsList.splice(propsList.indexOf(item), 1);
-            document.getElementById(id).remove();
-        }
-    })
-    console.log('LIST:');
-    propsList.map((item) => {
-        console.log(`id: ${item.id} | property: ${item.prop}`);
-    })
-
-    return propsList;
-}
-
 export default function Admin() {
     const [modalProps, setModalProps] = useState(false);
+    const [properties, setProperties] = useState(propsList);
+    const [update, setUpdate] = useState(false);
+
+    useEffect(() => {
+        console.log('Updated property list:');
+        properties.map((item) => {
+            console.log(`id: ${item.id} | property: ${item.prop}`);
+        })
+    })
+
+    function deleteProp(id) {
+        propsList.map((item) => {
+            if (item.id == id) {
+                propsList.splice(propsList.indexOf(item), 1);
+            }
+        })
+    }
+
+    function ItemsList() {
+        return (
+            <Row sm={3} className='items-list-container' style={{ width: '100%' }}>
+                {properties.map((item) => (
+                    <Col>
+                        <div id={item.id} style={{ backgroundColor: item.backgroundColor }} className='prop-item'>
+                            <span>{item.prop}</span><CloseButton
+                                onClick={
+                                    () => {
+                                        deleteProp(item.id);
+                                        if(!update){
+                                            setUpdate(true)
+                                        }
+                                        else{
+                                            setUpdate(false)
+                                        }
+                                    }
+                                }
+                                className='prop-item-close' />
+                        </div>
+                    </Col>
+                ))}
+                <dib>{update}</dib>
+            </Row>
+        )
+    }
+
+    function ModalAddProps(props) {
+        return (
+            <Modal style={{ zIndex: '100000' }}
+                {...props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+            >
+                <Modal.Header id='closeBut' className='authorize-close-button' closeButton></Modal.Header>
+                <Modal.Body className='authorize-window-body'>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Control id='productProp' size='lg' type="text" placeholder="Введите характеристику товара" />
+                        </Form.Group>
+                        <div className='authorize-button-container'>
+                            <Button className='authorize-button' variant="primary"
+                                onClick={
+                                    () => {
+                                        let value = document.getElementById('productProp').value;
+                                        let propObj = {
+                                            id: propsList.length,
+                                            prop: value,
+                                            backgroundColor: colors[Math.floor(Math.random() * colors.length)]
+                                        }
+                                        propsList.push(propObj);
+                                        setProperties(propsList);
+                                        setModalProps(false);
+                                    }
+                                }
+                                type="button"
+                            >
+                                Ок
+                            </Button>
+                        </div>
+                    </Form>
+                </Modal.Body>
+            </Modal>
+        );
+    }
 
     return (
         <>
@@ -110,15 +139,7 @@ export default function Admin() {
                                             <Button className='add-properties-button' onClick={() => setModalProps(true)}>
                                                 +
                                             </Button>
-                                            <Row sm={3} className='items-list-container' style={{ width: '100%' }}>
-                                                {propsList.map((item) => (
-                                                    <Col>
-                                                        <div id={item.id} style={{ backgroundColor: item.backgroundColor }} className='prop-item'>
-                                                            <span>{item.prop}</span><CloseButton onClick={()=>deleteProp(item.id)} className='prop-item-close' />
-                                                        </div>
-                                                    </Col>
-                                                ))}
-                                            </Row>
+                                            <ItemsList />
                                             <ModalAddProps
                                                 show={modalProps}
                                                 onHide={() => setModalProps(false)}
