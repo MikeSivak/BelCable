@@ -4,16 +4,6 @@
     padding: 2em;
 }
 
-.action-label{
-    font-family: 'Lato-900-normal';
-    font-size: 24px;
-    line-height: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E74137;
-    padding: 0 0 2em 0;
-}
-
 .add-product-section, .add-category-section, .add-industry-section{
     width: 800px;
     margin: 0 auto;

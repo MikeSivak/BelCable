@@ -10,7 +10,7 @@ export default function Certificates() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Сертификаты</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='certificates-page-label'>
+                <div className='commonLabels'>
                     Сертификаты
                 </div>
                 <div className='certificates-page-row-col'>

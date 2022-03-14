@@ -10,7 +10,7 @@ export default function PurchasePlace() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Где купить</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='place-page-label'>
+                <div className='commonLabels'>
                     Где купить
                 </div>
                 <Row className='place-page-row'>

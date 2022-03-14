@@ -88,7 +88,7 @@ export default function Calculator() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Подбор продукции по характеристикам</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='calculator-label'>
+                <div className='commonLabels'>
                     ПОДБОР ПРОДУКЦИИ ПО ХАРАКТЕРИСТИКАМ
                 </div>
                 <div className='info-container'>

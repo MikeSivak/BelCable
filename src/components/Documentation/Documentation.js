@@ -11,7 +11,7 @@ export default function Documentation() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Нормативная документация</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='documentation-page-label'>
+                <div className='commonLabels'>
                     Нормативная документация
                 </div>
                 <Row className='documentation-page-row'>

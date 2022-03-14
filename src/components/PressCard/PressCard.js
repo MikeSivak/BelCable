@@ -15,11 +15,11 @@ export default function PressCard() {
                 <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
-                    <Breadcrumb.Item href="/presscenter">Пресс-Центр</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/presscenter">Новости</Breadcrumb.Item>
                     <Breadcrumb.Item active>(Динамический контент)</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='press-card-page-label'>
-                    Пресс-центр
+                <div className='commonLabels'>
+                    Новости
                 </div>
                 <Row className='press-card-page-row'>
                     <Col className='press-card-page-col'>

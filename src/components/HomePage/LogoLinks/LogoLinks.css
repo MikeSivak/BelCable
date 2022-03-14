@@ -1,0 +1,18 @@
+.logo-links-container{
+    width: 55%;
+    margin: 0 auto;
+    padding: 6em 0 6em 0;
+    text-align: center;
+}
+
+.logo-links{
+    color: black;
+}
+
+.logo-links:hover img{
+    opacity: 0.6;
+}
+
+.logo-links:hover{
+    color: #E74137
+}

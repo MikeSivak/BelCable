@@ -43,7 +43,7 @@ export default function Reviews() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Отзывы</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='reviews-page-label'>
+                <div className='commonLabels'>
                     Отзывы
                 </div>
                 <div className='reviews-page-info'>

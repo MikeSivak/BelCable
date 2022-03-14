@@ -21,7 +21,7 @@ export default function Clients() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Наши клиенты</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='clients-page-label'>
+                <div className='commonLabels'>
                     Наши клиенты
                 </div>
                 <Row className='clients-page-row'>

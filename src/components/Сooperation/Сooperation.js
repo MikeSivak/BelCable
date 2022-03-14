@@ -10,7 +10,7 @@ export default function Сooperation() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Предложение к сотрудничеству</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='cooperation-page-label'>
+                <div className='commonLabels'>
                     Предложение к сотрудничеству
                 </div>
                 <Row className='cooperation-page-row'>

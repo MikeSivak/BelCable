@@ -33,10 +33,10 @@ export default function PressCenter() {
                 <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
-                    <Breadcrumb.Item active>Пресс-Центр</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Новости</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='press-center-page-label'>
-                    Пресс-центр
+                <div className='commonLabels'>
+                    Новости
                 </div>
                 <Row md={3} className='press-center-page-row'>
                     {pressInfo.map((info) => (

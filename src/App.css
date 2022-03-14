@@ -65,3 +65,13 @@
 .custom-breadcrumb .breadcrumb-item a:hover{
   color: #E74137;
 }
+
+.commonLabels{
+  text-align: center;
+  width: 100%;
+  color: #E74137;
+  font-family: 'Lato-900-normal';
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+}

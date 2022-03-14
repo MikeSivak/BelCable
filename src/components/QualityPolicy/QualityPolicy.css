@@ -4,17 +4,6 @@
     padding: 0 0 6em 0;
 }
 
-.quality-page-label{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E74137;
-    margin-top: 5%;
-}
-
 .quality-page-info{
     margin-top: 5%;
 }
@@ -22,9 +11,8 @@
 .quality-page-text{
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.3em;
-    padding: 4em 0;
 }
 
 .quality-page-text span{
@@ -35,11 +23,11 @@
 }
 
 .quality-page-row{
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .indentation-blocks{
-    padding: 7em 0;
+    padding: 3em 0;
 }
 
 .quality-image-section{
@@ -48,4 +36,9 @@
 
 .quality-page-row{
     justify-content: center;
+}
+
+.quality-page-images{
+    width: 150px;
+    height: 212.15;
 }

@@ -1,6 +1,7 @@
 import Styles from './Header.css';
-import {useState} from 'react';
-import { Nav, Navbar, Container, Dropdown, Modal, Button, Form, Tabs, Tab } from 'react-bootstrap';
+import { useState } from 'react';
+import { Nav, Navbar, Container, Dropdown, Modal, Button, Form, Tabs, Tab, NavLink } from 'react-bootstrap';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -67,6 +68,29 @@ function MyVerticallyCenteredModal(props) {
 
 export default function Header() {
     const [modalShow, setModalShow] = useState(false);
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
+
+    const showDropdown1 = (e) => {
+        setShow1(!show1);
+    }
+    const showDropdown2 = (e) => {
+        setShow2(!show2);
+    }
+    const showDropdown3 = (e) => {
+        setShow3(!show3);
+    }
+    const showDropdown4 = (e) => {
+        setShow4(!show4);
+    }
+    const hideDropdown = e => {
+        setShow1(false);
+        setShow2(false);
+        setShow3(false);
+        setShow4(false);
+    }
 
     return (
 
@@ -74,7 +98,9 @@ export default function Header() {
             <div className="banner">
                 <div className='row'>
                     <div className='col-md logo'>
-                        <img height='37px' width='309px' src='lbl.png' />
+                        <NavLink href='/'>
+                            <img height='37px' width='309px' src='lbl.png' />
+                        </NavLink>
                     </div>
                     <div className='col-md'>
                         Производство кабельной продукции c 1959 года
@@ -85,7 +111,10 @@ export default function Header() {
                     </div>
                     <div className='col-md sectionSales'>
                         <div className='row'>Отдел продаж</div>
-                        <div className='row boldText phones'>800 123 12 12</div>
+                        <div className='row boldText phones'>+375-236-24-45-23</div>
+                        <div className='row'>Email</div>
+                        <div className='row boldText'>zavod@belaruskabel.by</div>
+                        <div className='row boldText'>marketing@belaruskabel.by</div>
                     </div>
                     <div className='col-md'>
                         <Button className='profile-button' variant="link" onClick={() => setModalShow(true)}>
@@ -100,8 +129,8 @@ export default function Header() {
                     <div className='col-md iconsInfo'>
                         <div className='row'>
                             <div className='icons'>
-                                <img height="51px" width="51px" src="gerb1.png" />
-                                <img height="51px" width="51px" src="gerb.png" />
+                                {/* <img height="51px" width="51px" src="gerb1.png" />
+                                <img height="51px" width="51px" src="gerb.png" /> */}
                                 <div className='col-sm-10 boldText'>
                                     Министерство Промышленности Республики Беларусь
                                 </div>
@@ -117,9 +146,46 @@ export default function Header() {
                     <Navbar.Collapse id="navbars">
                         <Nav className='w-100 justify-content-between'>
                             <Nav.Item>
-                                <Dropdown>
+                                <Nav.Link href="/">ГЛАВНАЯ</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="/products">КАТАЛОГ</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Dropdown
+                                    id="production"
+                                    show={show2}
+                                    onMouseEnter={showDropdown2}
+                                    onMouseLeave={hideDropdown}
+                                >
+                                    <Dropdown.Toggle href='/production' bsPrefix='company-button' id="dropdown-basic">
+                                        ПРОИЗВОДСТВО
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu style={{ background: '#EBEEF2' }}>
+                                        <Dropdown.Item href="/qualitypolicy">
+                                            Менеджмент и маркетинг
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/testing">
+                                            Испытательный центр
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/innovative">
+                                            Инновационная продукция
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Dropdown
+                                    id="company"
+                                    show={show1}
+                                    onMouseEnter={showDropdown1}
+                                    onMouseLeave={hideDropdown}
+                                >
                                     <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
-                                        КОМПАНИЯ
+                                        О КОМПАНИИ
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu style={{ background: '#EBEEF2' }}>
@@ -130,37 +196,32 @@ export default function Header() {
                                         <Dropdown.Item href="/management">
                                             Руководство
                                         </Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Dropdown>
-                                    <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
-                                        ПРОИЗВОДСТВО
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu style={{ background: '#EBEEF2' }}>
-                                        <Dropdown.Item href="/qualitypolicy">
-                                            Политика качества
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="#">
+                                            СМИ о нас
                                         </Dropdown.Item>
                                         <Dropdown.Divider />
-                                        <Dropdown.Item href="/production">
-                                            Испытательный центр
+                                        <Dropdown.Item href="#">
+                                            Фотогалерея
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/clients">
+                                            Наши клиенты
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/reviews">
+                                            Отзывы
                                         </Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/products">ПРОДУКЦИЯ</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="#">ЗАКАЗЧИКАМ</Nav.Link>
-                            </Nav.Item>
-                            {/* <Nav.Item>
-                                <Nav.Link href="#">ПРОЕКТНЫМ ИНСТИТУТАМ</Nav.Link>
-                            </Nav.Item> */}
-                            <Nav.Item>
-                                <Dropdown>
+                                <Dropdown
+                                    id="design_institutes"
+                                    show={show4}
+                                    onMouseEnter={showDropdown4}
+                                    onMouseLeave={hideDropdown}
+                                >
                                     <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
                                         ПРОЕКТНЫМ ИНСТИТУТАМ
                                     </Dropdown.Toggle>
@@ -181,7 +242,7 @@ export default function Header() {
                                 </Dropdown>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/projects">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</Nav.Link>
+                                <Nav.Link href="/contacts">КОНТАКТЫ</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
@@ -193,22 +254,67 @@ export default function Header() {
                     <Navbar.Collapse id="navbars">
                         <Nav className='w-100 justify-content-between'>
                             <Nav.Item>
+                                <Nav.Link href="/presscenter">НОВОСТИ</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Dropdown
+                                    id="design_institutes"
+                                    show={show3}
+                                    onMouseEnter={showDropdown3}
+                                    onMouseLeave={hideDropdown}
+                                >
+                                    <Dropdown.Toggle bsPrefix='company-button' id="dropdown-basic">
+                                        ОБЩЕЕ
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu style={{ background: '#EBEEF2' }}>
+                                        <Dropdown.Item href="/cooperation">
+                                            Кооперация
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="#">
+                                            Закупки импортного сырья
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/#">
+                                            Вакансии
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/#">
+                                            Расписание
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/#">
+                                            Противодействие коррупции
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="/#">
+                                            Административные процедуры
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="/#">Интернет-магазин</Nav.Link>
+                            </Nav.Item>
+                            {/* <Nav.Item>
+                                <Nav.Link href="/projects">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</Nav.Link>
+                            </Nav.Item> */}
+                            {/* <Nav.Item>
                                 <Nav.Link href="/clients">НАШИ КЛИЕНТЫ</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="/reviews">ОТЗЫВЫ</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="/presscenter">ПРЕСС-ЦЕНТР</Nav.Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                             <Nav.Item>
                                 <Nav.Link href="/awards">НАШИ НАГРАДЫ</Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="#">КЛИЕНТАМ</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                                 <Nav.Link href="/contacts">КОНТАКТЫ</Nav.Link>
+                            </Nav.Item> */}
+                            
+                            <Nav.Item>
+                                <Nav.Link href="#">Инвесторам и акционерам</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

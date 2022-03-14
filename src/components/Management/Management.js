@@ -55,7 +55,7 @@ export default function Management() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Руководство</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='management-page-label'>
+                <div className='commonLabels'>
                     Руководство
                 </div>
                 <Row md={3} className='management-page-row'>

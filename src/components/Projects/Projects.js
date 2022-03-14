@@ -19,7 +19,7 @@ export default function Projects() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Реализованные проекты</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='project-page-label'>
+                <div className='commonLabels'>
                     Реализованные проекты
                 </div>
                 <Row md={3} className='project-page-row'>

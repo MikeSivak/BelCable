@@ -10,6 +10,7 @@ import Styles from './HomePage.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useState } from 'react';
+import LogoLinks from './LogoLinks/LogoLinks';
 
 
 export default function HomePage() {
@@ -105,6 +106,7 @@ export default function HomePage() {
                 <IndustriesList />
                 <Certificates />
                 <SecondBanner />
+                <LogoLinks />
                 <div className='trust-carousel-contaier'>
                     <div className='trust-label'>
                         НАМ ДОВЕРЯЮТ

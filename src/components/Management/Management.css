@@ -28,17 +28,6 @@
     margin-top: 20px;
 }
 
-.management-page-label{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E74137;
-    margin-top: 5%;
-}
-
 @media screen and (max-width:684px) {
     .management-page-row{
         display: block;

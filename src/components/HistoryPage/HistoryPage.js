@@ -10,7 +10,7 @@ export default function HistoryPage() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>История</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='history-page-label'>
+                <div className='commonLabels'>
                     История
                 </div>
                 <div className='history-page-info'>

@@ -10,7 +10,7 @@ export default function Production() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Производство</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='production-page-label'>
+                <div className='commonLabels'>
                     Производство
                 </div>
                 <div className='production-page-info'>

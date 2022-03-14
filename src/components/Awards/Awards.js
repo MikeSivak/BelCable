@@ -10,7 +10,7 @@ export default function Awards() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Наши награды</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='awards-label'>
+                <div className='commonLabels'>
                     Наши награды
                 </div>
                 <div className='awards-info'>

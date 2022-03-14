@@ -67,15 +67,6 @@
     background: #CDDBEC !important;
 }
 
-.product-page-container .productsLabel{
-    color: #E74137;
-    font-size: 2em;
-    font-weight: 900;
-    font-style: normal;
-    text-align: left;
-    margin-left: 14%;
-}
-
 .product-page-container .cardsBlock{
     margin-top: 20px;
 }

@@ -4,17 +4,6 @@
     padding: 0 0 6em 0;
 }
 
-.documentation-page-label{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E74137;
-    margin-top: 5%;
-}
-
 .documentation-page-row{
     margin-top: 5%;
     justify-content: space-between;

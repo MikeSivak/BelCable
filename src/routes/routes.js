@@ -20,6 +20,8 @@ import Awards from "../components/Awards/Awards";
 import IndustryPurpose from "../components/IndustryPurpose/IndustryPurpose";
 import Wires from "../components/Wires/Wires";
 import Admin from "../components/Admin/Admin";
+import InnovativeProduction from "../components/InnovativeProduction/InnovativeProduction";
+import Testing from "../components/Testing/Testing";
 
 const routes = [
     {
@@ -154,6 +156,18 @@ const routes = [
         name: 'Admin',
         component: Admin,
         id: 21,
+    },
+    {
+        path: '/innovative',
+        name: 'InnovativeProduction',
+        component: InnovativeProduction,
+        id: 22,
+    },
+    {
+        path: '/testing',
+        name: 'Testing',
+        component: Testing,
+        id: 23,
     },
 ]
 

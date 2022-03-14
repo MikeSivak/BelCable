@@ -8,30 +8,26 @@ export default function QualityPolicy() {
                 <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
-                    <Breadcrumb.Item active>Политика качества</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Система менеджмента и качества</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='quality-page-label'>
-                    Политика качества
+                <div className='commonLabels'>
+                    СИСТЕМА МЕНЕДЖМЕНТА И КАЧЕСТВА
                 </div>
                 <div className='quality-page-info'>
                     <Row className='quality-page-row'>
+                        <Col md={2} className='quality-image-section'>
+                            <Image className='quality-page-images' src='f2a6ab1e5911edbf381fc707566255d4.jpg' alt='1.1.png' />
+                        </Col>
                         <Col md={8}>
                             <Row>
                                 <div className='quality-page-text'>
-                                    Политика в области качества ориентирована на удовлетворение постоянно меняющегося потребительского спроса, требований к качеству продукции, на совершенствование технологий ее изготовления. Преимуществом предприятия является соответствие выпускаемой продукции существующим ГОСТ, ТУ, международным требованиям ISO 9001:2015, возможность гладко и оперативно приступить к выпуску продукции согласно предъявляемым требованиям заказчика.
                                     В ОАО «Беларускабель» с декабря 2000 года была внедрена и сертифицирована система качества разработки, производства и поставки кабельной продукции и потребительских товаров (шнуров армированных, вилок опрессованных, удлинителей) на базе международных стандартов серии ИСО 9000.
                                     В июле 2019 года организация успешно прошла ре-сертификацию на соответствие требованиям международного стандарта ISO 9001:2015 «Системы менеджмента качества. Требования». Сертификат на СМК №320513050/3 с 02.10.2019 по 01.10.2022 (DEKRA Certification GmbH  Германия).
                                 </div>
                             </Row>
                         </Col>
-                        <Col className='quality-image-section'>
-                            <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
-                        </Col>
                     </Row>
                     <Row className='quality-page-row'>
-                        <Col className='quality-image-section'>
-                            <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
-                        </Col>
                         <Col md={8}>
                             <Row>
                                 <div className='quality-page-text indentation-blocks'>
@@ -39,8 +35,14 @@ export default function QualityPolicy() {
                                 </div>
                             </Row>
                         </Col>
+                        <Col md={2} className='quality-image-section'>
+                            <Image className='quality-page-images' src='bc19d7835d25e9017aa3496527d672f3.jpg' alt='1.1.png' />
+                        </Col>
                     </Row>
                     <Row className='quality-page-row'>
+                        <Col md={2} className='quality-image-section'>
+                            <Image className='quality-page-images' src='a58a8a39443d0d844e7b6da3ea06059b.jpg' alt='1.1.png' />
+                        </Col>
                         <Col md={8}>
                             <Row>
                                 <div className='quality-page-text indentation-blocks'>
@@ -48,20 +50,17 @@ export default function QualityPolicy() {
                                 </div>
                             </Row>
                         </Col>
-                        <Col className='quality-image-section'>
-                            <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
-                        </Col>
                     </Row>
                     <Row className='quality-page-row'>
-                        <Col className='quality-image-section'>
-                            <Image className='quality-page-images' src='cert1.png' alt='1.1.png' />
-                        </Col>
                         <Col md={8}>
                             <Row>
                                 <div className='quality-page-text indentation-blocks'>
                                     В организации действует сертифицированная система управления охраной труда при производстве кабелей, проводов, шнуров, товаров народного потребления согласно требованиям СТБ 18001-2009 «Система управления охраной труда». Получен сертификат № BY/112 05.04.021 02058 (от 15.08.2018 до 15.08.2021). Выдан органом по сертификации продукции, услуг, систем управления «ПОЛИТЕХ-СЕРТ».
                                 </div>
                             </Row>
+                        </Col>
+                        <Col md={2} className='quality-image-section'>
+                            <Image className='quality-page-images' src='Сертификат 45001 BY 112 05.04. 021.03 00017_1.jpg' alt='1.1.png' />
                         </Col>
                     </Row>
                 </div>

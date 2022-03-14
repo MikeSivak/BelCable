@@ -202,3 +202,7 @@ nav.navbar-expand-lg.navbar-light div.container button{
 .authorize-close-button{
     border: none;
 }
+
+#dropdown-basic:hover .firstDropdown{
+    display: block;
+}

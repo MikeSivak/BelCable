@@ -12,7 +12,7 @@ export default function Contacts() {
                     <Breadcrumb.Item href="/">Компания</Breadcrumb.Item>
                     <Breadcrumb.Item active>Контакты</Breadcrumb.Item>
                 </Breadcrumb>
-                <div className='contacts-label'>
+                <div className='commonLabels'>
                     Контакты
                 </div>
                 <Row className='contacts-row'>

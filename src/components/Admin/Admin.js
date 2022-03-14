@@ -108,7 +108,7 @@ export default function Admin() {
                         <div className='add-product-container'>
                             {/* add product with all fields */}
                             <div className='add-product-section'>
-                                <span className='action-label'>Добавление товара</span>
+                                <span className='commonLabels'>Добавление товара</span>
                                 <Form className='add-product-form'>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <br></br>
@@ -165,7 +165,7 @@ export default function Admin() {
 
                             {/* add category only */}
                             <div className='add-category-section'>
-                                <span className='action-label'>Добавление категории</span>
+                                <span className='commonLabels'>Добавление категории</span>
                                 <Form className='add-category-form'>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Control type="text" placeholder="Введите имя категории" />
@@ -177,7 +177,7 @@ export default function Admin() {
                             </div>
                             {/* add industry only */}
                             <div className='add-industry-section'>
-                                <span className='action-label'>Добавление отрасли</span>
+                                <span className='commonLabels'>Добавление отрасли</span>
                                 <Form className='add-industry-form'>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Control type="text" placeholder="Введите имя отрасли" />
@@ -190,7 +190,7 @@ export default function Admin() {
                         </div>
                     </Tab>
                     <Tab eventKey="edit" title="Редактирование">
-                        <span className='action-label'>Редактирование</span>
+                        <span className='commonLabels'>Редактирование</span>
                         <div className='edit-product-container'>
                             {/* edit product with all fields */}
                             <div className='edit-product-section'>
@@ -207,7 +207,7 @@ export default function Admin() {
                         </div>
                     </Tab>
                     <Tab eventKey="delete" title="Удаление">
-                        <span className='action-label'>Удаление</span>
+                        <span className='commonLabels'>Удаление</span>
                         <div className='delete-product-container'>
                             {/* return list of all products with (while without search field) with delete button on items */}
                             <div className='delete-product-section'>

@@ -324,11 +324,11 @@ export default function ProductPage() {
             <div className='product-page-container'>
                 <Breadcrumb className='custom-breadcrumb' style={{ marginTop: '38px' }}>
                     <Breadcrumb.Item href="/">Главная</Breadcrumb.Item>
-                    <Breadcrumb.Item active>Продукция</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Каталог</Breadcrumb.Item>
                 </Breadcrumb>
                 <Row className='product-page-row'>
                     <Col md={4} className='product-menu'>
-                        <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example">
+                        <Tabs defaultActiveKey="byPurpose" id="uncontrolled-tab-example">
                             <Tab eventKey="byIndustry" title="По отраслям">
                                 {industry.map((data) => (
                                     <>
@@ -367,8 +367,8 @@ export default function ProductPage() {
                         </Tabs>
                     </Col>
                     <Col md={8} className='products'>
-                        <div className='productsLabel'>ПРОДУКЦИЯ</div>
-                        <Tabs defaultActiveKey="byIndustry" id="uncontrolled-tab-example" className='cardsBlock'>
+                        <div className='commonLabels' >ПРОДУКЦИЯ</div>
+                        <Tabs defaultActiveKey="byPurpose" id="uncontrolled-tab-example" className='cardsBlock'>
                             <Tab eventKey="byIndustry" title="По отраслям" className='cardsTab'>
                                 {/* <Row xs={1} md={3} className="g-2">
                                     {industry.map((data) => (
