@@ -206,3 +206,7 @@ nav.navbar-expand-lg.navbar-light div.container button{
 #dropdown-basic:hover .firstDropdown{
     display: block;
 }
+
+.logotext{
+    line-height: 18px;
+}

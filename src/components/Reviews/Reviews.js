@@ -1,4 +1,4 @@
-import { Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
+import { Row, Col, Image, Button, Breadcrumb, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Reviews.css'
 
@@ -54,9 +54,9 @@ export default function Reviews() {
                                 <p>Наши клиенты ценят ОАО «Беларускабель» за высокое качество продукции, готовность удовлетворять повышенные требования к кабельно-проводниковой продукции и за постоянное расширение ассортимента.</p>
                             </div>
                             <div className='history-button-container'>
-                                <Link>
+                                <NavLink href='/history'>
                                     <Button bsPrefix='history-button'>История завода</Button>
-                                </Link>
+                                </NavLink>
                             </div>
                         </Col>
                         <Col className='reviews-col-image'>

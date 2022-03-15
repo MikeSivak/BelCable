@@ -102,16 +102,17 @@ export default function Header() {
                             <img height='37px' width='309px' src='lbl.png' />
                         </NavLink>
                     </div>
-                    <div className='col-md'>
+                    <div className='col-md logotext'>
                         Производство кабельной продукции c 1959 года
                     </div>
-                    <div className='col-md sectionReception'>
+                    <div className='col-md sectionReception logotext'>
                         <div className='row'>Приёмная</div>
                         <div className='row boldText phones'>+375-236-24-77-29</div>
-                    </div>
-                    <div className='col-md sectionSales'>
+                        <p></p>
                         <div className='row'>Отдел продаж</div>
                         <div className='row boldText phones'>+375-236-24-45-23</div>
+                    </div>
+                    <div className='col-md sectionSales logotext'>
                         <div className='row'>Email</div>
                         <div className='row boldText'>zavod@belaruskabel.by</div>
                         <div className='row boldText'>marketing@belaruskabel.by</div>
@@ -129,9 +130,7 @@ export default function Header() {
                     <div className='col-md iconsInfo'>
                         <div className='row'>
                             <div className='icons'>
-                                {/* <img height="51px" width="51px" src="gerb1.png" />
-                                <img height="51px" width="51px" src="gerb.png" /> */}
-                                <div className='col-sm-10 boldText'>
+                                <div className='col-sm-10 boldText logotext'>
                                     Министерство Промышленности Республики Беларусь
                                 </div>
                             </div>
